@@ -14,6 +14,13 @@
 # Engineering
 
 ## Dependencies ----
+usethis::use_package("shiny")
+usethis::use_package("shinydashboard")
+usethis::use_package("shinyWidgets")
+usethis::use_package("magrittr")
+usethis::use_package("dplyr")
+usethis::use_package("shinyjs")
+usethis::use_package("jsonlite")
 ## Amend DESCRIPTION with dependencies read from package code parsing
 ## install.packages('attachment') # if needed.
 attachment::att_amend_desc()

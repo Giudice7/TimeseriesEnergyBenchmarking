@@ -1,0 +1,195 @@
+body {
+    font-family: 'Poppins', 'Helvetica','Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.content {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#header-title {
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+
+#title {
+  display: inline-flex;
+}
+
+#title>p {
+  font-size: 3rem;
+    font-weight: 1000;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: 'Poppins Light';
+}
+
+#container-logos {
+    display: inline-flex;
+    justify-content: center;
+    width: 500px;
+    align-items: center;
+    /*margin: auto;*/
+}
+
+.logo {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+} 
+
+.main-header {
+  background-color: #2E4F97;
+}
+
+.skin-blue .main-header .logo {
+  height: 0;
+  width: 0;
+  padding: 0;
+  background-color: #2E4F97;
+}
+
+.skin-blue .main-header .navbar {
+  margin-left: 0;
+  background-color: #2E4F97;
+}
+
+.skin-blue .main-header .navbar .sidebar-toggle:hover {
+    background-color: #F27507;
+}
+
+.skin-blue .main-sidebar {
+    background-color: #d9ebf6;
+    font-size: 1.8rem;
+    box-shadow: rgb(0 0 0 / 20%) 0 8px 10px -5px, rgb(0 0 0 / 14%) 0 16px 24px 2px, rgb(0 0 0 / 12%) 0 6px 30px;
+}
+
+.skin-blue .sidebar-menu>li.active>a, .skin-blue .sidebar-menu>li:hover>a {
+    color: #fff;
+    background: #F27507;
+    border-left-color: #2e4f97;
+}
+
+.skin-blue .sidebar-menu>li>a {
+    border-radius: 0 6px 6px 0;
+}
+
+.skin-blue .sidebar-menu>li:hover>a {
+    background: #ECA567;
+}
+
+.skin-blue .sidebar a {
+    color: #4c4c4c;
+}
+
+.box {
+  flex: 1;
+  box-shadow: 4px 4px 4px 0px rgb(0 0 0 / 10%);
+  border-radius: 8px;
+}
+
+.box-header .box-title {
+  font-family: 'Poppins Light', 'Helvetica','Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 1000;
+}
+
+div.box-body .shiny-input-container {
+  width: fit-content;
+}
+
+.col-sm-3, .col-sm-6, .col-sm-4, .col-sm-9, .row {
+  display: flex;
+}
+
+.loader, .loader:before, .loader:after {
+  color: #2E4F97 !important;
+  background-color: #2E4F97 !important;
+}
+
+.framework > img {
+  width: 100%;
+}
+
+#toggle-description, #upload-description {
+   margin-bottom: 20px;
+}
+
+#load_data1-ts_raw_progress > div {
+  background-color: #2E4F97
+}
+
+#load_data1-weather_raw_progress > div{
+  background-color: #F27507;
+}
+
+#load_data1-analyze {
+  display: flex;
+  background-color: #D9EBF6;
+  border-color: #838383;
+  border: none;
+  font-weight: 600;
+  border-radius: 6px;
+  height: 50px;
+  font-size: 1.75rem;
+  color: #000000;
+  margin: auto;
+  align-items: center;
+}
+
+.value {
+    font-size: 2.5rem;
+    color: #2E4F97;
+    font-weight: 600;
+}
+
+.value > .highlight {
+    color: #C7003F;
+}
+
+.inline-div {
+  display: flex;
+  margin: auto;
+}
+
+.inline-value {
+  flex: 1
+  ;
+}
+
+#shiny-tab-peer_identification > .col-sm-6 {
+  display: block;
+}
+
+.load_condition {
+  margin: auto;
+  font-size: 2.75rem;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+
+#peer_identification1-thermal_correlation_Winter, #peer_identification1-thermal_correlation_Summer, #peer_identification1-features_Winter,  #peer_identification1-features_Summer, #EPI1-EUI, #EPI1-off_impact, #EPI1-weekend_impact {
+  display: flex;
+}
+
+.card {
+  flex: 1;
+}
+
+.card > .value {
+  font-size: 2rem;
+  color: #2E4F97;
+  font-weight: 600;
+}
+
+.EPI-type {
+  margin: auto;
+  font-size: 2.75rem;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
