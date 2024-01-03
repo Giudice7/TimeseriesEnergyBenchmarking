@@ -1,0 +1,627 @@
+building_id,site_id,building_id_kaggle,site_id_kaggle,primaryspaceusage,sub_primaryspaceusage,sqm,sqft,lat,lng,timezone,electricity,hotwater,chilledwater,steam,water,irrigation,solar,gas,industry,subindustry,heatingtype,yearbuilt,date_opened,numberoffloors,occupants,energystarscore,eui,site_eui,source_eui,leed_level,rating,state,country
+Panther_education_Rosalie,Panther,0,0,Education,Research,690.5,7432,28.5176885788321,-81.3790387999998,US/Eastern,Yes,,,,Yes,,,,,,,2008.0,,,,,276.0,,,None,,Florida,United States
+Panther_education_Misty,Panther,1,0,Education,Research,252.7,2720,28.5176885788321,-81.3790387999998,US/Eastern,Yes,,,,Yes,,,,,,,2004.0,,,,,375.0,,,None,,Florida,United States
+Panther_education_Mattie,Panther,2,0,Education,Classroom,499.4,5376,28.5176885788321,-81.3790387999998,US/Eastern,Yes,,,,Yes,,,,,,,1991.0,,,,,49.0,,,None,,Florida,United States
+Panther_education_Diann,Panther,3,0,Education,Classroom,2200.4,23685,28.5176885788321,-81.3790387999998,US/Eastern,Yes,,,,Yes,,,,,,,2002.0,,,,,145.0,,,None,,Florida,United States
+Panther_education_Gina,Panther,4,0,Education,Research,10833.1,116607,28.5176885788321,-81.3790387999998,US/Eastern,Yes,,,,Yes,,,Yes,,,,1975.0,,,,,546.0,,,None,,Florida,United States
+Panther_education_Tina,Panther,5,0,Education,Research,743.2,8000,28.5176885788321,-81.3790387999998,US/Eastern,Yes,,,,Yes,,,,,,,2000.0,,,,,41.0,,,None,,Florida,United States
+Panther_education_Vincent,Panther,7,0,Education,Classroom,11248.1,121074,28.5176885788321,-81.3790387999998,US/Eastern,Yes,,Yes,,Yes,,,,,,,1989.0,,,,,128.0,,,None,,Florida,United States
+Panther_education_Shelton,Panther,8,0,Education,Classroom,5649.3,60809,28.5176885788321,-81.3790387999998,US/Eastern,Yes,,,,,,,,,,,2003.0,,,,,133.0,,,None,,Florida,United States
+Panther_office_Karla,Panther,9,0,Office,Office,2508.4,27000,28.5176885788321,-81.3790387999998,US/Eastern,Yes,,Yes,,Yes,,,,,,,2010.0,,,,,120.0,,,Gold,,Florida,United States
+Panther_education_Sophia,Panther,11,0,Education,Research,4559.0,49073,28.5176885788321,-81.3790387999998,US/Eastern,Yes,,,,Yes,,,Yes,,,,1968.0,,,,,466.0,,,None,,Florida,United States
+Panther_education_Annetta,Panther,13,0,Education,Classroom,9232.7,99380,28.5176885788321,-81.3790387999998,US/Eastern,Yes,,Yes,,Yes,,,,,,,2000.0,,,,,95.0,,,None,,Florida,United States
+Panther_education_Aurora,Panther,14,0,Education,Classroom,8012.9,86250,28.5176885788321,-81.3790387999998,US/Eastern,Yes,,Yes,,Yes,Yes,,,,,,2013.0,,,,,136.0,,,Gold,,Florida,United States
+Panther_office_Graham,Panther,15,0,Office,Office,7799.9,83957,28.5176885788321,-81.3790387999998,US/Eastern,Yes,,Yes,,Yes,,,Yes,,,,1974.0,,,,,104.0,,,None,,Florida,United States
+Panther_education_Karri,Panther,16,0,Education,Classroom,5076.6,54644,28.5176885788321,-81.3790387999998,US/Eastern,Yes,,,,,Yes,,,,,,1996.0,,,,,436.0,,,None,,Florida,United States
+Panther_office_Valarie,Panther,17,0,Office,Office,1416.8,15250,28.5176885788321,-81.3790387999998,US/Eastern,Yes,,,,,Yes,,,,,,1980.0,,,,,204.0,,,None,,Florida,United States
+Panther_education_Hugh,Panther,18,0,Education,Research,10395.0,111891,28.5176885788321,-81.3790387999998,US/Eastern,Yes,,,,Yes,,,Yes,,,,1996.0,,,,,495.0,,,None,,Florida,United States
+Panther_office_Larry,Panther,19,0,Office,Office,1738.9,18717,28.5176885788321,-81.3790387999998,US/Eastern,Yes,,,,Yes,Yes,,,,,,2004.0,,,,,173.0,,,None,,Florida,United States
+Panther_education_Mohammad,Panther,20,0,Education,Classroom,10244.6,110272,28.5176885788321,-81.3790387999998,US/Eastern,Yes,,,,Yes,,,Yes,,,,1977.0,,,,,199.0,,,None,,Florida,United States
+Panther_office_Jeane,Panther,21,0,Office,Office,654.3,7043,28.5176885788321,-81.3790387999998,US/Eastern,Yes,,,,,,,,,,,1990.0,,,,,86.0,,,None,,Florida,United States
+Panther_education_Jonathan,Panther,22,0,Education,Research,331.6,3569,28.5176885788321,-81.3790387999998,US/Eastern,Yes,,,,,,,,,,,1996.0,,,,,66.0,,,None,,Florida,United States
+Panther_education_Genevieve,Panther,23,0,Education,Classroom,12159.6,130885,28.5176885788321,-81.3790387999998,US/Eastern,Yes,,,,Yes,,,,,,,1985.0,,,,,151.0,,,None,,Florida,United States
+Panther_education_Alecia,Panther,24,0,Education,Classroom,9805.4,105545,28.5176885788321,-81.3790387999998,US/Eastern,Yes,,,,Yes,,,Yes,,,,2001.0,,,,,186.0,,,None,,Florida,United States
+Panther_office_Jesus,Panther,25,0,Office,Office,9595.6,103286,28.5176885788321,-81.3790387999998,US/Eastern,Yes,,,,,,,,,,,1969.0,,,,,28.0,,,None,,Florida,United States
+Panther_office_Catherine,Panther,26,0,Office,Office,2504.0,26953,28.5176885788321,-81.3790387999998,US/Eastern,Yes,,,,Yes,Yes,,,,,,2005.0,,,,,162.0,,,Gold,,Florida,United States
+Panther_office_Garth,Panther,28,0,Office,Office,4919.9,52957,28.5176885788321,-81.3790387999998,US/Eastern,Yes,,Yes,,,,,,,,,2016.0,,,,,73.0,,,Gold,,Florida,United States
+Panther_education_Quintin,Panther,29,0,Education,Classroom,10578.5,113866,28.5176885788321,-81.3790387999998,US/Eastern,Yes,,Yes,,Yes,,,,,,,2006.0,,,,,212.0,,,None,,Florida,United States
+Panther_education_Teofila,Panther,30,0,Education,Classroom,8723.3,93897,28.5176885788321,-81.3790387999998,US/Eastern,Yes,,Yes,,Yes,,,Yes,,,,1999.0,,,,,146.0,,,None,,Florida,United States
+Panther_education_Ivan,Panther,31,0,Education,Classroom,5751.1,61904,28.5176885788321,-81.3790387999998,US/Eastern,Yes,,Yes,,Yes,,,Yes,,,,2001.0,,,,,202.0,,,None,,Florida,United States
+Panther_office_Shauna,Panther,32,0,Office,Office,4495.8,48392,28.5176885788321,-81.3790387999998,US/Eastern,Yes,,,,Yes,,,Yes,,,,2005.0,,,,,165.0,,,None,,Florida,United States
+Panther_office_Lois,Panther,38,0,Office,Office,1186.3,12769,28.5176885788321,-81.3790387999998,US/Eastern,Yes,,,,Yes,,,,,,,2013.0,,,,,368.0,,,None,,Florida,United States
+Panther_office_Taryn,Panther,39,0,Office,Office,6003.3,64619,28.5176885788321,-81.3790387999998,US/Eastern,Yes,,,,,,,Yes,,,,1969.0,,,,,118.0,,,None,,Florida,United States
+Panther_office_Kristen,Panther,41,0,Office,Office,8719.9,93860,28.5176885788321,-81.3790387999998,US/Eastern,Yes,,,,Yes,Yes,,Yes,,,,1968.0,,,,,562.0,,,None,,Florida,United States
+Panther_education_Edna,Panther,52,0,Education,Classroom,9896.3,106523,28.5176885788321,-81.3790387999998,US/Eastern,Yes,,,,Yes,,,Yes,,,,1970.0,,,,,168.0,,,None,,Florida,United States
+Panther_office_Otto,Panther,53,0,Office,Office,8151.5,87742,28.5176885788321,-81.3790387999998,US/Eastern,Yes,,,,,,,,,,,1971.0,,,,,184.0,,,None,,Florida,United States
+Panther_education_Violet,Panther,54,0,Education,Research,730.9,7867,28.5176885788321,-81.3790387999998,US/Eastern,Yes,,,,Yes,,,,,,,2011.0,,,,,575.0,,,None,,Florida,United States
+Panther_office_Christian,Panther,55,0,Office,Office,1553.9,16726,28.5176885788321,-81.3790387999998,US/Eastern,Yes,,Yes,,Yes,,,,,,,2011.0,,,,,177.0,,,Gold,,Florida,United States
+Panther_education_Neal,Panther,60,0,Education,Classroom,7578.7,81576,28.5176885788321,-81.3790387999998,US/Eastern,Yes,,Yes,,Yes,,,,,,,1997.0,,,,,181.0,,,None,,Florida,United States
+Panther_education_Zelda,Panther,75,0,Education,Classroom,7519.8,80942,28.5176885788321,-81.3790387999998,US/Eastern,Yes,,Yes,,Yes,,,,,,,2010.0,,,,,92.0,,,Gold,,Florida,United States
+Panther_education_Jerome,Panther,76,0,Education,Research,11974.0,128887,28.5176885788321,-81.3790387999998,US/Eastern,Yes,,Yes,,Yes,,,Yes,,,,2009.0,,,,,515.0,,,Gold,,Florida,United States
+Panther_education_Enriqueta,Panther,78,0,Education,Classroom,7084.5,76257,28.5176885788321,-81.3790387999998,US/Eastern,Yes,,Yes,,,,,,,,,2007.0,,,,,90.0,,,None,,Florida,United States
+Panther_office_Lauretta,Panther,79,0,Office,Office,3366.8,36240,28.5176885788321,-81.3790387999998,US/Eastern,Yes,,,,Yes,,,Yes,,,,2010.0,,,,,178.0,,,Gold,,Florida,United States
+Panther_office_Patti,Panther,80,0,Office,Office,14503.2,156111,28.5176885788321,-81.3790387999998,US/Eastern,Yes,,,,Yes,,,Yes,,,,2001.0,,,,,124.0,,,Gold,,Florida,United States
+Panther_office_Brent,Panther,82,0,Office,Office,998.1,10743,28.5176885788321,-81.3790387999998,US/Eastern,Yes,,Yes,,,,,,,,,1974.0,,,,,100.0,,,None,,Florida,United States
+Panther_office_Hannah,Panther,84,0,Office,Office,375.1,4038,28.5176885788321,-81.3790387999998,US/Eastern,Yes,,,,Yes,,,,,,,1986.0,,,,,64.0,,,None,,Florida,United States
+Panther_education_Janis,Panther,86,0,Education,Research,1015.6,10932,28.5176885788321,-81.3790387999998,US/Eastern,Yes,,,,,,,,,,,1986.0,,,,,67.0,,,None,,Florida,United States
+Panther_education_Emily,Panther,91,0,Education,Classroom,6326.1,68094,28.5176885788321,-81.3790387999998,US/Eastern,Yes,,Yes,,Yes,,,,,,,2003.0,,,,,164.0,,,None,,Florida,United States
+Panther_office_Lavinia,Panther,92,0,Office,Office,1001.4,10779,28.5176885788321,-81.3790387999998,US/Eastern,Yes,,Yes,,,,,,,,,1970.0,,,,,101.0,,,None,,Florida,United States
+Panther_office_Clementine,Panther,93,0,Office,Office,3100.2,33370,28.5176885788321,-81.3790387999998,US/Eastern,Yes,,Yes,,Yes,,,,,,,1982.0,,,,,119.0,,,None,,Florida,United States
+Panther_education_Scarlett,Panther,94,0,Education,Classroom,2737.8,29469,28.5176885788321,-81.3790387999998,US/Eastern,Yes,,,,,,,Yes,,,,1968.0,,,,,84.0,,,None,,Florida,United States
+Panther_office_Danica,Panther,99,0,Office,Office,210.0,2260,28.5176885788321,-81.3790387999998,US/Eastern,Yes,,,,Yes,,,,,,,2016.0,,,,,79.0,,,Silver,,Florida,United States
+Panther_office_Antonette,Panther,101,0,Office,Office,1752.2,18860,28.5176885788321,-81.3790387999998,US/Eastern,Yes,,,,,Yes,,,,,,1986.0,,,,,208.0,,,None,,Florida,United States
+Panther_education_Cleopatra,Panther,103,0,Education,Classroom,2012.0,21657,28.5176885788321,-81.3790387999998,US/Eastern,Yes,,Yes,,Yes,,,,,,,2016.0,,,,,100.0,,,Gold,,Florida,United States
+Panther_office_Ruthie,Panther,104,0,Office,Office,4211.3,45330,28.5176885788321,-81.3790387999998,US/Eastern,Yes,,,,Yes,,,,,,,2003.0,,,,,211.0,,,None,,Florida,United States
+Robin_education_Kiera,Robin,105,1,Education,College Classroom,4703.0,50623,51.5187896538461,-0.134556230769231,Europe/London,Yes,,,,,,,,Education,College/University,Steam,,,5.0,,,,,,,G,England,United Kingdom
+Robin_education_Lashandra,Robin,107,1,Education,College Classroom,9061.0,97532,51.5187896538461,-0.134556230769231,Europe/London,Yes,,,,,,,,Education,College/University,Heat network,2005.0,,10.0,,,,,,,F,England,United Kingdom
+Robin_education_Megan,Robin,108,1,Education,College Laboratory,7579.0,81580,51.5187896538461,-0.134556230769231,Europe/London,Yes,,,,,,,,Education,College/University,Heat network,1913.0,,5.0,,,,,,,,England,United Kingdom
+Robin_education_Mercedes,Robin,109,1,Education,College Laboratory,5295.0,56995,51.5187896538461,-0.134556230769231,Europe/London,Yes,Yes,,,,,,,Education,College/University,Heat network,1953.0,,6.0,,,,,,,G,England,United Kingdom
+Robin_education_Audrea,Robin,110,1,Education,College Laboratory,2584.0,27814,51.5187896538461,-0.134556230769231,Europe/London,Yes,Yes,,,,,,,Education,College/University,Heat network,2006.0,,8.0,,,,,,,G,England,United Kingdom
+Robin_education_Derrick,Robin,111,1,Education,College Laboratory,10994.0,118338,51.5187896538461,-0.134556230769231,Europe/London,Yes,,,,,,,,Education,College/University,Heat network,1909.0,,7.0,,,,,,,F,England,United Kingdom
+Robin_education_Karyl,Robin,112,1,Education,College Laboratory,2992.0,32206,51.5187896538461,-0.134556230769231,Europe/London,Yes,Yes,,,,,,,Education,College/University,Heat network,,,6.0,,,,,,,E,England,United Kingdom
+Robin_education_Madeline,Robin,113,1,Education,College Laboratory,9335.0,100481,51.5187896538461,-0.134556230769231,Europe/London,Yes,Yes,,,,,,,Education,College/University,Heat network,1958.0,,9.0,,,,,,,F,England,United Kingdom
+Robin_education_Leslie,Robin,114,1,Education,College Laboratory,12977.0,139683,51.5187896538461,-0.134556230769231,Europe/London,Yes,Yes,,,,,,,Education,College/University,Heat network,1958.0,,13.0,,,,,,,E,England,United Kingdom
+Robin_education_So,Robin,115,1,Education,College Laboratory,12051.0,129716,51.5187896538461,-0.134556230769231,Europe/London,Yes,,,,,,,,Education,College/University,Heat network,1968.0,,6.0,,,,,,,F,England,United Kingdom
+Robin_education_Jasper,Robin,116,1,Education,College Laboratory,3462.0,37265,51.5187896538461,-0.134556230769231,Europe/London,Yes,,,,,,,,Education,College/University,Oil,,,5.0,,,,,,,,England,United Kingdom
+Robin_education_Cecilia,Robin,117,1,Education,College Laboratory,1439.0,15489,51.5187896538461,-0.134556230769231,Europe/London,Yes,Yes,,,,,,,Education,College/University,Heat network,2004.0,,4.0,,,,,,,E,England,United Kingdom
+Robin_education_Julius,Robin,118,1,Education,College Laboratory,12850.0,138316,51.5187896538461,-0.134556230769231,Europe/London,Yes,,,,,,,,Education,College/University,Gas,1960.0,,8.0,,,,,,,,England,United Kingdom
+Robin_education_Margarito,Robin,119,1,Education,College Laboratory,8468.0,91149,51.5187896538461,-0.134556230769231,Europe/London,Yes,Yes,,,,,,,Education,College/University,Heat network,2007.0,,7.0,,,,,,,E,England,United Kingdom
+Robin_education_Zenia,Robin,120,1,Education,College Laboratory,6337.0,68211,51.5187896538461,-0.134556230769231,Europe/London,Yes,,,,,,,,Education,College/University,Heat network,1976.0,,7.0,,,,,,,G,England,United Kingdom
+Robin_education_Terrance,Robin,122,1,Education,College Laboratory,7714.9,83043,51.5187896538461,-0.134556230769231,Europe/London,Yes,,,,,,,,Education,College/University,Gas,1991.0,,6.0,,,,,,,F,England,United Kingdom
+Robin_education_Kristopher,Robin,123,1,Education,College Laboratory,5686.0,61204,51.5187896538461,-0.134556230769231,Europe/London,Yes,,,,,,,,Education,College/University,Gas,1989.0,,6.0,,,,,,,E,England,United Kingdom
+Robin_education_Billi,Robin,124,1,Education,College Laboratory,3560.0,38319,51.5187896538461,-0.134556230769231,Europe/London,Yes,,,,,,,,Education,College/University,Gas,1900.0,,6.0,,,,,,,D,England,United Kingdom
+Robin_education_Takako,Robin,125,1,Education,College Laboratory,1561.0,16802,51.5187896538461,-0.134556230769231,Europe/London,Yes,,,,,,,,Education,College/University,Gas,1995.0,,6.0,,,,,,,,England,United Kingdom
+Robin_education_Lizbeth,Robin,126,1,Education,College Laboratory,2001.0,21539,51.5187896538461,-0.134556230769231,Europe/London,Yes,,,,,,,,Education,College/University,Gas,2004.0,,5.0,,,,,,,G,England,United Kingdom
+Robin_office_Gayle,Robin,141,1,Office,Office,4161.0,44789,51.5187896538461,-0.134556230769231,Europe/London,Yes,,,,,,,,Education,College/University,Heat network,1919.0,,5.0,,,,,,,,England,United Kingdom
+Robin_office_Dina,Robin,142,1,Office,Office,4213.0,45348,51.5187896538461,-0.134556230769231,Europe/London,Yes,,,,,,,,Education,College/University,Heat network,,,4.0,,,,,,,C,England,United Kingdom
+Robin_office_Victor,Robin,143,1,Office,Office,3724.0,40085,51.5187896538461,-0.134556230769231,Europe/London,Yes,,,,,,,,Education,College/University,Steam,,,4.0,,,,,,,C,England,United Kingdom
+Robin_office_Lindsay,Robin,144,1,Office,Office,5358.0,57673,51.5187896538461,-0.134556230769231,Europe/London,Yes,Yes,,,,,,,Education,College/University,Heat network,,,5.0,,,,,,,C,England,United Kingdom
+Robin_office_Adolph,Robin,145,1,Office,Office,1321.0,14219,51.5187896538461,-0.134556230769231,Europe/London,Yes,Yes,,,,,,,Education,College/University,Heat network,,,4.0,,,,,,,,England,United Kingdom
+Robin_office_Saul,Robin,146,1,Office,Office,2937.0,31614,51.5187896538461,-0.134556230769231,Europe/London,Yes,,,,,,,,Education,College/University,Gas,1956.0,,8.0,,,,,,,D,England,United Kingdom
+Robin_office_Donald,Robin,147,1,Office,Office,7669.0,82548,51.5187896538461,-0.134556230769231,Europe/London,Yes,,,,,,,,Education,College/University,Heat network but not ours,1977.0,,7.0,,,,,,,F,England,United Kingdom
+Robin_office_Zelma,Robin,149,1,Office,Office,7607.0,81881,51.5187896538461,-0.134556230769231,Europe/London,Yes,Yes,,,,,,,Education,College/University,Heat network,1960.0,,8.0,,,,,,,F,England,United Kingdom
+Robin_office_Antonina,Robin,150,1,Office,Office,6099.7,65657,51.5187896538461,-0.134556230769231,Europe/London,Yes,,,,,,,,Education,College/University,Gas,1955.0,,8.0,,,,,,,E,England,United Kingdom
+Robin_office_Serena,Robin,151,1,Office,Office,2833.1,30495,51.5187896538461,-0.134556230769231,Europe/London,Yes,,,,,,,,Education,College/University,Gas,1997.0,,8.0,,,,,,,D,England,United Kingdom
+Robin_office_Soledad,Robin,152,1,Office,Office,957.0,10301,51.5187896538461,-0.134556230769231,Europe/London,Yes,,,,,,,,Education,College/University,Gas,1970.0,,2.0,,,,,,,E,England,United Kingdom
+Robin_office_Addie,Robin,153,1,Office,Office,1495.0,16092,51.5187896538461,-0.134556230769231,Europe/London,Yes,,,,,,,,Education,College/University,Gas,1965.0,,3.0,,,,,,,,England,United Kingdom
+Robin_office_Maryann,Robin,154,1,Office,Office,3201.0,34455,51.5187896538461,-0.134556230769231,Europe/London,Yes,,,,,,,,Education,College/University,Heat network,1907.0,,8.0,,,,,,,,England,United Kingdom
+Robin_office_Sammie,Robin,155,1,Office,Office,4802.0,51688,51.5187896538461,-0.134556230769231,Europe/London,Yes,,,,,,,,Education,College/University,Electricity,1930.0,,8.0,,,,,,,F,England,United Kingdom
+Fox_office_Clayton,Fox,157,2,Office,Office,488.5,5258,33.4244253,-111.9281404,US/Mountain,Yes,,,,,,,,Education,College/University,,,,,,,,,,,,Arizona,United States
+Fox_office_Susanne,Fox,158,2,Office,Office,941.6,10135,33.4244253,-111.9281404,US/Mountain,Yes,,,,,,,,Education,College/University,,,,,,,,,,,,Arizona,United States
+Fox_education_Charles,Fox,159,2,Education,College Laboratory,909.3,9788,33.4244253,-111.9281404,US/Mountain,Yes,,,,,,,,Education,College/University,,,,,,,,,,,,Arizona,United States
+Fox_education_Kendrick,Fox,161,2,Education,Auditorium,1052.5,11329,33.4244253,-111.9281404,US/Mountain,Yes,,Yes,,,,,,Education,College/University,,,,,,,,,,,,Arizona,United States
+Fox_education_Delma,Fox,162,2,Education,College Classroom,9181.5,98829,33.4244253,-111.9281404,US/Mountain,Yes,Yes,Yes,,,,,,Education,College/University,,1968.0,,,,,,,,,,Arizona,United States
+Fox_education_Ollie,Fox,163,2,Education,College Classroom,6698.5,72102,33.4244253,-111.9281404,US/Mountain,Yes,Yes,Yes,,,,,,Education,College/University,,1970.0,,,,,,,,,,Arizona,United States
+Fox_education_Andre,Fox,168,2,Education,College Laboratory,17044.0,183460,33.4244253,-111.9281404,US/Mountain,Yes,Yes,Yes,,,,,,Education,College/University,,2005.0,,,,,,,,,,Arizona,United States
+Fox_education_Yolande,Fox,169,2,Education,College Laboratory,16681.6,179559,33.4244253,-111.9281404,US/Mountain,Yes,Yes,Yes,,,,,,Education,College/University,,2006.0,,,,,,,,,,Arizona,United States
+Fox_office_Essie,Fox,171,2,Office,Office,12244.3,131797,33.4244253,-111.9281404,US/Mountain,Yes,Yes,Yes,,,,,,Education,College/University,,1968.0,,,,,,,,,,Arizona,United States
+Fox_office_Israel,Fox,172,2,Office,Office,11282.1,121440,33.4244253,-111.9281404,US/Mountain,Yes,,Yes,,,,,,Education,College/University,,1983.0,,,,,,,,,,Arizona,United States
+Fox_education_Rosie,Fox,173,2,Education,College Classroom,8445.2,90903,33.4244253,-111.9281404,US/Mountain,Yes,,Yes,,,,,,Education,College/University,,,,,,,,,,,,Arizona,United States
+Fox_education_Tonya,Fox,174,2,Education,College Classroom,8444.9,90900,33.4244253,-111.9281404,US/Mountain,Yes,,Yes,,,,,,Education,College/University,,,,,,,,,,,,Arizona,United States
+Fox_education_Nilda,Fox,175,2,Education,College Classroom,10371.2,111635,33.4244253,-111.9281404,US/Mountain,Yes,Yes,Yes,,,,,,Education,College/University,,1989.0,,,,,,,,,,Arizona,United States
+Fox_education_Kim,Fox,176,2,Education,College Classroom,5782.1,62238,33.4244253,-111.9281404,US/Mountain,Yes,Yes,Yes,,,,,,Education,College/University,,1970.0,,,,,,,,,,Arizona,United States
+Fox_office_Berniece,Fox,178,2,Office,Office,2173.2,23392,33.4244253,-111.9281404,US/Mountain,Yes,,Yes,,,,,,Education,College/University,,,,,,,,,,,,Arizona,United States
+Fox_education_Elvira,Fox,181,2,Education,Student Union,13826.7,148829,33.4244253,-111.9281404,US/Mountain,Yes,,Yes,,,,,,Education,College/University,,2014.0,,,,,,,,,,Arizona,United States
+Fox_education_Leota,Fox,183,2,Education,College Laboratory,12311.3,132518,33.4244253,-111.9281404,US/Mountain,Yes,Yes,Yes,,,,,,Education,College/University,,1992.0,,,,,,,,,,Arizona,United States
+Fox_education_Heriberto,Fox,184,2,Education,College Classroom,3174.6,34171,33.4244253,-111.9281404,US/Mountain,Yes,Yes,Yes,,,,,,Education,College/University,,,,,,,,,,,,Arizona,United States
+Fox_education_Miguelina,Fox,185,2,Education,College Classroom,7831.7,84300,33.4244253,-111.9281404,US/Mountain,Yes,,,,,,,,Education,College/University,,,,,,,,,,,,Arizona,United States
+Fox_education_Sterling,Fox,187,2,Education,College Classroom,4106.6,44203,33.4244253,-111.9281404,US/Mountain,Yes,Yes,Yes,,,,,,Education,College/University,,1950.0,,,,,,,,,,Arizona,United States
+Fox_office_Margarita,Fox,188,2,Office,Office,2187.8,23549,33.4244253,-111.9281404,US/Mountain,Yes,,Yes,,,,,,Education,College/University,,1941.0,,,,,,,,,,Arizona,United States
+Fox_education_Elois,Fox,189,2,Education,College Classroom,695.0,7481,33.4244253,-111.9281404,US/Mountain,Yes,Yes,Yes,,,,,,Education,College/University,,1969.0,,,,,,,,,,Arizona,United States
+Fox_education_Geoffrey,Fox,190,2,Education,College Laboratory,12731.4,137040,33.4244253,-111.9281404,US/Mountain,Yes,Yes,Yes,,,,,,Education,College/University,,1957.0,,,,,,,,,,Arizona,United States
+Fox_education_Gloria,Fox,192,2,Education,College Laboratory,14087.5,151637,33.4244253,-111.9281404,US/Mountain,Yes,Yes,Yes,,,,,,Education,College/University,,1983.0,,,,,,,,,,Arizona,United States
+Fox_office_Molly,Fox,193,2,Office,Office,576.3,6203,33.4244253,-111.9281404,US/Mountain,Yes,,,,,,,,Education,College/University,,1999.0,,,,,,,,,,Arizona,United States
+Fox_office_Demetrius,Fox,194,2,Office,Office,14463.3,155682,33.4244253,-111.9281404,US/Mountain,Yes,,Yes,,,,,,Education,College/University,,,,,,,,,,,,Arizona,United States
+Fox_office_Sheila,Fox,195,2,Office,Office,901.4,9703,33.4244253,-111.9281404,US/Mountain,Yes,Yes,Yes,,,,,,Education,College/University,,1940.0,,,,,,,,,,Arizona,United States
+Fox_office_Yong,Fox,198,2,Office,Office,15232.3,163959,33.4244253,-111.9281404,US/Mountain,Yes,,Yes,,,,,,Education,College/University,,2004.0,,,,,,,,,,Arizona,United States
+Fox_education_Wendell,Fox,201,2,Education,College Laboratory,20402.2,219608,33.4244253,-111.9281404,US/Mountain,Yes,Yes,Yes,,,,,,Education,College/University,,1992.0,,,,,,,,,,Arizona,United States
+Fox_education_Claude,Fox,209,2,Education,College Laboratory,17957.6,193294,33.4244253,-111.9281404,US/Mountain,Yes,Yes,Yes,,,,,,Education,College/University,,2006.0,,,,,,,,,,Arizona,United States
+Fox_education_Jaclyn,Fox,210,2,Education,College Laboratory,6619.2,71248,33.4244253,-111.9281404,US/Mountain,Yes,Yes,Yes,,,,,,Education,College/University,,2004.0,,,,,,,,,,Arizona,United States
+Fox_education_Etta,Fox,211,2,Education,College Laboratory,4497.5,48411,33.4244253,-111.9281404,US/Mountain,Yes,,,,,,,,Education,College/University,,,,,,,,,,,,Arizona,United States
+Fox_education_Otilia,Fox,212,2,Education,College Laboratory,30403.1,327256,33.4244253,-111.9281404,US/Mountain,Yes,Yes,Yes,,,,,,Education,College/University,,2012.0,,,,,,,,,,Arizona,United States
+Fox_education_Eldon,Fox,213,2,Education,College Laboratory,4613.7,49662,33.4244253,-111.9281404,US/Mountain,Yes,Yes,Yes,,,,,,Education,College/University,,1964.0,,,,,,,,,,Arizona,United States
+Fox_education_Janina,Fox,214,2,Education,College Laboratory,8479.5,91273,33.4244253,-111.9281404,US/Mountain,Yes,,Yes,,,,,,Education,College/University,,1951.0,,,,,,,,,,Arizona,United States
+Fox_education_Long,Fox,216,2,Education,College Classroom,12733.7,137065,33.4244253,-111.9281404,US/Mountain,Yes,Yes,Yes,,,,,,Education,College/University,,1964.0,,,,,,,,,,Arizona,United States
+Fox_education_Leona,Fox,217,2,Education,College Classroom,26286.5,282946,33.4244253,-111.9281404,US/Mountain,Yes,Yes,Yes,,,,,,Education,College/University,,2003.0,,,,,,,,,,Arizona,United States
+Fox_education_Dominique,Fox,219,2,Education,College Laboratory,8930.2,96124,33.4244253,-111.9281404,US/Mountain,Yes,Yes,Yes,,,,,,Education,College/University,,1959.0,,,,,,,,,,Arizona,United States
+Fox_education_Theodore,Fox,220,2,Education,College Laboratory,11389.2,122592,33.4244253,-111.9281404,US/Mountain,Yes,Yes,Yes,,,,,,Education,College/University,,1971.0,,,,,,,,,,Arizona,United States
+Fox_education_Melinda,Fox,221,2,Education,College Laboratory,18984.6,204349,33.4244253,-111.9281404,US/Mountain,Yes,Yes,Yes,,,,,,Education,College/University,,1993.0,,,,,,,,,,Arizona,United States
+Fox_education_Willis,Fox,223,2,Education,College Laboratory,24265.1,261188,33.4244253,-111.9281404,US/Mountain,Yes,,,,,,,,Education,College/University,,,,,,,,,,,,Arizona,United States
+Fox_office_Carson,Fox,226,2,Office,Office,6891.5,74180,33.4244253,-111.9281404,US/Mountain,Yes,Yes,Yes,,,,,,Education,College/University,,1930.0,,,,,,,,,,Arizona,United States
+Fox_education_Eddy,Fox,229,2,Education,College Classroom,13015.0,140092,33.4244253,-111.9281404,US/Mountain,Yes,,Yes,,,,,,Education,College/University,,,,,,,,,,,,Arizona,United States
+Fox_education_Shawanda,Fox,230,2,Education,Primary/Secondary Classroom,960.1,10334,33.4244253,-111.9281404,US/Mountain,Yes,,,,,,,,Education,College/University,,,,,,,,,,,,Arizona,United States
+Fox_education_Stacia,Fox,231,2,Education,College Laboratory,3134.5,33739,33.4244253,-111.9281404,US/Mountain,Yes,Yes,Yes,,,,,,Education,College/University,,1939.0,,,,,,,,,,Arizona,United States
+Fox_education_Rudolph,Fox,233,2,Education,College Classroom,2335.5,25139,33.4244253,-111.9281404,US/Mountain,Yes,Yes,Yes,,,,,,Education,College/University,,1970.0,,,,,,,,,,Arizona,United States
+Fox_education_Louie,Fox,234,2,Education,College Classroom,16645.2,179167,33.4244253,-111.9281404,US/Mountain,Yes,Yes,Yes,,,,,,Education,College/University,,1971.0,,,,,,,,,,Arizona,United States
+Fox_education_Ashli,Fox,235,2,Education,College Classroom,864.8,9309,33.4244253,-111.9281404,US/Mountain,Yes,Yes,Yes,,,,,,Education,College/University,,1970.0,,,,,,,,,,Arizona,United States
+Fox_office_Bernard,Fox,238,2,Office,Office,4182.2,45017,33.4244253,-111.9281404,US/Mountain,Yes,Yes,Yes,,,,,,Education,College/University,,,,,,,,,,,,Arizona,United States
+Fox_education_Dewayne,Fox,244,2,Education,College Classroom,8892.4,95717,33.4244253,-111.9281404,US/Mountain,Yes,Yes,Yes,,,,,,Education,College/University,,,,,,,,,,,,Arizona,United States
+Fox_education_Shirley,Fox,245,2,Education,College Classroom,8220.6,88486,33.4244253,-111.9281404,US/Mountain,Yes,,Yes,,,,,,Education,College/University,,,,,,,,,,,,Arizona,United States
+Fox_office_Alice,Fox,246,2,Office,Office,18806.8,202435,33.4244253,-111.9281404,US/Mountain,Yes,Yes,Yes,,,,,,Education,College/University,,1967.0,,,,,,,,,,Arizona,United States
+Fox_education_Marlana,Fox,247,2,Education,College Laboratory,5997.8,64560,33.4244253,-111.9281404,US/Mountain,Yes,Yes,Yes,,,,,,Education,College/University,,1965.0,,,,,,,,,,Arizona,United States
+Fox_education_Melvin,Fox,248,2,Education,College Laboratory,2289.4,24643,33.4244253,-111.9281404,US/Mountain,Yes,Yes,Yes,,,,,,Education,College/University,,1982.0,,,,,,,,,,Arizona,United States
+Fox_education_Lilly,Fox,250,2,Education,College Laboratory,12236.3,131710,33.4244253,-111.9281404,US/Mountain,Yes,Yes,Yes,,,,,,Education,College/University,,1991.0,,,,,,,,,,Arizona,United States
+Fox_education_Virginia,Fox,251,2,Education,College Classroom,1186.7,12773,33.4244253,-111.9281404,US/Mountain,Yes,,,,,,,,Education,College/University,,,,,,,,,,,,Arizona,United States
+Fox_education_Marcelina,Fox,252,2,Education,College Classroom,400.8,4314,33.4244253,-111.9281404,US/Mountain,Yes,,Yes,,,,,,Education,College/University,,1907.0,,,,,,,,,,Arizona,United States
+Fox_education_Virgil,Fox,253,2,Education,College Laboratory,6123.0,65907,33.4244253,-111.9281404,US/Mountain,Yes,Yes,Yes,,,,,,Education,College/University,,1964.0,,,,,,,,,,Arizona,United States
+Fox_education_Suzan,Fox,255,2,Education,College Classroom,4559.5,49078,33.4244253,-111.9281404,US/Mountain,Yes,Yes,Yes,,,,,,Education,College/University,,1914.0,,,,,,,,,,Arizona,United States
+Fox_education_Lesley,Fox,256,2,Education,Primary/Secondary Classroom,1555.6,16744,33.4244253,-111.9281404,US/Mountain,Yes,,Yes,,,,,,Education,College/University,,,,,,,,,,,,Arizona,United States
+Fox_education_Burton,Fox,257,2,Education,College Classroom,7028.1,75650,33.4244253,-111.9281404,US/Mountain,Yes,,Yes,,,,,,Education,College/University,,,,,,,,,,,,Arizona,United States
+Fox_education_Shaun,Fox,258,2,Education,College Classroom,6616.9,71224,33.4244253,-111.9281404,US/Mountain,Yes,,Yes,,,,,,Education,College/University,,,,,,,,,,,,Arizona,United States
+Fox_education_Cynthia,Fox,259,2,Education,College Laboratory,7197.1,77469,33.4244253,-111.9281404,US/Mountain,Yes,,Yes,,,,,,Education,College/University,,,,,,,,,,,,Arizona,United States
+Fox_education_Tamika,Fox,261,2,Education,College Laboratory,8339.9,89770,33.4244253,-111.9281404,US/Mountain,Yes,,,,,,,,Education,College/University,,,,,,,,,,,,Arizona,United States
+Fox_education_Claire,Fox,263,2,Education,College Classroom,8145.1,87673,33.4244253,-111.9281404,US/Mountain,Yes,Yes,Yes,,,,,,Education,College/University,,1960.0,,,,,,,,,,Arizona,United States
+Fox_office_Edythe,Fox,264,2,Office,Office,7772.3,83660,33.4244253,-111.9281404,US/Mountain,Yes,Yes,Yes,,,,,,Education,College/University,,1973.0,,,,,,,,,,Arizona,United States
+Fox_office_Thelma,Fox,265,2,Office,Office,11052.3,118966,33.4244253,-111.9281404,US/Mountain,Yes,,Yes,,,,,,Education,College/University,,1988.0,,,,,,,,,,Arizona,United States
+Fox_education_Kris,Fox,266,2,Education,Student Union,2837.5,30543,33.4244253,-111.9281404,US/Mountain,Yes,,,,,,,,Education,College/University,,,,,,,,,,,,Arizona,United States
+Fox_office_Easter,Fox,270,2,Office,Office,2766.5,29778,33.4244253,-111.9281404,US/Mountain,Yes,,Yes,,,,,,Education,College/University,,,,,,,,,,,,Arizona,United States
+Fox_education_Carleen,Fox,271,2,Education,College Laboratory,6635.2,71421,33.4244253,-111.9281404,US/Mountain,Yes,,Yes,,,,,,Education,College/University,,,,,,,,,,,,Arizona,United States
+Fox_education_Henrietta,Fox,272,2,Education,College Laboratory,425.8,4583,33.4244253,-111.9281404,US/Mountain,Yes,,,,,,,,Education,College/University,,,,,,,,,,,,Arizona,United States
+Fox_office_Zachary,Fox,273,2,Office,Office,13038.5,140345,33.4244253,-111.9281404,US/Mountain,Yes,,Yes,,,,,,Education,College/University,,,,,,,,,,,,Arizona,United States
+Fox_office_Brandy,Fox,274,2,Office,Office,3921.8,42214,33.4244253,-111.9281404,US/Mountain,Yes,,,,,,,,Education,College/University,,1985.0,,,,,,,,,,Arizona,United States
+Fox_office_Vicki,Fox,275,2,Office,Office,6580.5,70832,33.4244253,-111.9281404,US/Mountain,Yes,,,,,,,,Education,College/University,,2014.0,,,,,,,,,,Arizona,United States
+Fox_office_Joy,Fox,276,2,Office,Office,6581.0,70837,33.4244253,-111.9281404,US/Mountain,Yes,,,,,,,,Education,College/University,,2014.0,,,,,,,,,,Arizona,United States
+Fox_education_Ray,Fox,277,2,Education,Student Union,1185.5,12761,33.4244253,-111.9281404,US/Mountain,Yes,,Yes,,,,,,Education,College/University,,1909.0,,,,,,,,,,Arizona,United States
+Fox_office_Gaylord,Fox,278,2,Office,Office,13759.0,148101,33.4244253,-111.9281404,US/Mountain,Yes,,,,,,,,Education,College/University,,,,,,,,,,,,Arizona,United States
+Fox_education_John,Fox,279,2,Education,College Laboratory,4587.9,49384,33.4244253,-111.9281404,US/Mountain,Yes,Yes,Yes,,,,,,Education,College/University,,1967.0,,,,,,,,,,Arizona,United States
+Fox_office_Juana,Fox,282,2,Office,Office,2671.0,28750,33.4244253,-111.9281404,US/Mountain,Yes,,Yes,,,,,,Education,College/University,,,,,,,,,,,,Arizona,United States
+Fox_office_Rowena,Fox,287,2,Office,Office,3132.0,33713,33.4244253,-111.9281404,US/Mountain,Yes,Yes,Yes,,,,,,Education,College/University,,1956.0,,,,,,,,,,Arizona,United States
+Fox_office_Karima,Fox,290,2,Office,Office,4806.1,51732,33.4244253,-111.9281404,US/Mountain,Yes,,Yes,,,,,,Education,College/University,,1966.0,,,,,,,,,,Arizona,United States
+Rat_office_Adele,Rat,293,3,Office,Office,37904.4,408000,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,2010.0,,,,,,,,,,District of Columbia,United States
+Rat_education_Colin,Rat,295,3,Education,K-12 School,7748.1,83400,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,1942.0,,,,,,,,,,District of Columbia,United States
+Rat_education_Wilmer,Rat,297,3,Education,K-12 School,6150.2,66200,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,1950.0,,,,,,,,,,District of Columbia,United States
+Rat_education_Conrad,Rat,299,3,Education,K-12 School,33073.5,356000,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,2014.0,,,,,,,,,,District of Columbia,United States
+Rat_education_Rogelio,Rat,300,3,Education,K-12 School,5834.3,62800,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,2014.0,,,,,,,,,,District of Columbia,United States
+Rat_education_Calvin,Rat,302,3,Education,K-12 School,5304.8,57100,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,2015.0,,,,,,,,,,District of Columbia,United States
+Rat_office_Ronald,Rat,305,3,Office,Office,802.4,8637,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,,,,,,,,,,,District of Columbia,United States
+Rat_education_Debra,Rat,306,3,Education,K-12 School,4784.5,51500,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,1931.0,,,,,,,,,,District of Columbia,United States
+Rat_education_Lonnie,Rat,311,3,Education,K-12 School,4645.2,50000,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,1928.0,,,,,,,,,,District of Columbia,United States
+Rat_education_Kandice,Rat,313,3,Education,K-12 School,9643.3,103800,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,,,,,,,,,,,District of Columbia,United States
+Rat_office_Jeannie,Rat,317,3,Office,Office,1495.6,16098,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,,,,,,,,,,,District of Columbia,United States
+Rat_office_Craig,Rat,318,3,Office,Office,9754.8,105000,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,,,,,,,,,,,District of Columbia,United States
+Rat_education_Dreama,Rat,320,3,Education,K-12 School,9801.3,105500,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,,,,,,,,,,,District of Columbia,United States
+Rat_education_Renee,Rat,322,3,Education,K-12 School,3445.1,37083,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,1908.0,,,,,,,,,,District of Columbia,United States
+Rat_education_Nellie,Rat,323,3,Education,K-12 School,26217.2,282200,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,1928.0,,,,,,,,,,District of Columbia,United States
+Rat_education_Winnie,Rat,325,3,Education,Other - Education,5499.9,59200,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,1959.0,,,,,,,,,,District of Columbia,United States
+Rat_education_Kelsey,Rat,327,3,Education,K-12 School,9227.6,99325,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,1927.0,,,,,,,,,,District of Columbia,United States
+Rat_education_Leonardo,Rat,328,3,Education,K-12 School,4385.0,47200,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,1935.0,,,,,,,,,,District of Columbia,United States
+Rat_education_Rosalyn,Rat,330,3,Education,K-12 School,6038.7,65000,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,,,,,,,,,,,District of Columbia,United States
+Rat_education_Theo,Rat,331,3,Education,K-12 School,26830.4,288800,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,1923.0,,,,,,,,,,District of Columbia,United States
+Rat_education_Marcos,Rat,332,3,Education,K-12 School,8398.4,90400,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,,,,,,,,,,,District of Columbia,United States
+Rat_education_Earnest,Rat,333,3,Education,K-12 School,5564.9,59900,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,1962.0,,,,,,,,,,District of Columbia,United States
+Rat_education_Zina,Rat,334,3,Education,K-12 School,5304.8,57100,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,1960.0,,,,,,,,,,District of Columbia,United States
+Rat_office_Lora,Rat,335,3,Office,Office,21274.8,229000,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,2010.0,,,,,,,,,,District of Columbia,United States
+Rat_education_Elisa,Rat,336,3,Education,K-12 School,3994.8,43000,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,1923.0,,,,,,,,,,District of Columbia,United States
+Rat_education_Francisca,Rat,339,3,Education,K-12 School,6605.4,71100,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,,,,,,,,,,,District of Columbia,United States
+Rat_education_Mavis,Rat,341,3,Education,K-12 School,14678.7,158000,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,1959.0,,,,,,,,,,District of Columbia,United States
+Rat_education_Earl,Rat,347,3,Education,K-12 School,7051.3,75900,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,1974.0,,,,,,,,,,District of Columbia,United States
+Rat_education_Nydia,Rat,350,3,Education,K-12 School,7785.3,83800,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,1944.0,,,,,,,,,,District of Columbia,United States
+Rat_education_Fernando,Rat,351,3,Education,K-12 School,5472.7,58908,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,1910.0,,,,,,,,,,District of Columbia,United States
+Rat_education_Pat,Rat,352,3,Education,K-12 School,13461.6,144900,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,,,,,,,,,,,District of Columbia,United States
+Rat_education_Milagros,Rat,353,3,Education,K-12 School,9262.4,99700,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,1955.0,,,,,,,,,,District of Columbia,United States
+Rat_education_Barney,Rat,354,3,Education,Other - Education,7200.0,77500,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,,,,,,,,,,,District of Columbia,United States
+Rat_education_Dann,Rat,355,3,Education,K-12 School,16954.8,182500,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,1970.0,,,,,,,,,,District of Columbia,United States
+Rat_education_Royal,Rat,358,3,Education,K-12 School,7218.6,77700,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,,,,,,,,,,,District of Columbia,United States
+Rat_education_Bryant,Rat,360,3,Education,K-12 School,6466.0,69600,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,1949.0,,,,,,,,,,District of Columbia,United States
+Rat_education_Cinthia,Rat,363,3,Education,K-12 School,6438.2,69300,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,2017.0,,,,,,,,,,District of Columbia,United States
+Rat_education_Lynn,Rat,364,3,Education,K-12 School,7785.3,83800,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,,,,,,,,,,,District of Columbia,United States
+Rat_education_Meghan,Rat,372,3,Education,K-12 School,4561.5,49100,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,1911.0,,,,,,,,,,District of Columbia,United States
+Rat_education_Ulrike,Rat,373,3,Education,K-12 School,4318.5,46484,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,1932.0,,,,,,,,,,District of Columbia,United States
+Rat_office_Chris,Rat,376,3,Office,Office,54437.0,585955,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,1942.0,,,,,,,,,,District of Columbia,United States
+Rat_education_Sherwood,Rat,380,3,Education,K-12 School,8835.1,95100,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,1927.0,,,,,,,,,,District of Columbia,United States
+Rat_education_Carmela,Rat,382,3,Education,K-12 School,4457.9,47984,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,2002.0,,,,,,,,,,District of Columbia,United States
+Rat_office_Tracy,Rat,384,3,Office,Office,1275.4,13728,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,,,,,,,,,,,District of Columbia,United States
+Rat_education_Willie,Rat,387,3,Education,K-12 School,9680.5,104200,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,2009.0,,,,,,,,,,District of Columbia,United States
+Rat_education_Jacob,Rat,389,3,Education,K-12 School,5310.8,57165,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,2014.0,,,,,,,,,,District of Columbia,United States
+Rat_office_Kasey,Rat,390,3,Office,Office,3195.9,34400,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,,,,,,,,,,,District of Columbia,United States
+Rat_education_Davis,Rat,391,3,Education,K-12 School,8092.5,87107,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,,,,,,,,,,,District of Columbia,United States
+Rat_education_Mona,Rat,392,3,Education,K-12 School,4923.9,53000,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,1912.0,,,,,,,,,,District of Columbia,United States
+Rat_education_Marvin,Rat,393,3,Education,K-12 School,5518.4,59400,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,1900.0,,,,,,,,,,District of Columbia,United States
+Rat_education_Shellie,Rat,398,3,Education,K-12 School,5778.6,62200,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,,,,,,,,,,,District of Columbia,United States
+Rat_education_Terese,Rat,399,3,Education,K-12 School,16722.5,180000,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,1939.0,,,,,,,,,,District of Columbia,United States
+Rat_education_Jeanne,Rat,403,3,Education,K-12 School,4598.7,49500,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,1962.0,,,,,,,,,,District of Columbia,United States
+Rat_education_Stuart,Rat,405,3,Education,K-12 School,7636.6,82200,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,1916.0,,,,,,,,,,District of Columbia,United States
+Rat_education_Kathryn,Rat,407,3,Education,K-12 School,30213.6,325217,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,2006.0,,,,,,,,,,District of Columbia,United States
+Rat_education_Candida,Rat,409,3,Education,K-12 School,3576.8,38500,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,2016.0,,,,,,,,,,District of Columbia,United States
+Rat_education_Adrian,Rat,410,3,Education,K-12 School,5956.3,64113,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,1924.0,,,,,,,,,,District of Columbia,United States
+Rat_education_Mose,Rat,412,3,Education,K-12 School,10219.3,110000,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,,,,,,,,,,,District of Columbia,United States
+Rat_education_Jesse,Rat,415,3,Education,K-12 School,3839.6,41329,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,,,,,,,,,,,District of Columbia,United States
+Rat_education_Maricela,Rat,417,3,Education,K-12 School,6466.0,69600,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,1978.0,,,,,,,,,,District of Columbia,United States
+Rat_education_Nona,Rat,419,3,Education,K-12 School,25204.6,271300,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,1940.0,,,,,,,,,,District of Columbia,United States
+Rat_education_Keith,Rat,426,3,Education,K-12 School,9420.4,101400,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,1930.0,,,,,,,,,,District of Columbia,United States
+Rat_education_Imelda,Rat,434,3,Education,K-12 School,3669.7,39500,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,,,,,,,,,,,District of Columbia,United States
+Rat_office_Loyd,Rat,435,3,Office,Office,2779.3,29916,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,2002.0,,,,,,,,,,District of Columbia,United States
+Rat_office_Randy,Rat,439,3,Office,Office,5779.0,62205,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,,,,,,,,,,,District of Columbia,United States
+Rat_education_Brett,Rat,443,3,Education,K-12 School,10126.4,109000,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,1940.0,,,,,,,,,,District of Columbia,United States
+Rat_education_Jena,Rat,445,3,Education,K-12 School,3804.4,40950,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,1910.0,,,,,,,,,,District of Columbia,United States
+Rat_office_Jessica,Rat,448,3,Office,Office,30542.8,328760,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,1904.0,,,,,,,,,,District of Columbia,United States
+Rat_education_Lincoln,Rat,450,3,Education,K-12 School,10857.8,116872,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,1931.0,,,,,,,,,,District of Columbia,United States
+Rat_education_Morton,Rat,452,3,Education,K-12 School,14409.3,155100,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,1931.0,,,,,,,,,,District of Columbia,United States
+Rat_education_Guillermo,Rat,457,3,Education,K-12 School,7404.4,79700,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,1932.0,,,,,,,,,,District of Columbia,United States
+Rat_education_Zoe,Rat,461,3,Education,K-12 School,6447.5,69400,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,1959.0,,,,,,,,,,District of Columbia,United States
+Rat_office_Annis,Rat,465,3,Office,Office,594.6,6400,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,,,,,,,,,,,District of Columbia,United States
+Rat_office_Arron,Rat,468,3,Office,Office,3716.1,40000,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,,,,,,,,,,,District of Columbia,United States
+Rat_education_Patty,Rat,471,3,Education,K-12 School,15793.5,170000,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,1956.0,,,,,,,,,,District of Columbia,United States
+Rat_education_Liz,Rat,472,3,Education,K-12 School,6447.5,69400,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,1911.0,,,,,,,,,,District of Columbia,United States
+Rat_office_Avis,Rat,475,3,Office,Office,44099.2,474680,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,1986.0,,,,,,,,,,District of Columbia,United States
+Rat_office_Rosemary,Rat,480,3,Office,Office,2787.1,30000,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,,,,,,,,,,,District of Columbia,United States
+Rat_education_Adell,Rat,481,3,Education,K-12 School,9689.2,104294,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,1976.0,,,,,,,,,,District of Columbia,United States
+Rat_education_Beverly,Rat,482,3,Education,K-12 School,36603.8,394000,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,2013.0,,,,,,,,,,District of Columbia,United States
+Rat_education_Alfred,Rat,483,3,Education,K-12 School,19230.9,207000,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,1935.0,,,,,,,,,,District of Columbia,United States
+Rat_education_Everett,Rat,486,3,Education,K-12 School,8024.5,86375,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,1903.0,,,,,,,,,,District of Columbia,United States
+Rat_education_Edmund,Rat,487,3,Education,K-12 School,6187.3,66600,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,1959.0,,,,,,,,,,District of Columbia,United States
+Rat_education_Esther,Rat,488,3,Education,K-12 School,6466.0,69600,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,1908.0,,,,,,,,,,District of Columbia,United States
+Rat_education_Robyn,Rat,490,3,Education,K-12 School,9188.1,98900,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,1961.0,,,,,,,,,,District of Columbia,United States
+Rat_education_Verna,Rat,491,3,Education,K-12 School,6187.3,66600,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,1970.0,,,,,,,,,,District of Columbia,United States
+Rat_education_Vicky,Rat,492,3,Education,K-12 School,18004.6,193800,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,,,,,,,,,,,District of Columbia,United States
+Rat_education_Lee,Rat,493,3,Education,K-12 School,26291.5,283000,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,2014.0,,,,,,,,,,District of Columbia,United States
+Rat_education_Irma,Rat,494,3,Education,K-12 School,6763.3,72800,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,1959.0,,,,,,,,,,District of Columbia,United States
+Rat_education_Tim,Rat,495,3,Education,K-12 School,4412.9,47500,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,1968.0,,,,,,,,,,District of Columbia,United States
+Rat_education_Elsie,Rat,499,3,Education,K-12 School,34978.6,376507,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,2011.0,,,,,,,,,,District of Columbia,United States
+Rat_education_Humberto,Rat,500,3,Education,K-12 School,9288.0,99975,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,1968.0,,,,,,,,,,District of Columbia,United States
+Rat_education_Cedric,Rat,501,3,Education,K-12 School,6169.1,66404,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,,,,,,,,,,,District of Columbia,United States
+Rat_education_Cecil,Rat,507,3,Education,K-12 School,5681.1,61151,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,,,,,,,,,,,District of Columbia,United States
+Rat_education_Marianna,Rat,515,3,Education,K-12 School,5936.5,63900,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,1921.0,,,,,,,,,,District of Columbia,United States
+Rat_office_Olivia,Rat,520,3,Office,Office,2564.1,27600,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,,,,,,,,,,,District of Columbia,United States
+Rat_office_Mei,Rat,522,3,Office,Office,743.2,8000,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,,,,,,,,,,,District of Columbia,United States
+Rat_education_Dianne,Rat,537,3,Education,K-12 School,6800.5,73200,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,1959.0,,,,,,,,,,District of Columbia,United States
+Rat_education_Sina,Rat,540,3,Education,K-12 School,8203.3,88300,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,1909.0,,,,,,,,,,District of Columbia,United States
+Rat_education_Deanna,Rat,542,3,Education,K-12 School,6215.2,66900,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,1969.0,,,,,,,,,,District of Columbia,United States
+Rat_education_Yu,Rat,545,3,Education,K-12 School,2034.9,21903,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,1931.0,,,,,,,,,,District of Columbia,United States
+Rat_office_Jacinta,Rat,551,3,Office,Office,2835.9,30525,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,,,,,,,,,,,District of Columbia,United States
+Rat_education_Jame,Rat,553,3,Education,K-12 School,3511.7,37800,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,,,,,,,,,,,District of Columbia,United States
+Rat_education_Gricelda,Rat,555,3,Education,K-12 School,2081.0,22400,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,,,,,,,,,,,District of Columbia,United States
+Rat_office_Ramiro,Rat,558,3,Office,Office,8297.6,89315,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,,,,,,,,,,,District of Columbia,United States
+Rat_education_Salvatore,Rat,559,3,Education,K-12 School,4551.7,48994,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,2015.0,,,,,,,,,,District of Columbia,United States
+Rat_office_Jill,Rat,560,3,Office,Office,31587.0,340000,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,2010.0,,,,,,,,,,District of Columbia,United States
+Rat_office_Jamal,Rat,561,3,Office,Office,27406.4,295000,38.9035039800032,-77.0053494170663,US/Eastern,Yes,,,,,,,,,,,,,,,,,,,,,District of Columbia,United States
+Bear_education_Yvette,Bear,565,4,Education,Education,1423.8,15326,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,1954.0,,2.0,,,,,,,,California,United States
+Bear_education_Arnold,Bear,566,4,Education,Education,186.7,2010,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,1957.0,,1.0,,,,,,,,California,United States
+Bear_education_Carlo,Bear,568,4,Education,Education,1314.6,14150,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,1974.0,,2.0,,,,,,,,California,United States
+Bear_education_Maryjane,Bear,569,4,Education,Education,7998.1,86091,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,1964.0,,8.0,,,,,,,,California,United States
+Bear_education_Owen,Bear,570,4,Education,Education,17949.0,193202,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,1964.0,,10.0,,,,,,,,California,United States
+Bear_education_Marta,Bear,571,4,Education,Education,4455.1,47954,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,1980.0,,3.0,,,,,,,,California,United States
+Bear_education_Babara,Bear,572,4,Education,Education,8749.1,94175,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,1964.0,,9.0,,,,,,,,California,United States
+Bear_education_Herb,Bear,573,4,Education,Education,2212.5,23815,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,1914.0,,4.0,,,,,,,,California,United States
+Bear_education_Darrell,Bear,574,4,Education,Education,5234.4,56343,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,1905.0,,4.0,,,,,,,,California,United States
+Bear_education_Pattie,Bear,576,4,Education,Education,8032.9,86465,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,2014.0,,7.0,,,,,,,,California,United States
+Bear_education_Holly,Bear,579,4,Education,Education,722.9,7781,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,1910.0,,4.0,,,,,,,,California,United States
+Bear_education_Danna,Bear,580,4,Education,Education,9663.4,104016,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,1960.0,,4.0,,,,,,,,California,United States
+Bear_education_Sandy,Bear,582,4,Education,Education,1351.0,14542,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,1920.0,,4.0,,,,,,,,California,United States
+Bear_education_Liliana,Bear,583,4,Education,Education,19143.0,206054,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,1950.0,,9.0,,,,,,,,California,United States
+Bear_education_Paola,Bear,584,4,Education,Education,12802.6,137806,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,1967.0,,8.0,,,,,,,,California,United States
+Bear_education_Austin,Bear,588,4,Education,Education,2031.4,21866,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,1911.0,,4.0,,,,,,,,California,United States
+Bear_education_Bob,Bear,589,4,Education,Education,28360.3,305268,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,1952.0,,8.0,,,,,,,,California,United States
+Bear_education_Lorie,Bear,592,4,Education,Education,11212.8,120694,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,2012.0,,7.0,,,,,,,,California,United States
+Bear_education_Nanette,Bear,593,4,Education,Education,6150.5,66203,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,2015.0,,6.0,,,,,,,,California,United States
+Bear_education_Val,Bear,594,4,Education,Education,16469.9,177281,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,1964.0,,7.0,,,,,,,,California,United States
+Bear_education_Thuy,Bear,595,4,Education,Education,25122.2,270413,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,1971.0,,14.0,,,,,,,,California,United States
+Bear_education_Deena,Bear,596,4,Education,Education,1716.3,18474,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,1923.0,,4.0,,,,,,,,California,United States
+Bear_education_Irene,Bear,599,4,Education,Education,2415.1,25996,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,1954.0,,4.0,,,,,,,,California,United States
+Bear_education_Curtis,Bear,600,4,Education,Education,4104.6,44182,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,1917.0,,5.0,,,,,,,,California,United States
+Bear_education_Benjamin,Bear,604,4,Education,Education,786.2,8463,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,,,3.0,,,,,,,,California,United States
+Bear_education_Marie,Bear,605,4,Education,Education,4739.9,51020,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,1924.0,,5.0,,,,,,,,California,United States
+Bear_education_Merrill,Bear,607,4,Education,Education,3235.3,34825,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,1999.0,,2.0,,,,,,,,California,United States
+Bear_education_Benita,Bear,609,4,Education,Education,13142.2,141461,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,1907.0,,6.0,,,,,,,,California,United States
+Bear_education_Mara,Bear,611,4,Education,Education,11903.3,128126,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,1966.0,,7.0,,,,,,,,California,United States
+Bear_education_Gavin,Bear,612,4,Education,Education,7158.6,77055,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,1917.0,,4.0,,,,,,,,California,United States
+Bear_education_Rebecca,Bear,615,4,Education,Education,14279.2,153700,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,1990.0,,7.0,,,,,,,,California,United States
+Bear_education_Lashanda,Bear,616,4,Education,Education,10945.3,117814,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,1959.0,,6.0,,,,,,,,California,United States
+Bear_education_Patricia,Bear,617,4,Education,Education,16996.0,182943,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,1963.0,,11.0,,,,,,,,California,United States
+Bear_education_Katy,Bear,618,4,Education,Education,13752.6,148032,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,1924.0,,5.0,,,,,,,,California,United States
+Bear_education_Derek,Bear,619,4,Education,Education,6331.0,68146,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,1948.0,,6.0,,,,,,,,California,United States
+Bear_education_Bulah,Bear,620,4,Education,Education,20504.0,220703,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,2011.0,,9.0,,,,,,,,California,United States
+Bear_education_Lila,Bear,622,4,Education,Education,11483.9,123612,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,1961.0,,7.0,,,,,,,,California,United States
+Bear_education_Lewis,Bear,623,4,Education,Education,4588.3,49388,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,1931.0,,6.0,,,,,,,,California,United States
+Bear_education_Chun,Bear,624,4,Education,Education,4292.5,46204,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,1941.0,,5.0,,,,,,,,California,United States
+Bear_education_Destiny,Bear,625,4,Education,Education,5157.6,55516,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,1978.0,,5.0,,,,,,,,California,United States
+Bear_education_Sharon,Bear,627,4,Education,Education,5261.7,56637,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,1953.0,,5.0,,,,,,,,California,United States
+Bear_education_Chana,Bear,628,4,Education,Education,3781.7,40706,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,1958.0,,3.0,,,,,,,,California,United States
+Bear_education_Yuri,Bear,629,4,Education,Education,3793.7,40835,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,1931.0,,6.0,,,,,,,,California,United States
+Bear_education_Wm,Bear,630,4,Education,Education,8679.0,93420,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,1948.0,,5.0,,,,,,,,California,United States
+Bear_education_Oscar,Bear,631,4,Education,Education,2186.3,23533,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,1906.0,,3.0,,,,,,,,California,United States
+Bear_education_Clint,Bear,632,4,Education,Education,3836.6,41297,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,1959.0,,6.0,,,,,,,,California,United States
+Bear_education_Herman,Bear,634,4,Education,Education,371.6,4000,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,1910.0,,4.0,,,,,,,,California,United States
+Bear_education_Millie,Bear,635,4,Education,Education,661.7,7122,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,1909.0,,3.0,,,,,,,,California,United States
+Bear_education_Alfredo,Bear,636,4,Education,Education,609.8,6564,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,1909.0,,3.0,,,,,,,,California,United States
+Bear_education_Bonita,Bear,637,4,Education,Education,389.2,4189,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,1929.0,,3.0,,,,,,,,California,United States
+Bear_education_Tara,Bear,638,4,Education,Education,733.9,7900,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,1923.0,,4.0,,,,,,,,California,United States
+Bear_education_Alvaro,Bear,641,4,Education,Education,10181.1,109588,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,1994.0,,8.0,,,,,,,,California,United States
+Bear_education_Lidia,Bear,642,4,Education,Education,2824.3,30401,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,,,4.0,,,,,,,,California,United States
+Bear_education_Marsha,Bear,643,4,Education,Education,10304.7,110919,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,1941.0,,6.0,,,,,,,,California,United States
+Bear_education_Wilton,Bear,645,4,Education,Education,28273.4,304333,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,2006.0,,12.0,,,,,,,,California,United States
+Bear_education_Iris,Bear,646,4,Education,Education,5456.5,58733,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,1923.0,,6.0,,,,,,,,California,United States
+Bear_education_Zandra,Bear,648,4,Education,Education,14372.7,154706,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,2009.0,,11.0,,,,,,,,California,United States
+Bear_education_Fannie,Bear,649,4,Education,Education,10788.0,116121,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,1996.0,,10.0,,,,,,,,California,United States
+Bear_education_Leonel,Bear,650,4,Education,Education,6988.9,75228,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,1993.0,,4.0,,,,,,,,California,United States
+Bear_education_Augusta,Bear,652,4,Education,Education,14017.9,150887,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,1959.0,,9.0,,,,,,,,California,United States
+Bear_education_Chad,Bear,653,4,Education,Education,39101.5,420885,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,1930.0,,8.0,,,,,,,,California,United States
+Bear_education_Laurette,Bear,654,4,Education,Education,4079.4,43910,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,1912.0,,5.0,,,,,,,,California,United States
+Bear_education_Elise,Bear,655,4,Education,Education,20664.8,222434,37.8719034,-122.2607286,US/Pacific,Yes,,,,,,,,,,,1964.0,,11.0,,,,,,,,California,United States
+Peacock_education_Anita,Peacock,745,6,Education,College Classroom,1255.3,13512,40.35,-74.6999999999999,US/Eastern,Yes,,Yes,Yes,,,,,Education,College/University,,,,,,,,,,,,New Jersey,United States
+Peacock_office_Burl,Peacock,746,6,Office,Office,1661.0,17879,40.35,-74.6999999999999,US/Eastern,Yes,,,,,,,,Education,College/University,,,,,,,,,,,,New Jersey,United States
+Peacock_education_Patience,Peacock,747,6,Education,College Classroom,2836.4,30531,40.35,-74.6999999999999,US/Eastern,Yes,,Yes,Yes,,,,,Education,College/University,,,,,,,,,,,,New Jersey,United States
+Peacock_office_Norman,Peacock,748,6,Office,Office,3044.1,32766,40.35,-74.6999999999999,US/Eastern,Yes,,Yes,Yes,,,,,Education,College/University,,,,,,,,,,,,New Jersey,United States
+Peacock_education_Pasquale,Peacock,750,6,Education,College Laboratory,3343.6,35990,40.35,-74.6999999999999,US/Eastern,Yes,,Yes,Yes,,,,,Education,College/University,,,,,,,,,,,,New Jersey,United States
+Peacock_education_Yolanda,Peacock,753,6,Education,College Laboratory,3675.1,39558,40.35,-74.6999999999999,US/Eastern,Yes,,Yes,Yes,,,,,Education,College/University,,,,,,,,,,,,New Jersey,United States
+Peacock_office_Julian,Peacock,755,6,Office,Office,3913.9,42129,40.35,-74.6999999999999,US/Eastern,Yes,,Yes,,,,,,Education,College/University,,,,,,,,,,,,New Jersey,United States
+Peacock_office_Dara,Peacock,760,6,Office,Office,4644.2,49990,40.35,-74.6999999999999,US/Eastern,Yes,,Yes,Yes,,,,,Education,College/University,,,,,,,,,,,,New Jersey,United States
+Peacock_education_Shelly,Peacock,762,6,Education,College Laboratory,4984.3,53651,40.35,-74.6999999999999,US/Eastern,Yes,,,Yes,,,,,Education,College/University,,,,,,,,,,,,New Jersey,United States
+Peacock_education_Robbie,Peacock,764,6,Education,College Classroom,5416.9,58307,40.35,-74.6999999999999,US/Eastern,Yes,,,Yes,,,,,Education,College/University,,,,,,,,,,,,New Jersey,United States
+Peacock_office_Annie,Peacock,766,6,Office,Office,6021.8,64818,40.35,-74.6999999999999,US/Eastern,Yes,,,Yes,,,,,Education,College/University,,,,,,,,,,,,New Jersey,United States
+Peacock_office_Major,Peacock,767,6,Office,Office,6507.1,70042,40.35,-74.6999999999999,US/Eastern,Yes,,Yes,Yes,,,,,Education,College/University,,,,,,,,,,,,New Jersey,United States
+Peacock_education_Joshua,Peacock,768,6,Education,College Laboratory,7054.0,75929,40.35,-74.6999999999999,US/Eastern,Yes,,,,,,,,Education,College/University,,,,,,,,,,,,New Jersey,United States
+Peacock_education_Forest,Peacock,769,6,Education,College Classroom,7178.0,77263,40.35,-74.6999999999999,US/Eastern,Yes,,Yes,Yes,,,,,Education,College/University,,,,,,,,,,,,New Jersey,United States
+Peacock_education_Dustin,Peacock,770,6,Education,College Classroom,7462.4,80325,40.35,-74.6999999999999,US/Eastern,Yes,,Yes,Yes,,,,,Education,College/University,,,,,,,,,,,,New Jersey,United States
+Peacock_office_Elton,Peacock,775,6,Office,Office,9694.9,104355,40.35,-74.6999999999999,US/Eastern,Yes,,,,,,,,Education,College/University,,,,,,,,,,,,New Jersey,United States
+Peacock_office_Effie,Peacock,776,6,Office,Office,9723.9,104667,40.35,-74.6999999999999,US/Eastern,Yes,,Yes,Yes,,,,,Education,College/University,,,,,,,,,,,,New Jersey,United States
+Peacock_education_Ophelia,Peacock,780,6,Education,College Laboratory,11226.0,120836,40.35,-74.6999999999999,US/Eastern,Yes,,Yes,,,,,,Education,College/University,,,,,,,,,,,,New Jersey,United States
+Peacock_education_Karyn,Peacock,782,6,Education,College Laboratory,12016.4,129344,40.35,-74.6999999999999,US/Eastern,Yes,,,,,,,,Education,College/University,,,,,,,,,,,,New Jersey,United States
+Peacock_education_Lyle,Peacock,784,6,Education,Student Union,17727.5,190817,40.35,-74.6999999999999,US/Eastern,Yes,,Yes,Yes,,,,,Education,College/University,,,,,,,,,,,,New Jersey,United States
+Peacock_education_Gilberto,Peacock,785,6,Education,College Laboratory,23225.8,250000,40.35,-74.6999999999999,US/Eastern,Yes,,,,,,,,Education,College/University,,,,,,,,,,,,New Jersey,United States
+Moose_education_Ricardo,Moose,791,7,Education,College Classroom,14000.0,150695,45.4215,-75.6972,US/Eastern,Yes,,Yes,Yes,,,,,Education,College/University,,,,5.0,,,,,,,,Ontario,Canada
+Moose_education_Lori,Moose,793,7,Education,College Classroom,14000.0,150695,45.4215,-75.6972,US/Eastern,Yes,Yes,Yes,,,,,,Education,College/University,,1964.0,,6.0,500.0,,,,,,,Ontario,Canada
+Moose_education_Gladys,Moose,794,7,Education,College Classroom,67999.9,731945,45.4215,-75.6972,US/Eastern,Yes,Yes,Yes,,,,,,Education,College/University,,1969.0,,11.0,,,,,,,,Ontario,Canada
+Moose_education_Maria,Moose,795,7,Education,College Classroom,35999.9,387500,45.4215,-75.6972,US/Eastern,Yes,Yes,Yes,,,,,,Education,College/University,,1960.0,,6.0,,,,,,,,Ontario,Canada
+Moose_education_Marlon,Moose,796,7,Education,College Classroom,21000.0,226042,45.4215,-75.6972,US/Eastern,Yes,,Yes,Yes,,,,,Education,College/University,,1965.0,,2.0,,,,,,,,Ontario,Canada
+Moose_education_Clark,Moose,797,7,Education,College Classroom,70999.9,764237,45.4215,-75.6972,US/Eastern,Yes,,Yes,Yes,,,,,Education,College/University,,1979.0,,13.0,2380.0,,,,,,,Ontario,Canada
+Moose_education_Rene,Moose,798,7,Education,College Classroom,37999.9,409028,45.4215,-75.6972,US/Eastern,Yes,,Yes,Yes,,,,,Education,College/University,,1970.0,,21.0,1800.0,,,,,,,Ontario,Canada
+Moose_education_Leland,Moose,799,7,Education,College Classroom,48999.9,527431,45.4215,-75.6972,US/Eastern,Yes,,Yes,Yes,,,,,Education,College/University,,1976.0,,26.0,2000.0,,,,,,,Ontario,Canada
+Moose_education_Marina,Moose,800,7,Education,College Classroom,6000.0,64583,45.4215,-75.6972,US/Eastern,Yes,,Yes,Yes,,,,,Education,College/University,,1955.0,,2.0,80.0,,,,,,,Ontario,Canada
+Moose_education_Abbie,Moose,801,7,Education,College Classroom,45000.0,484376,45.4215,-75.6972,US/Eastern,Yes,,Yes,Yes,,,,,Education,College/University,,1952.0,,5.0,1700.0,,,,,,,Ontario,Canada
+Moose_education_Florence,Moose,802,7,Education,College Classroom,26999.9,290625,45.4215,-75.6972,US/Eastern,Yes,,Yes,Yes,,,,,Education,College/University,,1995.0,,19.0,,,,,,,,Ontario,Canada
+Bull_office_Lilla,Bull,874,9,Office,Office,16890.2,181805,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Clarice,Bull,876,9,Education,College Classroom,5132.0,55240,30.2671999999999,-97.7430999999998,US/Central,Yes,,,Yes,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_office_Hilton,Bull,877,9,Office,Office,743.6,8004,30.2671999999999,-97.7430999999998,US/Central,Yes,,,,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Roseann,Bull,879,9,Education,College Laboratory,10241.2,110235,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Brenda,Bull,880,9,Education,College Classroom,14652.9,157723,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Brady,Bull,882,9,Education,College Classroom,3636.5,39143,30.2671999999999,-97.7430999999998,US/Central,Yes,,,,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Antonia,Bull,883,9,Education,College Classroom,37099.0,399331,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Dakota,Bull,884,9,Education,College Classroom,3585.9,38598,30.2671999999999,-97.7430999999998,US/Central,Yes,,,,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Annette,Bull,886,9,Education,College Laboratory,6484.5,69799,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Lydia,Bull,889,9,Education,College Classroom,11712.9,126077,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Kristal,Bull,890,9,Education,College Laboratory,18853.5,202937,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Bryon,Bull,891,9,Education,College Classroom,4723.7,50846,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Reynaldo,Bull,893,9,Education,College Classroom,4384.2,47191,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Reina,Bull,894,9,Education,College Classroom,9434.8,101555,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Sebastian,Bull,895,9,Education,College Classroom,5117.7,55087,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Miquel,Bull,896,9,Education,College Classroom,22820.4,245637,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Summer,Bull,897,9,Education,College Classroom,3509.4,37775,30.2671999999999,-97.7430999999998,US/Central,Yes,,,,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Pamela,Bull,899,9,Education,College Classroom,20904.5,225014,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Fabiola,Bull,900,9,Education,College Classroom,10370.1,111623,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Miranda,Bull,901,9,Education,College Classroom,10008.4,107730,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Shona,Bull,902,9,Education,College Laboratory,1352.8,14561,30.2671999999999,-97.7430999999998,US/Central,Yes,,,,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Carl,Bull,903,9,Education,College Laboratory,25622.0,275793,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Jeffery,Bull,904,9,Education,College Laboratory,2783.5,29961,30.2671999999999,-97.7430999999998,US/Central,Yes,,,,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Mario,Bull,908,9,Education,College Classroom,8477.8,91254,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_office_Myron,Bull,910,9,Office,Office,5583.1,60096,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Krista,Bull,911,9,Education,College Laboratory,22263.1,239638,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Venita,Bull,912,9,Education,College Laboratory,4882.9,52559,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Brain,Bull,914,9,Education,College Laboratory,21365.2,229973,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Nichole,Bull,915,9,Education,Student Union,19058.2,205141,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Pablo,Bull,916,9,Education,College Classroom,4810.3,51778,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Arthur,Bull,917,9,Education,College Classroom,22083.2,237702,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Elva,Bull,918,9,Education,College Classroom,5631.9,60621,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Brandi,Bull,919,9,Education,College Classroom,2901.6,31233,30.2671999999999,-97.7430999999998,US/Central,Yes,,,,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Magaret,Bull,920,9,Education,College Classroom,7954.6,85623,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Genie,Bull,922,9,Education,College Classroom,13675.8,147205,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Geneva,Bull,923,9,Education,Auditorium,2321.8,24992,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Patrina,Bull,925,9,Education,College Classroom,5054.4,54405,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Lyn,Bull,926,9,Education,College Classroom,2418.5,26033,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Kendra,Bull,928,9,Education,College Classroom,16640.3,179115,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Clarita,Bull,929,9,Education,College Laboratory,18546.0,199628,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_office_Nicolas,Bull,930,9,Office,Office,1943.3,20917,30.2671999999999,-97.7430999999998,US/Central,Yes,,,,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Roland,Bull,931,9,Education,College Classroom,20071.7,216050,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_office_Anne,Bull,935,9,Office,Office,1499.0,16135,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_office_Rob,Bull,945,9,Office,Office,30885.3,332447,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Jae,Bull,946,9,Education,College Laboratory,16463.9,177216,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Nolan,Bull,947,9,Education,College Classroom,8512.6,91629,30.2671999999999,-97.7430999999998,US/Central,Yes,,,,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_office_Chantel,Bull,951,9,Office,Office,9654.9,103924,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Mervin,Bull,952,9,Education,College Classroom,20255.1,218024,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Delia,Bull,954,9,Education,College Laboratory,28356.2,305224,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Barry,Bull,955,9,Education,College Laboratory,18440.1,198488,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_office_Efren,Bull,956,9,Office,Office,8005.2,86167,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Violeta,Bull,957,9,Education,College Classroom,10330.3,111195,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Dan,Bull,959,9,Education,College Laboratory,11941.4,128536,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Dania,Bull,960,9,Education,College Classroom,5215.3,56137,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Nina,Bull,964,9,Education,College Laboratory,12131.0,130577,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Racheal,Bull,966,9,Education,College Laboratory,36560.1,393530,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Linnie,Bull,968,9,Education,Student Union,14307.0,153999,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Hayley,Bull,969,9,Education,College Classroom,17997.4,193723,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Juan,Bull,972,9,Education,College Classroom,26212.8,282152,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_office_Yvonne,Bull,973,9,Office,Office,18019.5,193960,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Gregory,Bull,974,9,Education,College Classroom,17333.1,186572,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Myra,Bull,976,9,Education,College Classroom,5527.5,59498,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_office_Ella,Bull,977,9,Office,Office,821.0,8837,30.2671999999999,-97.7430999999998,US/Central,Yes,,,,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Tracey,Bull,978,9,Education,College Classroom,24014.6,258491,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Joseph,Bull,981,9,Education,College Classroom,15519.9,167055,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_office_Ivette,Bull,985,9,Office,Office,3229.1,34758,30.2671999999999,-97.7430999999998,US/Central,Yes,,,,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_office_Marco,Bull,986,9,Office,Office,3165.4,34072,30.2671999999999,-97.7430999999998,US/Central,Yes,,,,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Luke,Bull,987,9,Education,Student Union,15458.6,166395,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_office_Claudia,Bull,988,9,Office,Office,2272.7,24463,30.2671999999999,-97.7430999999998,US/Central,Yes,,,,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Dora,Bull,989,9,Education,College Classroom,15672.4,168696,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_office_Sally,Bull,990,9,Office,Office,7705.3,82939,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Olive,Bull,991,9,Education,College Classroom,5370.8,57811,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_office_Debbie,Bull,992,9,Office,Office,4782.9,51483,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Dottie,Bull,993,9,Education,College Laboratory,39822.6,428647,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Matilda,Bull,994,9,Education,College Classroom,10069.9,108392,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Lenny,Bull,995,9,Education,College Classroom,4294.9,46230,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_education_Stewart,Bull,996,9,Education,College Laboratory,7212.2,77632,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,,,,,,,Texas,United States
+Bull_office_Trevor,Bull,997,9,Office,Office,3546.4,38173,30.2671999999999,-97.7430999999998,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,,,,,,,Texas,United States
+Wolf_education_Anisa,Wolf,1033,12,Education,College Classroom,11008.0,118489,53.3498,6.2603,Europe/Dublin,Yes,,,,,,,,Education,College/University,,,,,,,,,,,,Groningen,Nederland
+Wolf_office_Joana,Wolf,1035,12,Office,Office,1355.0,14585,53.3498,6.2603,Europe/Dublin,Yes,,,,,,,Yes,Education,College/University,,,,,,,,,,,,Groningen,Nederland
+Wolf_office_Darleen,Wolf,1036,12,Office,Office,5036.0,54207,53.3498,6.2603,Europe/Dublin,Yes,,,,,,,,Education,College/University,,,,,,,,,,,,Groningen,Nederland
+Wolf_education_Roderick,Wolf,1037,12,Education,College Classroom,818.0,8805,53.3498,6.2603,Europe/Dublin,Yes,,,,Yes,,,Yes,Education,College/University,,,,,,,,,,,,Groningen,Nederland
+Wolf_education_Katie,Wolf,1039,12,Education,College Classroom,2803.0,30171,53.3498,6.2603,Europe/Dublin,Yes,,,,,,,Yes,Education,College/University,,,,3.0,,,,,,,,Groningen,Nederland
+Wolf_office_Cary,Wolf,1040,12,Office,Office,11795.0,126960,53.3498,6.2603,Europe/Dublin,Yes,,,,Yes,,,,Education,College/University,,,,,,,,,,,,Groningen,Nederland
+Wolf_education_Josefa,Wolf,1041,12,Education,School,750.0,8073,53.3498,6.2603,Europe/Dublin,Yes,,,,Yes,,,,Education,College/University,,,,,,,,,,,,Groningen,Nederland
+Wolf_office_Nadia,Wolf,1042,12,Office,Office,2745.0,29547,53.3498,6.2603,Europe/Dublin,Yes,,,,,,,,Education,College/University,,,,,,,,,,,,Groningen,Nederland
+Wolf_office_Elisabeth,Wolf,1043,12,Office,Office,2591.0,27889,53.3498,6.2603,Europe/Dublin,Yes,,,,,,,,Education,College/University,,,,,,,,,,,,Groningen,Nederland
+Wolf_education_Ursula,Wolf,1044,12,Education,College Classroom,13998.0,150673,53.3498,6.2603,Europe/Dublin,Yes,,,,Yes,,,Yes,Education,College/University,,,,4.0,,,,,,,C1,Groningen,Nederland
+Wolf_office_Rochelle,Wolf,1045,12,Office,Office,3115.0,33530,53.3498,6.2603,Europe/Dublin,Yes,,,,Yes,,,Yes,Education,College/University,,,,,,,,,,,,Groningen,Nederland
+Wolf_education_Laurinda,Wolf,1046,12,Education,College Classroom,18706.0,201350,53.3498,6.2603,Europe/Dublin,Yes,,,,,,,Yes,Education,College/University,,,,,,,,,,,,Groningen,Nederland
+Wolf_education_Cheryl,Wolf,1048,12,Education,College Classroom,25605.0,275610,53.3498,6.2603,Europe/Dublin,Yes,,,,,,,,Education,College/University,,,,,,,,,,,C1,Groningen,Nederland
+Wolf_education_Vivian,Wolf,1049,12,Education,College Classroom,8770.0,94399,53.3498,6.2603,Europe/Dublin,Yes,,,,Yes,,,,Education,College/University,,,,,,,,,,,,Groningen,Nederland
+Wolf_office_Bobbie,Wolf,1050,12,Office,Office,4691.0,50493,53.3498,6.2603,Europe/Dublin,Yes,,,,Yes,,,,Education,College/University,,,,2.0,,,,,,,,Groningen,Nederland
+Wolf_education_Cody,Wolf,1051,12,Education,College Classroom,2639.0,28406,53.3498,6.2603,Europe/Dublin,Yes,,,,Yes,,,Yes,Education,College/University,,,,1.0,,,,,,,,Groningen,Nederland
+Wolf_office_Emanuel,Wolf,1053,12,Office,Office,2005.0,21582,53.3498,6.2603,Europe/Dublin,Yes,,,,,,,,Education,College/University,,,,,,,,,,,,Groningen,Nederland
+Wolf_education_Tori,Wolf,1054,12,Education,College Classroom,19044.9,204998,53.3498,6.2603,Europe/Dublin,Yes,,,,,,,Yes,Education,College/University,,,,4.0,,,,,,,D1,Groningen,Nederland
+Wolf_education_Eulalia,Wolf,1055,12,Education,College Classroom,8056.0,86714,53.3498,6.2603,Europe/Dublin,Yes,,,,,,,,Education,College/University,,,,4.0,,,,,,,D1,Groningen,Nederland
+Wolf_education_Clarissa,Wolf,1056,12,Education,College Classroom,6778.0,72958,53.3498,6.2603,Europe/Dublin,Yes,,,,,,,,Education,College/University,,,,,,,,,,,,Groningen,Nederland
+Wolf_education_Joaquin,Wolf,1057,12,Education,College Classroom,2450.0,26372,53.3498,6.2603,Europe/Dublin,Yes,,,,,,,Yes,Education,College/University,,,,4.0,,,,,,,,Groningen,Nederland
+Wolf_education_Tammie,Wolf,1058,12,Education,College Classroom,7836.0,84346,53.3498,6.2603,Europe/Dublin,Yes,,,,,,,,Education,College/University,,,,,,,,,,,,Groningen,Nederland
+Wolf_education_Dolores,Wolf,1062,12,Education,College Classroom,6117.0,65843,53.3498,6.2603,Europe/Dublin,Yes,,,,,,,,Education,College/University,,,,,,,,,,,,Groningen,Nederland
+Wolf_education_Miguel,Wolf,1063,12,Education,College Classroom,5403.0,58157,53.3498,6.2603,Europe/Dublin,Yes,,,,Yes,,,,Education,College/University,,,,,,,,,,,,Groningen,Nederland
+Wolf_education_Loren,Wolf,1064,12,Education,College Classroom,12190.0,131212,53.3498,6.2603,Europe/Dublin,Yes,,,,Yes,,,Yes,Education,College/University,,,,,,,,,,,,Groningen,Nederland
+Wolf_office_Haydee,Wolf,1065,12,Office,Office,1129.0,12152,53.3498,6.2603,Europe/Dublin,Yes,,,,,,,,Education,College/University,,,,,,,,,,,,Groningen,Nederland
+Wolf_education_Arnulfo,Wolf,1066,12,Education,College Classroom,5184.0,55800,53.3498,6.2603,Europe/Dublin,Yes,,,,,,,,Education,College/University,,,,,,,,,,,,Groningen,Nederland
+Wolf_education_Dorris,Wolf,1067,12,Education,College Classroom,11678.0,125701,53.3498,6.2603,Europe/Dublin,Yes,,,,Yes,,,Yes,Education,College/University,,,,,,,,,,,,Groningen,Nederland
+Wolf_education_Bobby,Wolf,1068,12,Education,College Classroom,10494.0,112956,53.3498,6.2603,Europe/Dublin,Yes,,,,Yes,,,Yes,Education,College/University,,,,,,,,,,,,Groningen,Nederland
+Hog_office_Leon,Hog,1069,13,Office,Office,1938.3,20864,44.9787818478397,-93.2553976421019,US/Central,Yes,,,,,,,,,,,,,,,96,29.6,50.0,28.9,,,Minnesota,United States
+Hog_office_Patrick,Hog,1071,13,Office,Office,964.8,10385,44.9787818478397,-93.2553976421019,US/Central,Yes,,,,,,,,,,,,,,,48,76.6,138.9,74.2,,,Minnesota,United States
+Hog_office_Rolando,Hog,1073,13,Office,Office,18033.5,194111,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,-,289.1,429.4,269.9,,,Minnesota,United States
+Hog_office_Nancie,Hog,1074,13,Office,Office,8348.1,89858,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,,,,,,,,,,,,,-,87.8,136.0,88.3,,,Minnesota,United States
+Hog_office_Migdalia,Hog,1075,13,Office,Office,6754.9,72709,44.9787818478397,-93.2553976421019,US/Central,Yes,,,Yes,,,,,,,,,,,,-,70.3,108.0,70.9,,,Minnesota,United States
+Hog_education_Jared,Hog,1079,13,Education,College Classroom,1317.8,14185,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,-,93.8,153.1,91.7,,,Minnesota,United States
+Hog_education_Leandro,Hog,1080,13,Education,College Laboratory,19241.6,207115,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,-,187.3,305.5,182.8,,,Minnesota,United States
+Hog_office_Mack,Hog,1082,13,Office,Office,5332.1,57394,44.9787818478397,-93.2553976421019,US/Central,Yes,,,,,,,,,,,,,,,-,130.8,279.5,130.9,,,Minnesota,United States
+Hog_education_Roberto,Hog,1083,13,Education,College Classroom,9365.8,100813,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,,,,,,,,,,,,,-,110.8,182.9,108.2,,,Minnesota,United States
+Hog_office_Eloise,Hog,1084,13,Office,Office,11419.8,122922,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,,,,,,,,,,,,,-,213.5,372.4,209.0,,,Minnesota,United States
+Hog_office_Bill,Hog,1086,13,Office,Office,13375.5,143973,44.9787818478397,-93.2553976421019,US/Central,Yes,,,Yes,,,,,,,,,,,,-,182.3,313.8,177.9,,,Minnesota,United States
+Hog_office_Valda,Hog,1087,13,Office,Office,5255.4,56569,44.9787818478397,-93.2553976421019,US/Central,Yes,,,,,,,,,,,,,,,77,57.9,93.0,58.4,,,Minnesota,United States
+Hog_education_Janell,Hog,1088,13,Education,College Laboratory,26718.3,287594,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,-,378.1,621.9,371.8,,,Minnesota,United States
+Hog_office_Sonny,Hog,1089,13,Office,Office,5837.7,62837,44.9787818478397,-93.2553976421019,US/Central,Yes,,,Yes,,,,,,,,,,,,-,246.8,490.3,238.5,,,Minnesota,United States
+Hog_office_Garrett,Hog,1090,13,Office,Office,28339.8,305047,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,-,78.6,135.6,76.6,,,Minnesota,United States
+Hog_office_Elnora,Hog,1092,13,Office,Office,9770.3,105167,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,-,383.7,689.3,378.7,,,Minnesota,United States
+Hog_office_Cordelia,Hog,1093,13,Office,Office,4420.1,47578,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,-,99.5,146.5,90.0,,,Minnesota,United States
+Hog_office_Gustavo,Hog,1094,13,Office,Office,6582.4,70852,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,27,140.8,213.5,137.8,,,Minnesota,United States
+Hog_education_Hallie,Hog,1095,13,Education,College Laboratory,2996.7,32256,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,,,,,,,,,,,,,-,447.3,624.1,438.5,,,Minnesota,United States
+Hog_office_Josefina,Hog,1097,13,Office,Office,14636.4,157545,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,58,99.0,168.4,99.0,,,Minnesota,United States
+Hog_office_Marlena,Hog,1098,13,Office,Office,12239.5,131745,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,79,79.4,121.0,79.3,,,Minnesota,United States
+Hog_education_Robert,Hog,1099,13,Education,Student Union,30925.9,332884,44.9787818478397,-93.2553976421019,US/Central,Yes,,,Yes,,,,,,,,,,,,-,106.7,203.9,107.7,,,Minnesota,United States
+Hog_office_Almeda,Hog,1101,13,Office,Office,6683.1,71936,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,,,,,,,,,,,,,-,106.2,163.0,107.1,,,Minnesota,United States
+Hog_office_Man,Hog,1102,13,Office,Office,8099.9,87187,44.9787818478397,-93.2553976421019,US/Central,Yes,,,Yes,,,,,,,,,,,,-,189.8,271.8,188.8,,,Minnesota,United States
+Hog_office_Randi,Hog,1106,13,Office,Office,8556.3,92099,44.9787818478397,-93.2553976421019,US/Central,Yes,,,Yes,,,,,,,,,,,,83,47.4,98.5,46.4,,,Minnesota,United States
+Hog_education_Sonia,Hog,1107,13,Education,College Laboratory,17103.3,184098,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,-,346.8,531.3,338.7,,,Minnesota,United States
+Hog_office_Charla,Hog,1109,13,Office,Office,9493.9,102191,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,-,264.4,392.3,257.2,,,Minnesota,United States
+Hog_office_Buford,Hog,1110,13,Office,Office,2521.9,27145,44.9787818478397,-93.2553976421019,US/Central,Yes,,,,,,,,,,,,,,,100,4.2,8.5,4.2,,,Minnesota,United States
+Hog_office_Mari,Hog,1111,13,Office,Office,6302.4,67839,44.9787818478397,-93.2553976421019,US/Central,Yes,,,Yes,,,,,,,,,,,,73,67.6,120.3,68.1,,,Minnesota,United States
+Hog_office_Alisha,Hog,1113,13,Office,Office,3103.1,33401,44.9787818478397,-93.2553976421019,US/Central,Yes,,,,,,,,,,,,,,,-,275.2,349.1,274.1,,,Minnesota,United States
+Hog_office_Lizzie,Hog,1117,13,Office,Office,10351.6,111424,44.9787818478397,-93.2553976421019,US/Central,Yes,,,Yes,,,,,,,,,,,,-,107.7,167.6,107.7,,,Minnesota,United States
+Hog_office_Corie,Hog,1119,13,Office,Office,11102.7,119509,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,-,59.7,100.9,59.8,,,Minnesota,United States
+Hog_education_Wayne,Hog,1121,13,Education,College Laboratory,7964.8,85732,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,-,205.1,324.0,195.8,,,Minnesota,United States
+Hog_office_Shon,Hog,1122,13,Office,Office,7837.8,84365,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,,,,,,,,,,,,,72,86.3,122.1,86.8,,,Minnesota,United States
+Hog_office_Sherrie,Hog,1123,13,Office,Office,8639.4,92994,44.9787818478397,-93.2553976421019,US/Central,Yes,,,,,,,,,,,,,,,77,67.0,99.6,67.7,,,Minnesota,United States
+Hog_education_George,Hog,1126,13,Education,College Laboratory,6719.9,72332,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,-,307.8,502.9,307.9,,,Minnesota,United States
+Hog_office_Sydney,Hog,1127,13,Office,Office,8094.7,87131,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,,,,,,,,,,,,,-,106.3,178.5,106.9,,,Minnesota,United States
+Hog_office_Clemencia,Hog,1128,13,Office,Office,5453.7,58703,44.9787818478397,-93.2553976421019,US/Central,Yes,,,,,,,,,,,,,,,-,128.1,216.1,129.9,,,Minnesota,United States
+Hog_office_Napoleon,Hog,1129,13,Office,Office,12365.4,133100,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,-,89.7,147.4,87.5,,,Minnesota,United States
+Hog_education_Casandra,Hog,1130,13,Education,College Laboratory,26033.7,280225,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,,,,,,,,,,,,,-,221.7,377.4,220.6,,,Minnesota,United States
+Hog_office_Carri,Hog,1131,13,Office,Office,2365.6,25463,44.9787818478397,-93.2553976421019,US/Central,Yes,,,,,,,,,,,,,,,-,153.8,251.9,151.1,,,Minnesota,United States
+Hog_office_Leanne,Hog,1133,13,Office,Office,7646.1,82302,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,-,262.9,381.6,263.5,,,Minnesota,United States
+Hog_office_Lanell,Hog,1134,13,Office,Office,14209.1,152946,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,,,,,,,,,,,,,-,77.8,131.8,78.1,,,Minnesota,United States
+Hog_education_Bruno,Hog,1135,13,Education,College Laboratory,13972.0,150393,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,,,,,,,,,,,,,-,362.1,499.5,362.2,,,Minnesota,United States
+Hog_office_Myles,Hog,1136,13,Office,Office,7412.0,79782,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,,,,,,,,,,,,,77,75.9,117.4,76.5,,,Minnesota,United States
+Hog_office_Simon,Hog,1137,13,Office,Office,2550.4,27452,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,35,101.4,172.1,100.6,,,Minnesota,United States
+Hog_education_Rachael,Hog,1138,13,Education,College Laboratory,3715.0,39988,44.9787818478397,-93.2553976421019,US/Central,Yes,,,,,,,,,,,,,,,-,157.7,270.7,154.5,,,Minnesota,United States
+Hog_office_Joey,Hog,1139,13,Office,Office,31275.8,336650,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,-,226.3,393.5,224.2,,,Minnesota,United States
+Hog_education_Odell,Hog,1140,13,Education,College Laboratory,14537.7,156483,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,-,419.9,682.4,409.8,,,Minnesota,United States
+Hog_office_Elke,Hog,1142,13,Office,Office,9635.7,103718,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,,,,,,,,,,,,,82,65.0,102.6,63.4,,,Minnesota,United States
+Hog_office_Bessie,Hog,1143,13,Office,Office,8975.5,96612,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,-,63.5,112.2,61.6,,,Minnesota,United States
+Hog_office_Sarah,Hog,1144,13,Office,Office,14150.2,152312,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,-,380.3,602.9,376.9,,,Minnesota,United States
+Hog_office_Byron,Hog,1148,13,Office,Office,80038.2,861524,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,-,168.8,249.5,161.9,,,Minnesota,United States
+Hog_office_Shawnna,Hog,1149,13,Office,Office,27312.6,293990,44.9787818478397,-93.2553976421019,US/Central,Yes,,,Yes,,,,,,,,,,,,73,60.6,133.7,59.1,,,Minnesota,United States
+Hog_office_Shawna,Hog,1150,13,Office,Office,18213.0,196043,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,-,99.5,147.4,99.9,,,Minnesota,United States
+Hog_office_Terry,Hog,1151,13,Office,Office,24854.9,267536,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,26,174.2,255.8,166.4,,,Minnesota,United States
+Hog_office_Catharine,Hog,1152,13,Office,Office,11042.3,118858,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,-,347.4,551.5,341.2,,,Minnesota,United States
+Hog_education_Caridad,Hog,1156,13,Education,College Laboratory,24153.8,259989,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,-,316.0,519.0,314.6,,,Minnesota,United States
+Hog_education_Haywood,Hog,1157,13,Education,College Laboratory,3447.4,37107,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,-,688.5,954.7,672.8,,,Minnesota,United States
+Hog_office_Cornell,Hog,1159,13,Office,Office,62385.0,671507,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,-,234.1,355.2,224.8,,,Minnesota,United States
+Hog_office_Marlene,Hog,1160,13,Office,Office,7451.3,80205,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,,,,,,,,,,,,,71,86.1,130.7,87.0,,,Minnesota,United States
+Hog_office_Mary,Hog,1161,13,Office,Office,4931.0,53077,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,,,,,,,,,,,,,-,96.1,139.7,96.4,,,Minnesota,United States
+Hog_office_Guadalupe,Hog,1162,13,Office,Office,6778.0,72958,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,-,54.7,91.9,53.9,,,Minnesota,United States
+Hog_office_Betsy,Hog,1164,13,Office,Office,23175.3,249457,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,-,105.4,158.3,103.1,,,Minnesota,United States
+Hog_office_Alexis,Hog,1165,13,Office,Office,2693.4,28991,44.9787818478397,-93.2553976421019,US/Central,Yes,,,,,,,,,,,,,,,44,103.0,158.3,102.9,,,Minnesota,United States
+Hog_office_Mike,Hog,1166,13,Office,Office,5924.5,63771,44.9787818478397,-93.2553976421019,US/Central,Yes,,,,,,,,,,,,,,,51,94.7,154.1,95.8,,,Minnesota,United States
+Hog_office_Catalina,Hog,1167,13,Office,Office,4900.4,52748,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,67,75.9,120.0,74.5,,,Minnesota,United States
+Hog_office_Nia,Hog,1168,13,Office,Office,53614.4,577101,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,-,319.8,458.0,313.3,,,Minnesota,United States
+Hog_education_Cathleen,Hog,1169,13,Education,College Laboratory,14440.7,155439,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,-,367.7,594.4,362.6,,,Minnesota,United States
+Hog_office_Marilyn,Hog,1170,13,Office,Office,5525.5,59476,44.9787818478397,-93.2553976421019,US/Central,Yes,,,,,,,,,,,,,,,-,46.2,71.7,45.0,,,Minnesota,United States
+Hog_education_Beth,Hog,1176,13,Education,College Laboratory,13254.7,142672,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,-,101.4,149.6,99.0,,,Minnesota,United States
+Hog_office_Emmanuel,Hog,1177,13,Office,Office,1899.3,20444,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,,,,,,,,,,,,,-,147.6,236.5,148.0,,,Minnesota,United States
+Hog_education_Jordan,Hog,1178,13,Education,College Classroom,12362.8,133072,44.9787818478397,-93.2553976421019,US/Central,Yes,,,Yes,,,,,,,,,,,,-,179.8,253.8,168.9,,,Minnesota,United States
+Hog_office_Corey,Hog,1185,13,Office,Office,12033.9,129532,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,52,122.5,182.5,121.4,,,Minnesota,United States
+Hog_office_Merilyn,Hog,1188,13,Office,Office,3446.3,37096,44.9787818478397,-93.2553976421019,US/Central,Yes,,,,,,,,,,,,,,,54,81.8,141.0,82.0,,,Minnesota,United States
+Hog_office_Roger,Hog,1189,13,Office,Office,9124.2,98212,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,9,271.9,423.9,267.2,,,Minnesota,United States
+Hog_office_Elsy,Hog,1190,13,Office,Office,3698.2,39807,44.9787818478397,-93.2553976421019,US/Central,Yes,,,,,,,,,,,,,,,71,59.9,103.7,60.5,,,Minnesota,United States
+Hog_education_Luvenia,Hog,1191,13,Education,College Laboratory,17851.5,192152,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,-,332.9,495.2,327.3,,,Minnesota,United States
+Hog_office_Sung,Hog,1194,13,Office,Office,3328.6,35829,44.9787818478397,-93.2553976421019,US/Central,Yes,,,,,,,,,,,,,,,-,173.1,271.2,174.1,,,Minnesota,United States
+Hog_office_Lavon,Hog,1195,13,Office,Office,1530.3,16472,44.9787818478397,-93.2553976421019,US/Central,Yes,,,,,,,,,,,,,,,100,0.0,0.0,0.0,,,Minnesota,United States
+Hog_education_Jewel,Hog,1198,13,Education,Student Union,7912.0,85164,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,-,158.3,226.2,153.9,,,Minnesota,United States
+Hog_education_Donnie,Hog,1201,13,Education,Auditorium,6837.4,73597,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,,,,,,,,,,,,,-,101.7,181.8,99.5,,,Minnesota,United States
+Hog_office_Darline,Hog,1202,13,Office,Office,1561.2,16805,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,,,,,,,,,,,,,-,679.7,1348.0,679.7,,,Minnesota,United States
+Hog_office_Richelle,Hog,1206,13,Office,Office,9285.3,99946,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,32,156.8,219.2,157.2,,,Minnesota,United States
+Hog_office_Elizbeth,Hog,1210,13,Office,Office,8593.5,92500,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,-,240.6,346.7,243.0,,,Minnesota,United States
+Hog_office_Denita,Hog,1211,13,Office,Office,8824.7,94988,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,70,87.5,130.1,88.0,,,Minnesota,United States
+Hog_office_Candi,Hog,1214,13,Office,Office,18156.7,195437,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,-,242.1,350.4,235.3,,,Minnesota,United States
+Hog_office_Miriam,Hog,1216,13,Office,Office,1418.5,15269,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,,,,,,,,,,,,,-,152.1,245.6,149.3,,,Minnesota,United States
+Hog_education_Madge,Hog,1217,13,Education,Auditorium,6786.0,73044,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,-,108.7,183.2,108.5,,,Minnesota,United States
+Hog_office_Vera,Hog,1219,13,Office,Office,8483.5,91316,44.9787818478397,-93.2553976421019,US/Central,Yes,,Yes,Yes,,,,,,,,,,,,72,76.9,132.1,75.4,,,Minnesota,United States
+Hog_office_Concetta,Hog,1221,13,Office,Office,2699.9,29062,44.9787818478397,-93.2553976421019,US/Central,Yes,,,,,,,,,,,,,,,92,27.1,63.1,25.8,,,Minnesota,United States
+Cockatoo_office_Rodney,Cockatoo,1326,15,Office,Office,4364.7,46981,42.4598368592579,-76.4852915864667,US/Eastern,Yes,,Yes,Yes,,,,,Education,College/University,,1962.0,,,,,,,,,,New York,United States
+Cockatoo_education_Julio,Cockatoo,1327,15,Education,College Laboratory,9116.1,98125,42.4598368592579,-76.4852915864667,US/Eastern,Yes,,,Yes,,,,,Education,College/University,,2011.0,,,,,,,,,,New York,United States
+Cockatoo_education_Brigitte,Cockatoo,1328,15,Education,College Laboratory,25998.0,279840,42.4598368592579,-76.4852915864667,US/Eastern,Yes,,Yes,,,,,,Education,College/University,,2008.0,,,,,,,,,,New York,United States
+Cockatoo_education_Orlando,Cockatoo,1331,15,Education,College Laboratory,15887.2,171008,42.4598368592579,-76.4852915864667,US/Eastern,Yes,Yes,Yes,Yes,,,,,Education,College/University,,1930.0,,,,,,,,,,New York,United States
+Cockatoo_education_Laurence,Cockatoo,1332,15,Education,College Classroom,4403.4,47398,42.4598368592579,-76.4852915864667,US/Eastern,Yes,,Yes,Yes,,,,,Education,College/University,,1912.0,,,,,,,,,,New York,United States
+Cockatoo_office_Gail,Cockatoo,1333,15,Office,Office,2909.4,31316,42.4598368592579,-76.4852915864667,US/Eastern,Yes,,Yes,,,,,,Education,College/University,,1913.0,,,,,,,,,,New York,United States
+Cockatoo_office_Paige,Cockatoo,1334,15,Office,Office,12151.2,130794,42.4598368592579,-76.4852915864667,US/Eastern,Yes,,Yes,Yes,,,,,Education,College/University,,1933.0,,,,,,,,,,New York,United States
+Cockatoo_office_Jodie,Cockatoo,1336,15,Office,Office,2884.9,31053,42.4598368592579,-76.4852915864667,US/Eastern,Yes,,Yes,Yes,,,,,Education,College/University,,1915.0,,,,,,,,,,New York,United States
+Cockatoo_office_Jimmy,Cockatoo,1337,15,Office,Office,1369.8,14744,42.4598368592579,-76.4852915864667,US/Eastern,Yes,,Yes,Yes,,,,,Education,College/University,,1910.0,,,,,,,,,,New York,United States
+Cockatoo_education_Jack,Cockatoo,1338,15,Education,College Classroom,2918.5,31415,42.4598368592579,-76.4852915864667,US/Eastern,Yes,,,Yes,,,,,Education,College/University,,1912.0,,,,,,,,,,New York,United States
+Cockatoo_education_Erik,Cockatoo,1339,15,Education,College Classroom,13051.8,140488,42.4598368592579,-76.4852915864667,US/Eastern,Yes,,Yes,Yes,,,,,Education,College/University,,1961.0,,,,,,,,,,New York,United States
+Cockatoo_education_Rita,Cockatoo,1341,15,Education,College Laboratory,1704.0,18342,42.4598368592579,-76.4852915864667,US/Eastern,Yes,,Yes,Yes,,,,,Education,College/University,,1960.0,,,,,,,,,,New York,United States
+Cockatoo_education_Brendan,Cockatoo,1342,15,Education,College Laboratory,10856.1,116854,42.4598368592579,-76.4852915864667,US/Eastern,Yes,,Yes,Yes,,,,,Education,College/University,,1978.0,,,,,,,,,,New York,United States
+Cockatoo_office_Laila,Cockatoo,1343,15,Office,Office,10254.6,110380,42.4598368592579,-76.4852915864667,US/Eastern,Yes,,Yes,Yes,,,,,Education,College/University,,1985.0,,,,,,,,,,New York,United States
+Cockatoo_education_Lionel,Cockatoo,1344,15,Education,College Laboratory,11660.0,125507,42.4598368592579,-76.4852915864667,US/Eastern,Yes,,Yes,Yes,,,,,Education,College/University,,1974.0,,,,,,,,,,New York,United States
+Cockatoo_education_Melanie,Cockatoo,1346,15,Education,College Classroom,3240.0,34875,42.4598368592579,-76.4852915864667,US/Eastern,Yes,,,Yes,,,,,Education,College/University,,1993.0,,,,,,,,,,New York,United States
+Cockatoo_education_Janet,Cockatoo,1347,15,Education,College Laboratory,29946.4,322341,42.4598368592579,-76.4852915864667,US/Eastern,Yes,,Yes,Yes,,,,,Education,College/University,,1995.0,,,,,,,,,,New York,United States
+Cockatoo_education_Eunice,Cockatoo,1348,15,Education,College Laboratory,12195.5,131271,42.4598368592579,-76.4852915864667,US/Eastern,Yes,,Yes,Yes,,,,,Education,College/University,,2010.0,,,,,,,,,,New York,United States
+Cockatoo_education_Flora,Cockatoo,1350,15,Education,College Laboratory,13913.3,149762,42.4598368592579,-76.4852915864667,US/Eastern,Yes,,Yes,Yes,,,,,Education,College/University,,2004.0,,,,,,,,,,New York,United States
+Cockatoo_office_Elbert,Cockatoo,1351,15,Office,Office,3772.9,40611,42.4598368592579,-76.4852915864667,US/Eastern,Yes,,Yes,Yes,,,,,Education,College/University,,,,,,,,,,,,New York,United States
+Cockatoo_office_Alton,Cockatoo,1352,15,Office,Office,3972.1,42755,42.4598368592579,-76.4852915864667,US/Eastern,Yes,,Yes,Yes,,,,,Education,College/University,,,,,,,,,,,,New York,United States
+Cockatoo_education_Minh,Cockatoo,1355,15,Education,College Classroom,4697.8,50567,42.4598368592579,-76.4852915864667,US/Eastern,Yes,,Yes,Yes,,,,,Education,College/University,,,,,,,,,,,,New York,United States
+Cockatoo_education_Doreen,Cockatoo,1356,15,Education,College Classroom,8477.7,91253,42.4598368592579,-76.4852915864667,US/Eastern,Yes,,Yes,Yes,,,,,Education,College/University,,,,,,,,,,,,New York,United States
+Cockatoo_office_Roxanna,Cockatoo,1357,15,Office,Office,2008.4,21618,42.4598368592579,-76.4852915864667,US/Eastern,Yes,,Yes,Yes,,,,,Education,College/University,,,,,,,,,,,,New York,United States
+Cockatoo_education_Mayra,Cockatoo,1359,15,Education,College Classroom,11546.8,124289,42.4598368592579,-76.4852915864667,US/Eastern,Yes,,Yes,Yes,,,,,Education,College/University,,1904.0,,,,,,,,,,New York,United States
+Cockatoo_education_Charity,Cockatoo,1361,15,Education,College Laboratory,21726.6,233863,42.4598368592579,-76.4852915864667,US/Eastern,Yes,,Yes,Yes,,,,,Education,College/University,,1921.0,,,,,,,,,,New York,United States
+Cockatoo_education_Jon,Cockatoo,1362,15,Education,Student Union,10589.8,113988,42.4598368592579,-76.4852915864667,US/Eastern,Yes,,Yes,,,,,,Education,College/University,,1923.0,,,,,,,,,,New York,United States
+Cockatoo_office_Georgia,Cockatoo,1363,15,Office,Office,14672.4,157933,42.4598368592579,-76.4852915864667,US/Eastern,Yes,,Yes,Yes,,,,,Education,College/University,,1932.0,,,,,,,,,,New York,United States
+Cockatoo_office_Pansy,Cockatoo,1366,15,Office,Office,8173.3,87977,42.4598368592579,-76.4852915864667,US/Eastern,Yes,,Yes,Yes,,,,,Education,College/University,,1947.0,,,,,,,,,,New York,United States
+Cockatoo_education_Helene,Cockatoo,1367,15,Education,College Classroom,3130.4,33695,42.4598368592579,-76.4852915864667,US/Eastern,Yes,,Yes,Yes,,,,,Education,College/University,,1948.0,,,,,,,,,,New York,United States
+Cockatoo_education_Maynard,Cockatoo,1370,15,Education,Student Union,443.4,4773,42.4598368592579,-76.4852915864667,US/Eastern,Yes,,Yes,Yes,,,,,Education,College/University,,,,,,,,,,,,New York,United States
+Cockatoo_office_Giovanni,Cockatoo,1375,15,Office,Office,10710.6,115288,42.4598368592579,-76.4852915864667,US/Eastern,Yes,,Yes,Yes,,,,,Education,College/University,,1957.0,,,,,,,,,,New York,United States
+Cockatoo_education_Nelda,Cockatoo,1377,15,Education,College Laboratory,6930.5,74599,42.4598368592579,-76.4852915864667,US/Eastern,Yes,,Yes,Yes,,,,,Education,College/University,,1984.0,,,,,,,,,,New York,United States
+Cockatoo_education_Tyler,Cockatoo,1378,15,Education,College Laboratory,19928.2,214505,42.4598368592579,-76.4852915864667,US/Eastern,Yes,,,Yes,,,,,Education,College/University,,1990.0,,,,,,,,,,New York,United States
+Cockatoo_office_Kristin,Cockatoo,1379,15,Office,Office,4603.6,49553,42.4598368592579,-76.4852915864667,US/Eastern,Yes,,Yes,Yes,,,,,Education,College/University,,1963.0,,,,,,,,,,New York,United States
+Cockatoo_education_Terrence,Cockatoo,1380,15,Education,College Laboratory,18954.9,204029,42.4598368592579,-76.4852915864667,US/Eastern,Yes,,Yes,,,,,,Education,College/University,,2010.0,,,,,,,,,,New York,United States
+Cockatoo_office_Delores,Cockatoo,1381,15,Office,Office,7861.0,84615,42.4598368592579,-76.4852915864667,US/Eastern,Yes,,Yes,Yes,,,,,Education,College/University,,1963.0,,,,,,,,,,New York,United States
+Cockatoo_education_June,Cockatoo,1383,15,Education,College Laboratory,9811.7,105612,42.4598368592579,-76.4852915864667,US/Eastern,Yes,,Yes,Yes,,,,,Education,College/University,,1967.0,,,,,,,,,,New York,United States
+Cockatoo_education_Clifton,Cockatoo,1384,15,Education,College Classroom,5292.6,56969,42.4598368592579,-76.4852915864667,US/Eastern,Yes,,Yes,Yes,,,,,Education,College/University,,1967.0,,,,,,,,,,New York,United States
+Cockatoo_office_Christy,Cockatoo,1387,15,Office,Office,17376.7,187041,42.4598368592579,-76.4852915864667,US/Eastern,Yes,,,Yes,,,,,Education,College/University,,1973.0,,,,,,,,,,New York,United States
+Cockatoo_office_Lorraine,Cockatoo,1410,15,Office,Office,1070.6,11524,42.4598368592579,-76.4852915864667,US/Eastern,Yes,,Yes,,,,,,Education,College/University,,1994.0,,,,,,,,,,New York,United States
+Cockatoo_education_Magdalena,Cockatoo,1411,15,Education,College Classroom,846.4,9111,42.4598368592579,-76.4852915864667,US/Eastern,Yes,,Yes,,,,,,Education,College/University,,1958.0,,,,,,,,,,New York,United States
+Cockatoo_education_Shawn,Cockatoo,1421,15,Education,College Classroom,4453.2,47934,42.4598368592579,-76.4852915864667,US/Eastern,Yes,,,Yes,,,,,Education,College/University,,,,,,,,,,,,New York,United States
+Cockatoo_education_Oliver,Cockatoo,1427,15,Education,College Classroom,16780.6,180625,42.4598368592579,-76.4852915864667,US/Eastern,Yes,,,Yes,,,,,Education,College/University,,1933.0,,,,,,,,,,New York,United States
+Cockatoo_education_Amira,Cockatoo,1428,15,Education,College Laboratory,2641.4,28432,42.4598368592579,-76.4852915864667,US/Eastern,Yes,,,,,,,,Education,College/University,,1933.0,,,,,,,,,,New York,United States
+Cockatoo_education_Julia,Cockatoo,1429,15,Education,College Classroom,3758.9,40461,42.4598368592579,-76.4852915864667,US/Eastern,Yes,,,,,,,,Education,College/University,,2002.0,,,,,,,,,,New York,United States
+Cockatoo_office_Ada,Cockatoo,1430,15,Office,Office,4952.0,53303,42.4598368592579,-76.4852915864667,US/Eastern,Yes,,,Yes,,,,,Education,College/University,,1981.0,,,,,,,,,,New York,United States
+Cockatoo_education_Sheryl,Cockatoo,1432,15,Education,College Laboratory,14927.0,160673,42.4598368592579,-76.4852915864667,US/Eastern,Yes,,,Yes,,,,,Education,College/University,,1968.0,,,,,,,,,,New York,United States
+Cockatoo_education_Claudine,Cockatoo,1433,15,Education,College Laboratory,2609.1,28084,42.4598368592579,-76.4852915864667,US/Eastern,Yes,,,Yes,,,,,Education,College/University,,1913.0,,,,,,,,,,New York,United States
+Cockatoo_education_Deloris,Cockatoo,1434,15,Education,College Laboratory,3079.5,33148,42.4598368592579,-76.4852915864667,US/Eastern,Yes,,,Yes,,,,,Education,College/University,,1967.0,,,,,,,,,,New York,United States
+Cockatoo_education_Joel,Cockatoo,1435,15,Education,College Laboratory,887.4,9552,42.4598368592579,-76.4852915864667,US/Eastern,Yes,,,Yes,,,,,Education,College/University,,1961.0,,,,,,,,,,New York,United States
+Cockatoo_education_Joeann,Cockatoo,1437,15,Education,College Laboratory,10360.4,111518,42.4598368592579,-76.4852915864667,US/Eastern,Yes,,,Yes,,,,,Education,College/University,,1968.0,,,,,,,,,,New York,United States
+Cockatoo_education_Marva,Cockatoo,1438,15,Education,College Classroom,10123.7,108971,42.4598368592579,-76.4852915864667,US/Eastern,Yes,,,Yes,,,,,Education,College/University,,1990.0,,,,,,,,,,New York,United States
+Cockatoo_education_Collin,Cockatoo,1439,15,Education,College Laboratory,5248.7,56497,42.4598368592579,-76.4852915864667,US/Eastern,Yes,,,,,,,,Education,College/University,,1957.0,,,,,,,,,,New York,United States
+Cockatoo_education_Gussie,Cockatoo,1441,15,Education,College Laboratory,2800.4,30143,42.4598368592579,-76.4852915864667,US/Eastern,Yes,,,Yes,,,,,Education,College/University,,1951.0,,,,,,,,,,New York,United States
+Cockatoo_education_Arlen,Cockatoo,1443,15,Education,College Classroom,3745.0,40311,42.4598368592579,-76.4852915864667,US/Eastern,Yes,,,,,,,,Education,College/University,,1913.0,,,,,,,,,,New York,United States
+Cockatoo_office_Margaret,Cockatoo,1448,15,Office,Office,8572.3,92271,42.4598368592579,-76.4852915864667,US/Eastern,Yes,,,,,,,,Education,College/University,,2001.0,,,,,,,,,,New York,United States
