@@ -21,6 +21,9 @@ usethis::use_package("magrittr")
 usethis::use_package("dplyr")
 usethis::use_package("shinyjs")
 usethis::use_package("jsonlite")
+usethis::use_package("lubridate")
+usethis::use_dev_package("BreakoutDetection")
+usethis::use_package("shinycssloaders")
 ## Amend DESCRIPTION with dependencies read from package code parsing
 ## install.packages('attachment') # if needed.
 attachment::att_amend_desc()

@@ -175,7 +175,7 @@ mod_load_data_server <- function(id) {
 
     state <<- reactive({
       if (input$switch == FALSE) {
-        state <- metadata$state
+        state <- metadata()$state
       } else {
         req(input$state)
         state <- input$state
@@ -185,7 +185,7 @@ mod_load_data_server <- function(id) {
 
     end_use <<- reactive({
       if (input$switch == FALSE) {
-        end_use <- metadata$primaryspaceusage
+        end_use <- metadata()$primaryspaceusage
       } else {
         req(input$end_use)
         end_use <- input$end_use
@@ -195,7 +195,7 @@ mod_load_data_server <- function(id) {
 
     sqm <<- reactive({
       if (input$switch == FALSE) {
-        sqm <- metadata$sqm
+        sqm <- metadata()$sqm
       } else {
         req(input$end_use)
         sqm <- input$sqm
@@ -231,6 +231,97 @@ mod_load_data_server <- function(id) {
         ))
       )
     })
+
+    # Define reactive values to store the output of the functions
+    results <- reactiveValues(data_clean = NULL,
+                              thermal_correlation = NULL,
+                              features = NULL,
+                              EUI = NULL,
+                              operational_schedules = NULL,
+                              epi_schedules = NULL,
+                              volatility_Winter_Workday = NULL,
+                              volatility_Summer_Workday = NULL,
+                              volatility_Winter_Weekend = NULL,
+                              volatility_Summer_Weekend = NULL)
+
+    observeEvent(input$analyze, {
+      # Reset the progress indicator
+      withProgress(message = "Analyzing the building: ", value = 0, {
+
+        # PRE-PROCESSING
+        incProgress(0.1, detail = "Data pre-processing")
+        results$data_clean <- get_data_clean()
+
+        # PEER IDENTIFICATION
+        incProgress(0.2, detail = "Peer identification")
+        features <- get_features()
+
+        results$thermal_correlation <- features$thermal_correlation
+
+        results$features <- features$features
+
+        # ENERGY PERFORMANCE INDICATOR CALCULATION
+        incProgress(0.1, detail = "Energy Use Intensity calculation")
+        results$EUI <- get_eui()
+
+        incProgress(0.2, detail = "Operational schedules extraction")
+        results$operational_schedules <- get_operational_schedules()
+
+        results$epi_schedules <- get_epi_schedules(results$operational_schedules$schedule)
+
+        incProgress(0.1, detail = "Volatility of energy consumption calculation")
+        results$volatility_Winter_Workday <- get_volatility("Winter Workday")
+        results$volatility_Summer_Workday <- get_volatility("Summer Workday")
+        results$volatility_Winter_Weekend <- get_volatility("Winter Weekend")
+        results$volatility_Summer_Weekend <- get_volatility("Summer Weekend")
+
+
+      })
+    })
+
+    data_clean <<- reactive({
+      results$data_clean
+
+    })
+
+    features <<- reactive({
+      results$features
+    })
+
+    thermal_correlation <<- reactive({
+      results$thermal_correlation
+    })
+
+    EUI <<- reactive({
+      results$EUI
+    })
+
+    schedules <<- reactive({
+      results$operational_schedules$schedule
+    })
+
+    off_impact <<- reactive({
+      results$epi_schedules$off_impact
+    })
+
+    weekend_impact <<- reactive({
+      results$epi_schedules$weekend_impact
+    })
+
+    volatility <<- reactive(
+      list(
+        "volatility_Winter_Workday" = results$volatility_Winter_Workday,
+        "volatility_Summer_Workday" = results$volatility_Summer_Workday,
+        "volatility_Winter_Weekend" = results$volatility_Winter_Weekend,
+        "volatility_Summer_Weekend" = results$volatility_Summer_Weekend
+      )
+    )
+
+    return(
+      list(
+        analyze = reactive({ input$analyze })
+      )
+    )
 
 
   })
