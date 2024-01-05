@@ -110,7 +110,8 @@ get_data_clean <- function() {
   }
 
   # Extracting only zeros data to interpolate with lookup table next
-  data[is.na(data)] = 0
+  data$power[is.na(data$power)] <- 0
+  data$power[data$power == NA] <- 0
 
   data_na <- data %>%
     subset(power == 0) %>%

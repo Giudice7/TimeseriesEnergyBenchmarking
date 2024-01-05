@@ -9,6 +9,9 @@ function plot_ts_clean(data, corruptanceIndex, container_id) {
                 fontFamily: 'Poppins, sans-serif'
             }
         },
+        title: {
+          text: ""
+        },
         xAxis: {
             type: 'datetime'
         },
