@@ -26,7 +26,7 @@ get_load_condition <- function() {
       ) %>%
       mutate(
         load_condition = ifelse(
-          as.character(date) %in% df_date$date, "Holiday",
+          as.character(date) %in% df_date$date, "Holidays",
           ifelse(
             month %in% c("Jan", "Feb", "Mar", "Oct", "Nov", "Dec") &
               dayofweek %in% c("Sun", "Sat"),
@@ -92,8 +92,10 @@ get_load_condition <- function() {
 
   data <- data %>%
     mutate(load_condition = ifelse(date %in% data_outliers$date, "Non-working days", load_condition)) %>%
-    mutate(load_condition = ifelse(load_condition == "Winter Weekday", "Winter Workday",
-                                   ifelse(load_condition == "Summer Weekday", "Summer Workday", load_condition)
+    mutate(load_condition = ifelse(load_condition == "Winter Weekday", "Winter workdays",
+                                   ifelse(load_condition == "Summer Weekday", "Summer workdays",
+                                          ifelse(load_condition == "Winter Weekend", "Winter weekends",
+                                                 ifelse(load_condition == "Summer Weekend", "Summer weekends", load_condition)))
     ))
 
   return(data[, c("timestamp", "load_condition")])

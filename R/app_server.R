@@ -10,4 +10,6 @@ app_server <- function(input, output, session) {
   perform_button <- mod_load_data_server("load_data1")
 
   mod_pre_processing_server("pre_processing1", perform_button$analyze)
+
+  mod_peer_identification_server("peer_identification1", perform_button$analyze)
 }

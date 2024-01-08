@@ -52,9 +52,9 @@ app_ui <- function(request) {
           tabItem(tabName = "load_data",
                   mod_load_data_ui("load_data1")),
           tabItem(tabName = "pre-processing",
-                  mod_pre_processing_ui("pre_processing1"))
-        #   tabItem(tabName = "peer_identification",
-        #           mod_peer_identification_ui("peer_identification1")),
+                  mod_pre_processing_ui("pre_processing1")),
+          tabItem(tabName = "peer_identification",
+                  mod_peer_identification_ui("peer_identification1"))
         #   tabItem(tabName = "kpi",
         #           mod_EPI_ui("KPI1")),
         #   tabItem(tabName = "benchmarking")

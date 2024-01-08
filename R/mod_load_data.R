@@ -4,7 +4,7 @@
 #'
 #' @param id,input,output,session Internal parameters for {shiny}.
 #'
-#' @noRd 
+#' @noRd
 #'
 #' @import shiny
 #' @import shinyWidgets
@@ -25,7 +25,7 @@ mod_load_data_ui <- function(id) {
         ),
         materialSwitch(
           inputId = ns("switch"),
-          label = "Load your data/Inspect",
+          label = "Inspect/Load your data",
           value = FALSE,
           status = "success"
         ),
@@ -270,10 +270,10 @@ mod_load_data_server <- function(id) {
         results$epi_schedules <- get_epi_schedules(results$operational_schedules$schedule)
 
         incProgress(0.1, detail = "Volatility of energy consumption calculation")
-        results$volatility_Winter_Workday <- get_volatility("Winter Workday")
-        results$volatility_Summer_Workday <- get_volatility("Summer Workday")
-        results$volatility_Winter_Weekend <- get_volatility("Winter Weekend")
-        results$volatility_Summer_Weekend <- get_volatility("Summer Weekend")
+        results$volatility_Winter_workdays <- get_volatility("Winter workdays")
+        results$volatility_Summer_workdays <- get_volatility("Summer workdays")
+        results$volatility_Winter_weekends <- get_volatility("Winter weekends")
+        results$volatility_Summer_weekends <- get_volatility("Summer weekends")
 
 
       })
@@ -310,10 +310,10 @@ mod_load_data_server <- function(id) {
 
     volatility <<- reactive(
       list(
-        "volatility_Winter_Workday" = results$volatility_Winter_Workday,
-        "volatility_Summer_Workday" = results$volatility_Summer_Workday,
-        "volatility_Winter_Weekend" = results$volatility_Winter_Weekend,
-        "volatility_Summer_Weekend" = results$volatility_Summer_Weekend
+        "volatility_Winter_workdays" = results$volatility_Winter_workdays,
+        "volatility_Summer_workdays" = results$volatility_Summer_workdays,
+        "volatility_Winter_weekends" = results$volatility_Winter_weekends,
+        "volatility_Summer_weekends" = results$volatility_Summer_weekends
       )
     )
 

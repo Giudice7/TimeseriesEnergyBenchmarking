@@ -224,23 +224,6 @@ output$mstl_plot <- renderUI({
       date = as.Date(timestamp, format = '%Y-%m-%d'),
       dayofweek = weekdays(date, abbreviate = TRUE),
       month = as.character(format(date, "%b"))
-    ) %>%
-    mutate(
-      load_condition = ifelse(
-        month %in% c("Jan", "Feb", "Mar", "Oct", "Nov", "Dec") &
-          dayofweek %in% c("Sun", "Sat"),
-        "Winter Weekend",
-        ifelse(
-          month %in% c("Jan", "Feb", "Mar", "Oct", "Nov", "Dec") &
-            !(dayofweek %in% c("Sun", "Sat")),
-          "Winter Workday",
-          ifelse(
-            month %in% c("Apr", "May", "Jun", "Jul", "Aug", "Sep") &
-              dayofweek %in% c("Sun", "Sat"),
-            "Summer Weekend",
-            "Summer Workday"
-          )
-        ))
     )
 
   # Calculate threshold of low values and high values

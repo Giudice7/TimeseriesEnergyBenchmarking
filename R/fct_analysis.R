@@ -53,16 +53,16 @@ get_data_clean <- function() {
       load_condition = ifelse(
         month %in% c("Jan", "Feb", "Mar", "Oct", "Nov", "Dec") &
           dayofweek %in% c("Sun", "Sat"),
-        "Winter Weekend",
+        "Winter weekends",
         ifelse(
           month %in% c("Jan", "Feb", "Mar", "Oct", "Nov", "Dec") &
             !(dayofweek %in% c("Sun", "Sat")),
-          "Winter Workday",
+          "Winter workdays",
           ifelse(
             month %in% c("Apr", "May", "Jun", "Jul", "Aug", "Sep") &
               dayofweek %in% c("Sun", "Sat"),
-            "Summer Weekend",
-            "Summer Workday"
+            "Summer weekends",
+            "Summer workdays"
           )
         ))
     )
@@ -166,7 +166,7 @@ get_features <- function() {
 
   # Calculation of the mean daily energy consumption
   mean_ec <- data %>%
-    subset(load_condition %in% c("Winter Workday", "Summer Workday")) %>%
+    subset(load_condition %in% c("Winter workdays", "Summer workdays")) %>%
     dplyr::group_by(date, load_condition) %>%
     dplyr::summarise(energy = sum(power)) %>%
     dplyr::group_by(load_condition) %>%
@@ -185,7 +185,7 @@ get_features <- function() {
   night_period <- paste(night_period, ":00:00", sep = "")
 
   shape_factor <- data %>%
-    subset(load_condition %in% c("Winter Workday", "Summer Workday")) %>%
+    subset(load_condition %in% c("Winter workdays", "Summer workdays")) %>%
     mutate(period = ifelse(time %in% night_period, "night", "day")) %>%
     dplyr::group_by(date, load_condition) %>%
     dplyr::summarise(F_ratio = sum(power[period == "night"]) / sum(power[period == "day"])) %>%
@@ -234,7 +234,7 @@ get_thermal_correlation <- function() {
 
   # Calculate top 90 days for Winter and Summer
   sliced_Winter_Workday <- data %>%
-    subset(load_condition == "Winter Workday") %>%
+    subset(load_condition == "Winter workdays") %>%
     dplyr::group_by(date, load_condition) %>%
     dplyr::summarise(energy = sum(power),
                      temperature = mean(airTemperature)) %>%
@@ -243,7 +243,7 @@ get_thermal_correlation <- function() {
     dplyr::slice(1:90)
 
   sliced_Summer_Workday <- data %>%
-    subset(load_condition == "Summer Workday") %>%
+    subset(load_condition == "Summer workdays") %>%
     dplyr::group_by(date, load_condition) %>%
     dplyr::summarise(energy = sum(power),
                      temperature = mean(airTemperature)) %>%
@@ -253,14 +253,14 @@ get_thermal_correlation <- function() {
 
   # Performing correlation analysis
   correlation <- data %>%
-    subset(load_condition %in% c("Winter Workday", "Summer Workday")) %>%
+    subset(load_condition %in% c("Winter workdays", "Summer workdays")) %>%
     dplyr::group_by(date, load_condition) %>%
     dplyr::summarise(energy = sum(power),
                      temperature = mean(airTemperature)) %>%
-    dplyr::mutate(slice = ifelse((load_condition == "Winter Workday") &
+    dplyr::mutate(slice = ifelse((load_condition == "Winter workdays") &
                                    (date %in% sliced_Winter_Workday$date),
                                  "Yes",
-                                 ifelse((load_condition == "Summer Workday") &
+                                 ifelse((load_condition == "Summer workdays") &
                                           (date %in% sliced_Summer_Workday$date),
                                         "Yes",
                                         "No"
@@ -288,14 +288,14 @@ get_thermal_correlation <- function() {
 
   correlation$slope <- "NaN"
 
-  if (correlation$result[correlation$load_condition == "Winter Workday"] == "Potentially thermal sensitive") {
+  if (correlation$result[correlation$load_condition == "Winter workdays"] == "Potentially thermal sensitive") {
 
     # Normalize data
     normalized_data <- data %>%
       dplyr::group_by(date, load_condition) %>%
       dplyr::summarise(energy = sum(power),
                        temperature = mean(airTemperature)) %>%
-      subset(load_condition %in% c("Winter Workday")) %>%
+      subset(load_condition %in% c("Winter workdays")) %>%
       dplyr::ungroup() %>%
       dplyr::mutate(energy = energy / max(energy)) %>%
       dplyr::arrange(temperature) %>%
@@ -305,22 +305,22 @@ get_thermal_correlation <- function() {
     slope_Winter <- round(abs(model$coefficients[2]), 2)
 
     if (slope_Winter < 0.005) {
-      correlation$result[correlation$load_condition == "Winter Workday"] <- "Non-thermal sensitive"
+      correlation$result[correlation$load_condition == "Winter workdays"] <- "Non-thermal sensitive"
     } else {
-      correlation$result[correlation$load_condition == "Winter Workday"] <- "Thermal sensitive"
-      correlation$slope[correlation$load_condition == "Winter Workday"] <- slope_Winter
+      correlation$result[correlation$load_condition == "Winter workdays"] <- "Thermal sensitive"
+      correlation$slope[correlation$load_condition == "Winter workdays"] <- slope_Winter
     }
   }
 
 
-  if (correlation$result[correlation$load_condition == "Summer Workday"] == "Potentially thermal sensitive") {
+  if (correlation$result[correlation$load_condition == "Summer workdays"] == "Potentially thermal sensitive") {
 
     # Normalize data
     normalized_data <- data %>%
       dplyr::group_by(date, load_condition) %>%
       dplyr::summarise(energy = sum(power),
                        temperature = mean(airTemperature)) %>%
-      subset(load_condition %in% c("Summer Workday")) %>%
+      subset(load_condition %in% c("Summer workdays")) %>%
       dplyr::ungroup() %>%
       dplyr::mutate(energy = energy / max(energy)) %>%
       dplyr::arrange(temperature) %>%
@@ -330,10 +330,10 @@ get_thermal_correlation <- function() {
     slope_Summer <- round(abs(model$coefficients[2]), 2)
 
     if (slope_Summer < 0.005) {
-      correlation$result[correlation$load_condition == "Summer Workday"] <- "Non-thermal sensitive"
+      correlation$result[correlation$load_condition == "Summer workdays"] <- "Non-thermal sensitive"
     } else {
-      correlation$result[correlation$load_condition == "Summer Workday"] <- "Thermal sensitive"
-      correlation$slope[correlation$load_condition == "Summer Workday"] <- slope_Summer
+      correlation$result[correlation$load_condition == "Summer workdays"] <- "Thermal sensitive"
+      correlation$slope[correlation$load_condition == "Summer workdays"] <- slope_Summer
     }
 
   }
@@ -390,7 +390,7 @@ get_eui <- function() {
     dplyr::pull(GG)
 
   temperature_correlation <- get_thermal_correlation() %>%
-    mutate(load_condition = gsub(" Workday", "", load_condition))
+    mutate(load_condition = gsub(" workdays", "", load_condition))
 
   data <- merge(x = data,
                 y = temperature_correlation[, c("load_condition", "result")],
@@ -459,7 +459,7 @@ get_operational_schedules <- function() {
 
   # Calculating load parameters
   load_parameters <- data %>%
-    subset(load_condition %in% c("Winter Workday", "Summer Workday")) %>%
+    subset(load_condition %in% c("Winter workdays", "Summer workdays")) %>%
     dplyr::group_by(breakout, load_condition) %>%
     dplyr::summarise(baseload = quantile(power, 0.15),
                      peakload = quantile(power, 0.95)) %>%
@@ -467,7 +467,7 @@ get_operational_schedules <- function() {
 
   # Obtaining on-off hours
   schedules <- data %>%
-    subset(load_condition %in% c("Winter Workday", "Summer Workday")) %>%
+    subset(load_condition %in% c("Winter workdays", "Summer workdays")) %>%
     merge(load_parameters[, c("breakout", "delta_load")], by = "breakout", all.x = TRUE) %>%
     dplyr::group_by(date, breakout, load_condition) %>%
     mutate(on_hour_threshold = quantile(power, 0.15) + 0.25 * delta_load) %>%
@@ -599,8 +599,7 @@ get_volatility <- function(load_condition_string) {
       dayofweek = wday(date, label = TRUE, locale="EN-us"),
       month = as.character(month(date, label = TRUE, abbr = TRUE, locale = "EN-us"))
     ) %>%
-    mutate(load_condition = get_load_condition()$load_condition
-    ) %>%
+    mutate(load_condition = get_load_condition()$load_condition) %>%
     subset(load_condition == load_condition_string) %>%
     dplyr::group_by(date) %>%
     dplyr::summarise(energy = sum(power))
@@ -629,10 +628,10 @@ perform_analysis <- function(input) {
                             EUI = NULL,
                             operational_schedules = NULL,
                             epi_schedules = NULL,
-                            volatility_Winter_Workday = NULL,
-                            volatility_Summer_Workday = NULL,
-                            volatility_Winter_Weekend = NULL,
-                            volatility_Summer_Weekend = NULL)
+                            volatility_Winter_workdays = NULL,
+                            volatility_Summer_workdays = NULL,
+                            volatility_Winter_workdays = NULL,
+                            volatility_Summer_workdays = NULL)
 
   observeEvent(input, {
     # Reset the progress indicator
@@ -660,10 +659,10 @@ perform_analysis <- function(input) {
       results$epi_schedules <- get_epi_schedules(results$operational_schedules$schedule)
 
       incProgress(0.1, detail = "Volatility of energy consumption calculation")
-      results$volatility_Winter_Workday <- get_volatility("Winter Workday")
-      results$volatility_Summer_Workday <- get_volatility("Summer Workday")
-      results$volatility_Winter_Weekend <- get_volatility("Winter Weekend")
-      results$volatility_Summer_Weekend <- get_volatility("Summer Weekend")
+      # results$volatility_Winter_workdays <- get_volatility("Winter workdays")
+      # results$volatility_Summer_workdays <- get_volatility("Summer workdays")
+      # results$volatility_Winter_weekends <- get_volatility("Winter weekends")
+      # results$volatility_Summer_weekends <- get_volatility("Summer weekends")
 
 
     })
@@ -671,7 +670,6 @@ perform_analysis <- function(input) {
 
   data_clean <<- reactive({
     results$data_clean
-
   })
 
   features <<- reactive({
@@ -698,12 +696,12 @@ perform_analysis <- function(input) {
     results$epi_schedules$weekend_impact
   })
 
-  volatility <<- reactive(
-    list(
-      "volatility_Winter_Workday" = results$volatility_Winter_Workday,
-      "volatility_Summer_Workday" = results$volatility_Summer_Workday,
-      "volatility_Winter_Weekend" = results$volatility_Winter_Weekend,
-      "volatility_Summer_Weekend" = results$volatility_Summer_Weekend
-    )
-  )
+  # volatility <<- reactive(
+  #   list(
+  #     "volatility_Winter_workdays" = results$volatility_Winter_Workday,
+  #     "volatility_Summer_workdays" = results$volatility_Summer_Workday,
+  #     "volatility_Winter_workdays" = results$volatility_Winter_Weekend,
+  #     "volatility_Summer_workdays" = results$volatility_Summer_Weekend
+  #   )
+  # )
 }

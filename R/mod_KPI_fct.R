@@ -13,7 +13,7 @@ get_neighbor_days <- function(load_condition_string) {
   # Obtaining the number of dates in the load condition
   dates <- get_dates(load_condition_string)
 
-  load_condition_thermal <- gsub(" .*", " Workday", load_condition_string)
+  load_condition_thermal <- gsub(" .*", " workdays", load_condition_string)
 
   temperature_correlation <- thermal_correlation() %>%
     subset(load_condition == load_condition_thermal) %>%
@@ -58,6 +58,7 @@ get_neighbor_days <- function(load_condition_string) {
   }
 
   df_neighbor_date$date <- dates
+
 
   return(df_neighbor_date)
 }
