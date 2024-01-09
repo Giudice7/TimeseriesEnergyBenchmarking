@@ -42,7 +42,7 @@ body {
 .logo img {
     max-width: 100%;
     height: auto;
-} 
+}
 
 .main-header {
   background-color: #2E4F97;
@@ -173,7 +173,7 @@ div.box-body .shiny-input-container {
   padding-bottom: 20px;
 }
 
-#peer_identification1-thermal_correlation_Winter, #peer_identification1-thermal_correlation_Summer, #peer_identification1-features_Winter,  #peer_identification1-features_Summer, #EPI1-EUI, #EPI1-off_impact, #EPI1-weekend_impact {
+#peer_identification1-thermal_correlation_results {
   display: flex;
 }
 
@@ -185,6 +185,16 @@ div.box-body .shiny-input-container {
   font-size: 2rem;
   color: #2E4F97;
   font-weight: 600;
+}
+
+#peer_identification1-load_condition_peer_identification-label {
+  width: 1000px;
+  max-width: none;
+}
+
+.form-group, .shiny-input-container {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .EPI-type {

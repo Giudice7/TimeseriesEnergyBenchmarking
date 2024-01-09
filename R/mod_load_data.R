@@ -45,13 +45,13 @@ mod_load_data_ui <- function(id) {
           width = 6,
           title = "Electric energy consumption time series",
           solidHeader = TRUE,
-          htmlOutput(ns("energy_raw"))
+          withSpinner(htmlOutput(ns("energy_raw")))
         ),
         box(
           width = 6,
           title = "Outdoor air temperature time series",
           solidHeader = TRUE,
-          htmlOutput(ns("temperature_raw"))
+          withSpinner(htmlOutput(ns("temperature_raw")))
         )
       )
   )

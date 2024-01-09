@@ -1,6 +1,4 @@
 function load_condition_plot(data, id_container) {
-  // Log the data to the console for debugging
-  console.log(data);
 
   // Group data by load condition and date
   var groupedData = {};

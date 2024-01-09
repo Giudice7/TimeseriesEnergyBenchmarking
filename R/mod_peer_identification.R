@@ -49,7 +49,21 @@ mod_peer_identification_ui <- function(id){
         title = "Load condition segmentation",
         width = 12,
         solidHeader = TRUE,
-        htmlOutput(outputId = ns("plot_load_condition"))
+        withSpinner(htmlOutput(outputId = ns("plot_load_condition")))
+      )
+    ),
+    fluidRow(
+      selectizeInput(inputId = ns("load_condition_peer_identification"),
+                     label = "Select a load condition to inspect peer buildings",
+                     choices = c("Winter workdays", "Summer workdays"))
+    ),
+    fluidRow(
+      box(
+        title = "Thermal sensitivity analysis",
+        width = 6,
+        solidHeader = T,
+        withSpinner(uiOutput(outputId = ns("thermal_correlation_results"))),
+        withSpinner(htmlOutput(outputId = ns("plot_energy_signature")))
       )
     )
   )
@@ -81,6 +95,67 @@ mod_peer_identification_server <- function(id, button){
       )
     })
 
+
+    output$thermal_correlation_results <- renderUI({
+      req(thermal_correlation())
+
+      correlation <- thermal_correlation()
+
+      spearman <- correlation$spearman[correlation$load_condition == input$load_condition_peer_identification]
+      slope <- correlation$slope[correlation$load_condition == input$load_condition_peer_identification]
+      result <- correlation$result[correlation$load_condition == input$load_condition_peer_identification]
+
+      HTML(
+        paste(
+          "<div class='card'> <p class='value'>",
+          result,
+          "</p> <p> Sensitiveness </p> </div>",
+          "<div class='card'> <p class='value'>",
+          round(spearman, 1),
+          "</p> <p> Spearman coefficient </p> </div>",
+          "<div class='card'> <p class='value'>",
+          slope,
+          "</p> <p> Normalized slope </p> </div>"
+        )
+      )
+    })
+
+    output$plot_energy_signature <- renderUI({
+      req(data_clean(), weather())
+      data <- merge(
+        x = weather(),
+        y = data_clean() %>%
+          mutate(date = as.Date(timestamp, format = '%Y-%m-%d')) %>%
+          mutate(load_condition = get_load_condition()$load_condition),
+        by = "timestamp",
+        all = TRUE
+      ) %>%
+        mutate(airTemperature = imputeTS::na_interpolation(airTemperature, option = "linear"))
+
+      data <- data[!duplicated(data),]
+
+      data <- data %>%
+        subset(load_condition == input$load_condition_peer_identification) %>%
+        dplyr::group_by(date, load_condition) %>%
+        dplyr::summarise(energy = sum(power),
+                         temperature = round(mean(airTemperature), 1)) %>%
+        dplyr::ungroup() %>%
+        dplyr::arrange(temperature) %>%
+        dplyr::slice(1:90)
+
+      model <- lm(energy ~ temperature, data = data)
+      slope <- coef(model)["temperature"]
+      intercept <- coef(model)["(Intercept)"]
+
+      tags$div(
+        HTML(sprintf(
+          '<script>energy_signature_plot(%s, "peer_identification1-plot_energy_signature", %s, %s)</script>',
+          jsonlite::toJSON(data, dataframe = "rows"),
+          slope, intercept
+        ))
+      )
+
+    })
 
 
 

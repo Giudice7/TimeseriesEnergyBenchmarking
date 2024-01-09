@@ -149,7 +149,7 @@ mod_pre_processing_server <- function(id, button){
 
 
     output$corruptance <- renderUI({
-
+      req(data_raw(), data_clean())
       HTML(
         paste(
           "<p class='value'> <span class='highlight'>",
