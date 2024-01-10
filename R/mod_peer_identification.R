@@ -64,6 +64,13 @@ mod_peer_identification_ui <- function(id){
         solidHeader = T,
         withSpinner(uiOutput(outputId = ns("thermal_correlation_results"))),
         withSpinner(htmlOutput(outputId = ns("plot_energy_signature")))
+      ),
+      box(
+        title = "Identification of peer buildings",
+        width = 6,
+        solidHeader = T,
+        withSpinner(uiOutput(outputId = ns("features"))),
+        withSpinner(htmlOutput(outputId = ns("plot_peers")))
       )
     )
   )
@@ -156,6 +163,78 @@ mod_peer_identification_server <- function(id, button){
       )
 
     })
+
+    output$features <- renderUI({
+      req(thermal_correlation())
+
+      correlation <- thermal_correlation()
+      result <- correlation$result[correlation$load_condition == input$load_condition_peer_identification]
+
+      HTML(
+        paste(
+          "<div class='card'> <p class='value'>",
+          result,
+          "</p> <p> Sensitiveness </p> </div>",
+          "<div class='card'> <p class='value'>",
+          end_use(),
+          "</p> <p> PSU </p> </div>",
+          "<div class='card'> <p class='value'>",
+          features()$mean_ec[features()$load_condition == input$load_condition_peer_identification],
+          "kWh</p> <p> Mean daily energy consumption </p> </div>",
+          "<div class='card'> <p class='value'>",
+          features()$shape_factor[features()$load_condition == input$load_condition_peer_identification],
+          "</p> <p> Shape factor </p> </div>"
+        )
+      )
+    })
+
+    output$plot_peers <- renderUI({
+      req(peers())
+
+      peers <- peers() %>%
+        subset(load_condition == input$load_condition_peer_identification)
+
+      correlation <- thermal_correlation()
+      result <- correlation$result[correlation$load_condition == input$load_condition_peer_identification]
+
+      features_all <- read.csv2(
+        file.path("data", paste0("features_", tolower(end_use()), ".csv"))
+      ) %>%
+        subset(!(building_id %in% gsub(".csv", "", list.files(path = file.path("data", "default_files", "electric_consumption"), pattern = tolower(end_use()))))) %>%
+        subset(temperature_correlation == result) %>%
+        subset(load_condition == input$load_condition_peer_identification) %>%
+        mutate(type = ifelse(
+          building_id %in% peers$building_id, "Peers", end_use()
+        ))
+
+      end_use_features <- features_all %>%
+        subset(type == end_use()) %>%
+        mutate(mean_ec = as.numeric(mean_ec),
+               shape_factor = as.numeric(shape_factor))
+
+      peers_features <- features_all %>%
+        subset(type == "Peers") %>%
+        mutate(mean_ec = as.numeric(mean_ec),
+               shape_factor = as.numeric(shape_factor))
+
+      building_features <- features() %>%
+        subset(load_condition == input$load_condition_peer_identification)
+
+      end_use_name <- end_use()
+
+      tags$div(
+        HTML(sprintf(
+          '<script>scatter_plot_peers("peer_identification1-plot_peers", %s, %s, %s, %s)</script>',
+          jsonlite::toJSON(end_use_features, dataframe = "rows"),
+          jsonlite::toJSON(peers_features, dataframe = "rows"),
+          jsonlite::toJSON(building_features, dataframe = "rows"),
+          jsonlite::toJSON(end_use_name, dataframe = "rows")
+        ))
+      )
+
+    })
+
+
 
 
 

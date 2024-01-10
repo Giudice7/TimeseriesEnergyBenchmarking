@@ -236,6 +236,7 @@ mod_load_data_server <- function(id) {
     results <- reactiveValues(data_clean = NULL,
                               thermal_correlation = NULL,
                               features = NULL,
+                              peers = NULL,
                               EUI = NULL,
                               operational_schedules = NULL,
                               epi_schedules = NULL,
@@ -259,6 +260,12 @@ mod_load_data_server <- function(id) {
         results$thermal_correlation <- features$thermal_correlation
 
         results$features <- features$features
+
+        peers_winter <- get_peers(load_condition_string = "Winter workdays")
+        peers_winter$load_condition = "Winter workdays"
+        peers_summer <- get_peers(load_condition_string = "Summer workdays")
+        peers_summer$load_condition = "Summer workdays"
+        results$peers <- rbind(peers_winter, peers_summer)
 
         # ENERGY PERFORMANCE INDICATOR CALCULATION
         incProgress(0.1, detail = "Energy Use Intensity calculation")
@@ -286,6 +293,10 @@ mod_load_data_server <- function(id) {
 
     features <<- reactive({
       results$features
+    })
+
+    peers <<- reactive({
+      results$peers
     })
 
     thermal_correlation <<- reactive({
