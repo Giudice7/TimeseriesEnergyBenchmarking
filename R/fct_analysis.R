@@ -94,6 +94,7 @@ get_data_clean <- function() {
       idx_nan_real_start <- sum(list$lengths[1:idx_nan[i]]) - list$lengths[idx_nan][i] + 1
       idx_nan_real_end <- sum(list$lengths[1:idx_nan[i]])
 
+      print(data$power[idx_nan_real_start:idx_nan_real_end])
       data$power[idx_nan_real_start:idx_nan_real_end] <- NA
     }
     data$power <- na_interpolation(data$power)

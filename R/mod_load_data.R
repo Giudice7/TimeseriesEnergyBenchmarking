@@ -40,6 +40,14 @@ mod_load_data_ui <- function(id) {
                      label = "Perform the analysis")
       )
     ),
+    fluidRow(
+      box(
+        width = 12,
+        title = "Metadata",
+        solidHeader = T,
+        withSpinner(uiOutput(outputId = ns("metadata")))
+      )
+    ),
       fluidRow(
         box(
           width = 6,
@@ -201,6 +209,24 @@ mod_load_data_server <- function(id) {
         sqm <- input$sqm
       }
       return(sqm)
+    })
+
+    output$metadata <- renderUI({
+      req(input$file_raw)
+
+      HTML(
+        paste(
+          "<div class='card'> <p class='value'>",
+          end_use(),
+          "</p> <p> Primary Space Usage category </p> </div>",
+          "<div class='card'> <p class='value'>",
+          round(sqm(), 1),
+          "</p> <span> <p> Gross floor area ", withMathJax("\\([m^2]\\)"), " </p> </span> </div>",
+          "<div class='card'> <p class='value'>",
+          state(),
+          "</p> <p> State/Region </p> </div>"
+        )
+      )
     })
 
     output$energy_raw <- renderUI({

@@ -173,7 +173,7 @@ div.box-body .shiny-input-container {
   padding-bottom: 20px;
 }
 
-#peer_identification1-thermal_correlation_results, #peer_identification1-features {
+#peer_identification1-thermal_correlation_results, #peer_identification1-features, #load_data1-metadata {
   display: flex;
 }
 
