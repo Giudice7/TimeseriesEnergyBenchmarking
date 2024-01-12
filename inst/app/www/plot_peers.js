@@ -9,6 +9,9 @@ function scatter_plot_peers(id_container, end_use_features, peers_features, buil
       style: {
         fontFamily: 'Poppins, sans-serif'
       },
+        credits: {
+          enabled: false
+        },
     },
     title: {
       text: ''

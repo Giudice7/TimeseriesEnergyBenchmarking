@@ -9,6 +9,9 @@ function plot_temperature(data, id_container) {
                 fontFamily: 'Poppins, sans-serif'
             }
         },
+        credits: {
+          enabled: false
+        },
         title: {
             text: ''
         },

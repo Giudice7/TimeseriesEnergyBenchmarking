@@ -177,6 +177,18 @@ div.box-body .shiny-input-container {
   display: flex;
 }
 
+#load_condition_segmentation {
+  display: flex;
+}
+
+#peer_identification1-Winter_workdays_profiles, #peer_identification1-Summer_weekends_profiles, #peer_identification1-Summer_workdays_profiles, #peer_identification1-Winter_weekends_profiles, #peer_identification1-non_workdays_profiles, #peer_identification1-Holidays_profiles {
+  flex: 1;
+}
+
+.shiny-spinner-output-container > .shiny-spinner-placeholder {
+  height: 0px;
+}
+
 .card {
   flex: 1;
 }

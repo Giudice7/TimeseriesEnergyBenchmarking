@@ -49,7 +49,15 @@ mod_peer_identification_ui <- function(id){
         title = "Load condition segmentation",
         width = 12,
         solidHeader = TRUE,
-        withSpinner(htmlOutput(outputId = ns("plot_load_condition")))
+        div(
+          id = "load_condition_segmentation",
+          htmlOutput(outputId = ns("Winter_workdays_profiles")),
+          htmlOutput(outputId = ns("Summer_workdays_profiles")),
+          htmlOutput(outputId = ns("Winter_weekends_profiles")),
+          htmlOutput(outputId = ns("Summer_weekends_profiles")),
+          htmlOutput(outputId = ns("non_workdays_profiles")),
+          htmlOutput(outputId = ns("Holidays_profiles"))
+        )
       )
     ),
     fluidRow(
@@ -83,7 +91,7 @@ mod_peer_identification_server <- function(id, button){
   moduleServer( id, function(input, output, session){
     ns <- session$ns
 
-    output$plot_load_condition <- renderUI({
+    data_lc <- reactive({
       req(data_clean())
 
       data <- data_clean() %>%
@@ -91,16 +99,96 @@ mod_peer_identification_server <- function(id, button){
           time = strftime(timestamp, format = "%H:%M", tz = 'UTC'),
           date = as.Date(timestamp, format = '%Y-%m-%d'),
           load_condition = get_load_condition()$load_condition
-          ) %>%
+        ) %>%
         select(c(date, time, power, load_condition))
+    })
+
+    output$Summer_workdays_profiles <- renderUI({
+      req(data_lc())
 
       tags$div(
         HTML(sprintf(
-          '<script>load_condition_plot(%s, "peer_identification1-plot_load_condition")</script>',
-          jsonlite::toJSON(data, dataframe = "rows")
+          '<script>load_condition_plot(%s, "peer_identification1-Summer_workdays_profiles", "%s", "%s")</script>',
+          jsonlite::toJSON(data_lc() %>%
+                             subset(load_condition == "Summer workdays"),
+                           dataframe = "rows"),
+          "Summer workdays",
+          max(data_clean()$power)
         ))
       )
     })
+
+    output$Winter_workdays_profiles <- renderUI({
+      req(data_lc())
+
+      tags$div(
+        HTML(sprintf(
+          '<script>load_condition_plot(%s, "peer_identification1-Winter_workdays_profiles", "%s", "%s")</script>',
+          jsonlite::toJSON(data_lc() %>% subset(load_condition == "Winter workdays"), dataframe = "rows"),
+          "Winter workdays",
+          max(data_clean()$power)
+        ))
+      )
+    })
+
+
+    output$Summer_weekends_profiles <- renderUI({
+      req(data_lc())
+
+      tags$div(
+        HTML(sprintf(
+          '<script>load_condition_plot(%s, "peer_identification1-Summer_weekends_profiles", "%s", "%s")</script>',
+          jsonlite::toJSON(data_lc() %>%
+                             subset(load_condition == "Summer weekends"),
+                           dataframe = "rows"),
+          "Summer weekends",
+          max(data_clean()$power)
+        ))
+      )
+    })
+
+    output$Winter_weekends_profiles <- renderUI({
+      req(data_lc())
+
+      tags$div(
+        HTML(sprintf(
+          '<script>load_condition_plot(%s, "peer_identification1-Winter_weekends_profiles", "%s", "%s")</script>',
+          jsonlite::toJSON(data_lc() %>%
+                             subset(load_condition == "Winter weekends"),
+                           dataframe = "rows"),
+          "Winter weekends",
+          max(data_clean()$power)
+        ))
+      )
+    })
+
+    output$non_workdays_profiles <- renderUI({
+      req(data_lc())
+
+      tags$div(
+        HTML(sprintf(
+          '<script>load_condition_plot(%s, "peer_identification1-non_workdays_profiles", "%s", "%s")</script>',
+          jsonlite::toJSON(data_lc() %>% subset(load_condition == "Non-working days"), dataframe = "rows"),
+          "Non-working days",
+          max(data_clean()$power)
+        ))
+      )
+    })
+
+    output$Holidays_profiles <- renderUI({
+      req(data_lc())
+
+      tags$div(
+        HTML(sprintf(
+          '<script>load_condition_plot(%s, "peer_identification1-Holidays_profiles", "%s", "%s")</script>',
+          jsonlite::toJSON(data_lc() %>% subset(load_condition == "Holidays"), dataframe = "rows"),
+          "Holidays",
+          max(data_clean()$power)
+        ))
+      )
+    })
+
+
 
 
     output$thermal_correlation_results <- renderUI({

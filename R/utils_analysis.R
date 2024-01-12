@@ -48,8 +48,8 @@ get_load_condition <- function() {
       mutate(
         time = strftime(timestamp, format = "%H:%M:%S", tz = 'UTC'),
         date = as.Date(timestamp, format = '%Y-%m-%d'),
-        dayofweek = weekdays(date, abbreviate = TRUE),
-        month = as.character(format(date, "%b"))
+        dayofweek = wday(date, label = TRUE, locale="EN-us"),
+        month = as.character(month(date, label = TRUE, abbr = TRUE, locale = "EN-us"))
       ) %>%
       mutate(
         load_condition = ifelse(
@@ -68,6 +68,8 @@ get_load_condition <- function() {
         )
       )
   }
+
+
 
   getOutlierBoxPlot <- function(x) {
         #' @description function that returns that return the value of a vector that are outlier based on boxplot method.

@@ -91,6 +91,26 @@ mod_pre_processing_server <- function(id, button){
     pre_processing_results <- observeEvent(button(), {
       req(data_raw())
 
+      data <- data_raw() %>%
+        mutate(
+          type = ifelse(is.na(power), "Missing value", "No")
+        )
+
+      # Indentify very low values and very high values
+      low_threshold <- quantile(data$power, 0.05, na.rm = TRUE) / 2
+
+      high_threshold <- quantile(data$power, 0.95, na.rm = TRUE) * 2
+
+      idx_lv <- which(data$power < low_threshold)
+      idx_hv <- which(data$power > high_threshold)
+
+      data$type[idx_lv] <- "Low value"
+      data$type[idx_hv] <- "High value"
+
+      data$power[idx_lv] <- NA
+      data$power[idx_hv] <- NA
+
+
       # Find consecutive values and their position
       list <- rle(data_raw()$power)
 
@@ -112,28 +132,10 @@ mod_pre_processing_server <- function(id, button){
 
       }
 
-      data <- data_raw() %>%
-        mutate(
-          type = ifelse(is.na(power), "Missing value", "No")
-        )
-
-
       index_outliers <- get_outlier_index(data)
 
       data$type[index_outliers] <- "Outlier"
       data$type[constant_vector] <- "Constant value"
-
-      # Indentify very low values and very high values
-      low_threshold <- quantile(data$power, 0.05, na.rm = TRUE) / 2
-
-      high_threshold <- quantile(data$power, 0.95, na.rm = TRUE) * 2
-
-      idx_lv <- which(data$power < low_threshold)
-      idx_hv <- which(data$power > high_threshold)
-
-      data$type[idx_lv] <- "Low value"
-      data$type[idx_hv] <- "High value"
-
 
       data_corruptance$outliers <- length(data$type[data$type == "Outlier"])
       data_corruptance$missing <- length(data$type[data$type == "Missing value"])

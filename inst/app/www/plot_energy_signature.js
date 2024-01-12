@@ -13,6 +13,9 @@ function energy_signature_plot(data, id_container, slope, intercept) {
     title: {
       text: 'Energy signature'
     },
+        credits: {
+          enabled: false
+        },
     legend: {
       enabled: false
     },

@@ -11,6 +11,9 @@ function mstl_plot(decomposition, id_container) {
             },
             height: 600  // Set the overall height of the chart
         },
+        credits: {
+          enabled: false
+        },
         title: {
             text: ''
         },

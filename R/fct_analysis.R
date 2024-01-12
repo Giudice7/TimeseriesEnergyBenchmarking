@@ -81,6 +81,8 @@ get_data_clean <- function() {
   index_outliers <- get_outlier_index(data)
   data$power[index_outliers] <- 0
 
+  data$power[is.na(data$power)] <- 0
+
   # Searching for continuous constant values
   list <- rle(data$power)
   idx_zero <- which(list$values==0)
@@ -94,7 +96,6 @@ get_data_clean <- function() {
       idx_nan_real_start <- sum(list$lengths[1:idx_nan[i]]) - list$lengths[idx_nan][i] + 1
       idx_nan_real_end <- sum(list$lengths[1:idx_nan[i]])
 
-      print(data$power[idx_nan_real_start:idx_nan_real_end])
       data$power[idx_nan_real_start:idx_nan_real_end] <- NA
     }
     data$power <- na_interpolation(data$power)
@@ -111,8 +112,6 @@ get_data_clean <- function() {
   }
 
   # Extracting only zeros data to interpolate with lookup table next
-  data$power[is.na(data$power)] <- 0
-  data$power[data$power == NA] <- 0
 
   data_na <- data %>%
     subset(power == 0) %>%
