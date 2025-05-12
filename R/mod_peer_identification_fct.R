@@ -75,3 +75,34 @@ get_peers <- function(load_condition_string) {
 
   return(peers)
 }
+
+
+#' @description Return the KPI values of the peer buildings
+
+#' @param load_condition the load condition (e.g. Winter workdays, Summer workdays)
+#' @param peers the list of peers of the building for the load condition
+#'
+#' @return Peer buildings identified
+#'
+#' @noRd
+#'
+#' @importFrom dplyr select mutate
+get_KPI_peers <- function(load_condition_string, peers) {
+
+  KPI_season <- read.csv2(
+    file.path("data", paste0("KPI_season_", tolower(end_use()), ".csv"))) %>%
+    subset(building_id %in% peers$building_id)
+
+  KPI_load_condition <- read.csv2(
+    file.path("data", paste0("KPI_load_condition_", tolower(end_use()), ".csv"))
+  ) %>%
+    subset(building_id %in% peers$building_id)
+
+
+  return(
+    list(
+      "KPI_season" = KPI_season,
+      "KPI_load_condition" = KPI_load_condition
+    )
+  )
+}

@@ -9,7 +9,6 @@
 #' @importFrom dplyr pull arrange
 get_neighbor_days <- function(load_condition_string) {
 
-
   # Obtaining the number of dates in the load condition
   dates <- get_dates(load_condition_string)
 
@@ -170,3 +169,67 @@ get_neighbor_energy <- function(load_condition_string) {
   return(df_neighbor_energy)
 
 }
+
+
+#' @description Function that returns that return the value of a vector that are outlier based on
+#' boxplot method.
+#'
+#' @param x: the vector that must be detected
+
+#' @return idx_outliers: outliers detected
+
+#' @noRd
+get_outlier_boxplot <- function(x) {
+
+  idx_outliers <- (x > quantile(x, .75) + 1.5*IQR(x))
+
+  return(which(idx_outliers))
+
+
+}
+
+
+#' @description Function that returns that return the value of a vector that are outlier based on
+#' Zscore method.
+#'
+#' @param x: the vector that must be detected
+
+#' @return idx_outliers: outliers detected
+
+#' @noRd
+get_outlier_zscore <- function(x) {
+
+  zscore <- (x - mean(x))/sd(x)
+  idx_outliers <- (zscore > 2)
+
+  return(which(idx_outliers))
+}
+
+
+#' @description Function that returns that return the value of a vector that are outlier based on
+#' MAD method.
+#'
+#' @param x: the vector that must be detected
+
+#' @return idx_outliers: outliers detected
+
+#' @noRd
+get_outlier_mad <- function(x) {
+
+  med = median(x)
+
+  # Get absolute deviation
+  abs_dev = abs(x - med)
+
+  # Get Median Absolute Deviation
+  mad = 1.4826 * median(abs_dev)
+
+  # Get threshold
+  Tmax = med + (3 * mad)
+
+  idx_outliers <- which(x > Tmax)
+
+  return(idx_outliers)
+}
+
+

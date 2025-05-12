@@ -16,14 +16,31 @@ function plot_ts_clean(data, corruptanceIndex, container_id) {
           text: ""
         },
         xAxis: {
-            type: 'datetime'
+            type: 'datetime',
+            labels: {
+                style: {
+                  fontSize: '1.3em'
+                }
+            }
+        },
+        legend: {
+          enabled: true,
+          itemStyle: { fontSize: '1.3em' }
         },
         yAxis: {
             offset: 10,
             opposite: false,
             title: {
                 text: 'Power [kW]',
-                align: 'middle'
+                align: 'middle',
+                style: {
+                  fontSize: '1.3em'
+                }
+            },
+            labels: {
+                style: {
+                  fontSize: '1.3em'
+                }
             }
         },
         plotOptions: {

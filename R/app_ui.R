@@ -11,16 +11,18 @@ app_ui <- function(request) {
     golem_add_external_resources(),
     # Your application UI logic
     includeScript("https://code.highcharts.com/highcharts.js"),
+    includeScript("https://code.highcharts.com/highcharts-more.js"),
     includeScript("https://code.highcharts.com/modules/exporting.js"),
     includeScript("https://code.highcharts.com/modules/export-data.js"),
     includeScript("https://code.highcharts.com/modules/accessibility.js"),
+    includeScript("https://code.highcharts.com/modules/heatmap.js"),
     # App title
     div(
       id = "header-title",
       div(
         id = "title",
         p(
-          "External Energy Benchmarking"
+          "Building Energy Benchmarking"
         )
       ),
       div(
@@ -47,17 +49,18 @@ app_ui <- function(request) {
       header = header,
       body = shinydashboard::dashboardBody(
         tabItems(
-        #   tabItem(tabName = "about",
-        #           mod_about_ui("about1")),
           tabItem(tabName = "load_data",
                   mod_load_data_ui("load_data1")),
-          tabItem(tabName = "pre-processing",
+          tabItem(tabName = "pre_processing",
                   mod_pre_processing_ui("pre_processing1")),
           tabItem(tabName = "peer_identification",
-                  mod_peer_identification_ui("peer_identification1"))
-        #   tabItem(tabName = "kpi",
-        #           mod_EPI_ui("KPI1")),
-        #   tabItem(tabName = "benchmarking")
+                  mod_peer_identification_ui("peer_identification1")),
+          tabItem(tabName = "kpi",
+                  mod_KPI_ui("KPI1")),
+          tabItem(tabName = "benchmarking",
+                  mod_benchmarking_ui("benchmarking1")),
+          tabItem(tabName = "summary",
+                  mod_result_summary_ui("summary1"))
         )
       )
     )

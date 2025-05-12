@@ -12,18 +12,34 @@ function plot_temperature(data, id_container) {
         credits: {
           enabled: false
         },
+        legend: {
+          enabled: false
+        },
         title: {
             text: ''
         },
         xAxis: {
-            type: 'datetime'
+            type: 'datetime',
+            labels: {
+                style: {
+                  fontSize: '1.3em'
+                }
+            }
         },
         yAxis: {
             offset: 50,
             opposite: false,
             title: {
                 text: 'Temperature [°C]',
-                align: 'middle'
+                align: 'middle',
+                style: {
+                fontSize: '1.3em'
+              }
+            },
+            labels: {
+                style: {
+                  fontSize: '1.3em'
+                }
             }
         },
         plotOptions: {

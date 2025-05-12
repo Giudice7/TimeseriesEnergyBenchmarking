@@ -103,7 +103,7 @@ div.box-body .shiny-input-container {
   width: fit-content;
 }
 
-.col-sm-3, .col-sm-6, .col-sm-4, .col-sm-9, .row {
+.col-sm-2, .col-sm-3, .col-sm-6, .col-sm-4, .col-sm-9, .col-sm-10, .row {
   display: flex;
 }
 
@@ -181,7 +181,15 @@ div.box-body .shiny-input-container {
   display: flex;
 }
 
+#anomaly_profiles {
+  display: flex;
+}
+
 #peer_identification1-Winter_workdays_profiles, #peer_identification1-Summer_weekends_profiles, #peer_identification1-Summer_workdays_profiles, #peer_identification1-Winter_weekends_profiles, #peer_identification1-non_workdays_profiles, #peer_identification1-Holidays_profiles {
+  flex: 1;
+}
+
+#KPI1-anomaly_profiles_Winter_workdays, #KPI1-anomaly_profiles_Winter_weekends, #KPI1-anomaly_profiles_Summer_workdays, #KPI1-anomaly_profiles_Summer_weekends {
   flex: 1;
 }
 
@@ -214,4 +222,56 @@ div.box-body .shiny-input-container {
   font-size: 2.75rem;
   font-weight: 400;
   padding-bottom: 20px;
+}
+
+.shiny-notification{
+  position: fixed;
+  top: 30%;
+  left: 33%;
+  right: 33%;
+  bottom: 60%;
+  background-color: #d9ebf6;
+  color: black;
+}
+
+/* Full modal container */
+.modal-content {
+  border: 2px solid #2E4F97;
+  border-radius: 10px;
+}
+
+/* Modal header styling */
+.modal-header {
+  background-color: #2E4F97;
+  color: white;
+  border-bottom: none;
+/*  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;*/
+}
+
+/* Close button style */
+.close {
+  color: white;
+  opacity: 1;
+}
+
+.close:hover {
+  color: #ccc;
+}
+
+/* Optional: footer subtle line */
+.modal-footer {
+  border-top: 1px solid #eee;
+}
+
+#select_date_lv {
+  display: inline-flex;
+  gap: 20px; /* Space between inputs */
+  align-items: flex-end; /* Align labels and inputs */
+  flex-wrap: wrap; /* Allows wrapping if screen is too small */
+}
+
+#select_date_lv .form-group {
+  width: auto;
+  flex: 0 0 auto; /* Prevent growing/shrinking */
 }

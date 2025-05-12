@@ -22,7 +22,15 @@ function energy_signature_plot(data, id_container, slope, intercept) {
     xAxis: {
       title: {
         text: 'Temperature [°C]',
-        align: 'middle'
+        align: 'middle',
+        style: {
+          fontSize: '1.3em'
+                }
+      },
+      labels: {
+        style: {
+          fontSize: '1.3em'
+                }
       }
     },
     yAxis: {
@@ -30,7 +38,15 @@ function energy_signature_plot(data, id_container, slope, intercept) {
       opposite: false,
       title: {
         text: 'Energy consumption [kWh]',
-        align: 'middle'
+        align: 'middle',
+        style: {
+          fontSize: '1.3em'
+                }
+      },
+      labels: {
+        style: {
+          fontSize: '1.3em'
+                }
       }
     },
     plotOptions: {

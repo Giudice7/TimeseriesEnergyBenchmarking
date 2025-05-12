@@ -13,34 +13,6 @@ mod_pre_processing_ui <- function(id){
   tagList(
     fluidRow(
       box(
-        width = 12,
-        title = "About data pre-processing",
-        solidHeader = TRUE,
-        collapsible = TRUE,
-        withMathJax(HTML(
-          paste0(
-            "<p> Data pre-processing aims to clean the energy consumption time series from outliers, missing values and continuous constant values.
-          For this scope, the Multi-Seasonal and Trend decomposition by LOESS (MSTL) technique has been employed, in order to capture the seasonality and trend information of the time series investigated.
-          To ensure a proper cleaning process, the following steps are applied:",
-            "<ul>",
-            "<li> Very high values and very low values in the time series are identified using thresholds (high threshold HT, low threshold LT) and treated as missing values. In particular, the following criteria have been employed:",
-            withMathJax("$$ HT = pct_{95} \\cdot 2 $$"),
-            withMathJax("$$ LT = pct_{5} / 2 $$"),
-            "</li>",
-            "<li> Outliers are identified using the MSTL tecnhinque. In particular, the time series is decomposed in the Trend, Seasonal24 (daily), Seasonal168 (weekly) and Remainder component. Outliers are searched in the Remainder component using the interquartile method. In particular:",
-            withMathJax("$$ OUT = Q_1 - 5 \\cdot IQR \\lor Q_3 + 5 \\cdot IQR $$"),
-            "Once one outlier is found, it is imputed as NaN.",
-            "</li>",
-            "<li> Continuous constant values higher than 6 are considered NaN. </li>",
-            "<li> Finally, all corrupted records (missing values, outliers and continuous constant values) are imputed using a look-up table, which contains the mean value of the energy consumption of that load condition for each hour of the day. </li>",
-            "</ul>",
-            "</p>"
-          )
-        ))
-      )
-    ),
-    fluidRow(
-      box(
         width = 9,
         title = "Time series pre-processing",
         solidHeader = TRUE,
@@ -52,15 +24,15 @@ mod_pre_processing_ui <- function(id){
         solidHeader = TRUE,
         withSpinner(uiOutput(outputId = ns("corruptance")))
       )
-    ),
-    fluidRow(
-      box(
-        width = 12,
-        title = "Multi-Seasonal and Trend Decomposition by Loess",
-        solidHeader = TRUE,
-        withSpinner(htmlOutput(outputId = ns("mstl_plot")))
-      )
-    )
+    ) # ,
+    # fluidRow(
+    #   box(
+    #     width = 12,
+    #     title = "Multi-Seasonal and Trend Decomposition by Loess",
+    #     solidHeader = TRUE,
+    #     withSpinner(htmlOutput(outputId = ns("mstl_plot")))
+    #   )
+    # )
   )
 }
 
@@ -218,43 +190,43 @@ mod_pre_processing_server <- function(id, button){
 
     })
 
-output$mstl_plot <- renderUI({
-
-  data <- data_raw() %>%
-    mutate(
-      time = strftime(timestamp, format = "%H:%M:%S", tz = 'UTC'),
-      date = as.Date(timestamp, format = '%Y-%m-%d'),
-      dayofweek = weekdays(date, abbreviate = TRUE),
-      month = as.character(format(date, "%b"))
-    )
-
-  # Calculate threshold of low values and high values
-  low_threshold <- quantile(data$power, 0.05, na.rm = TRUE) / 2
-
-  high_threshold <- quantile(data$power, 0.95, na.rm = TRUE) * 2
-
-  # Substituting very low values with na
-  data <- data %>%
-    mutate(power = ifelse(power < low_threshold | power > high_threshold, NA, power))
-
-  x <- msts(data$power[49:8569], seasonal.periods=c(24, 24*7))
-
-  decomposition <- data.frame(mstl(x, s.window = "periodic"))
-  decomposition$timestamp <- data$timestamp[49:8569]
-  decomposition <- decomposition %>%
-    mutate(timestamp = as.POSIXct(timestamp, tz = "UTC")) %>%
-    mutate(datetime_ms = as.numeric(timestamp) * 1000) %>%
-    select(-c(timestamp))
-
-  tags$div(
-    HTML(sprintf(
-      '<script>mstl_plot(%s, "pre_processing1-mstl_plot")</script>',
-      jsonlite::toJSON(decomposition, dataframe = "rows")
-    ))
-  )
-
-
-})
+    # output$mstl_plot <- renderUI({
+    #   data <- data_raw() %>%
+    #     mutate(
+    #       time = strftime(timestamp, format = "%H:%M:%S", tz = 'UTC'),
+    #       date = as.Date(timestamp, format = '%Y-%m-%d'),
+    #       dayofweek = weekdays(date, abbreviate = TRUE),
+    #       month = as.character(format(date, "%b"))
+    #     )
+    #
+    #   # Calculate threshold of low values and high values
+    #   low_threshold <- quantile(data$power, 0.05, na.rm = TRUE) / 2
+    #
+    #   high_threshold <- quantile(data$power, 0.95, na.rm = TRUE) * 2
+    #
+    #   # Substituting very low values with na
+    #   data <- data %>%
+    #     mutate(power = ifelse(power < low_threshold |
+    #                             power > high_threshold, NA, power))
+    #
+    #   x <- msts(data$power[49:8569], seasonal.periods = c(24, 24 * 7))
+    #
+    #   decomposition <- data.frame(mstl(x, s.window = "periodic"))
+    #   decomposition$timestamp <- data$timestamp[49:8569]
+    #   decomposition <- decomposition %>%
+    #     mutate(timestamp = as.POSIXct(timestamp, tz = "UTC")) %>%
+    #     mutate(datetime_ms = as.numeric(timestamp) * 1000) %>%
+    #     select(-c(timestamp))
+    #
+    #   tags$div(HTML(
+    #     sprintf(
+    #       '<script>mstl_plot(%s, "pre_processing1-mstl_plot")</script>',
+    #       jsonlite::toJSON(decomposition, dataframe = "rows")
+    #     )
+    #   ))
+    #
+    #
+    # })
 
 
   })

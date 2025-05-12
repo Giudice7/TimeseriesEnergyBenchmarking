@@ -467,14 +467,31 @@ get_operational_schedules <- function() {
 
   # Obtaining on-off hours
   schedules <- data %>%
-    subset(load_condition %in% c("Winter workdays", "Summer workdays")) %>%
     merge(load_parameters[, c("breakout", "delta_load")], by = "breakout", all.x = TRUE) %>%
     dplyr::group_by(date, breakout, load_condition) %>%
-    mutate(on_hour_threshold = quantile(power, 0.15) + 0.25 * delta_load) %>%
-    mutate(on_hour = ifelse(power > on_hour_threshold, "on hour", "off hour")) %>%
+    mutate(
+      on_hour_threshold = if_else(
+        load_condition %in% c("Winter workdays", "Summer workdays"),
+        quantile(power, 0.15) + 0.25 * delta_load,
+        NA_real_
+      )
+    ) %>%
+    mutate(
+      on_hour = case_when(
+        load_condition %in% c("Winter weekends", "Summer weekends") ~ "weekend",
+        power > on_hour_threshold ~ "on hour",
+        TRUE ~ "off hour"
+      )
+    ) %>%
     ungroup() %>%
     dplyr::group_by(breakout, load_condition) %>%
-    dplyr::mutate(baseload = quantile(power, 0.15)) %>%
+    mutate(
+      baseload = if_else(
+        load_condition %in% c("Winter workdays", "Summer workdays"),
+        quantile(power, 0.15),
+        NA_real_
+      )
+    ) %>%
     ungroup()
 
   # Obtaining full on or full of days
@@ -492,6 +509,7 @@ get_operational_schedules <- function() {
                             ifelse(date %in% dates & mean(power) < baseload + 0.25*delta_load, "off hour", on_hour
                             ))) %>%
     ungroup()
+
 
 
   return(
@@ -566,7 +584,8 @@ get_epi_schedules <- function(operational_schedules) {
     dplyr::group_by(n_week, season) %>%
     dplyr::summarise(weekly_energy = sum(power[dayofweek %in% c("Mon", "Tue", "Wed", "Thu", "Fri") & on_hour == "on hour"]),
                      weekend_energy = sum(power[dayofweek %in% c("Sun", "Sat")])) %>%
-    ungroup() %>%
+    ungroup()%>%
+    filter(!is.na(weekly_energy) & weekly_energy != 0) %>%
     mutate(weekend_impact = round((weekend_energy - weekly_energy) / weekly_energy * 100, 2)) %>%
     dplyr::group_by(season) %>%
     summarise(weekend_impact = median(weekend_impact))
@@ -620,88 +639,184 @@ get_volatility <- function(load_condition_string) {
 
 }
 
-perform_analysis <- function(input) {
-  # Define reactive values to store the output of the functions
-  results <- reactiveValues(data_clean = NULL,
-                            thermal_correlation = NULL,
-                            features = NULL,
-                            EUI = NULL,
-                            operational_schedules = NULL,
-                            epi_schedules = NULL,
-                            volatility_Winter_workdays = NULL,
-                            volatility_Summer_workdays = NULL,
-                            volatility_Winter_workdays = NULL,
-                            volatility_Summer_workdays = NULL)
 
-  observeEvent(input, {
-    # Reset the progress indicator
-    withProgress(message = "Analyzing the building: ", value = 0, {
-
-      # PRE-PROCESSING
-      incProgress(0.2, detail = "Data pre-processing")
-      results$data_clean <- get_data_clean()
-
-      # PEER IDENTIFICATION
-      incProgress(0.2, detail = "Peer identification")
-      features <- get_features()
-
-      results$thermal_correlation <- features$thermal_correlation
-
-      results$features <- features$features
-
-      # KEY PERFORMANCE INDICATOR CALCULATION
-      incProgress(0.1, detail = "Energy Use Intensity calculation")
-      results$EUI <- get_eui()
-
-      incProgress(0.2, detail = "Operational schedules extraction")
-      results$operational_schedules <- get_operational_schedules()
-
-      results$epi_schedules <- get_epi_schedules(results$operational_schedules$schedule)
-
-      incProgress(0.1, detail = "Volatility of energy consumption calculation")
-      # results$volatility_Winter_workdays <- get_volatility("Winter workdays")
-      # results$volatility_Summer_workdays <- get_volatility("Summer workdays")
-      # results$volatility_Winter_weekends <- get_volatility("Winter weekends")
-      # results$volatility_Summer_weekends <- get_volatility("Summer weekends")
+#' @description Function that returns the anomaly rate for a building in a load condition
+#'
+#' @param load_condition_string the load condition string (e.g. "Winter Workday")
+#'
+#' @return the anomaly rate in percentage
+#'
+#' @noRd
+get_anomaly_rate <- function(load_condition_string) {
 
 
-    })
-  })
 
-  data_clean <<- reactive({
-    results$data_clean
-  })
+  data_daily <- data_clean() %>%
+    mutate(
+      time = strftime(timestamp, format = "%H:%M:%S", tz = 'UTC'),
+      date = as.Date(timestamp, format = '%Y-%m-%d'),
+      dayofweek = weekdays(date, abbreviate = TRUE),
+      month = as.character(format(date, "%b"))
+    ) %>%
+    mutate(load_condition = get_load_condition()$load_condition) %>%
+    subset(load_condition == load_condition_string) %>%
+    dplyr::group_by(date) %>%
+    dplyr::summarise(energy = sum(power))
 
-  features <<- reactive({
-    results$features
-  })
+  # Calculate Anomaly Rate
+  date_outliers <- get_anomaly_dates(load_condition_string)
+  anomaly_rate <- length(date_outliers)/length(data_daily$date)*100
 
-  thermal_correlation <<- reactive({
-    results$thermal_correlation
-  })
+  # # Calculate Anomaly Energy
+  # anomaly_energy <- data_daily %>%
+  #   subset(as.character(date) %in% date_outliers) %>%
+  #   pull(energy) %>%
+  #   sum()/sum(data_daily$energy)*100
 
-  EUI <<- reactive({
-    results$EUI
-  })
-
-  schedules <<- reactive({
-    results$operational_schedules$schedule
-  })
-
-  off_impact <<- reactive({
-    results$epi_schedules$off_impact
-  })
-
-  weekend_impact <<- reactive({
-    results$epi_schedules$weekend_impact
-  })
-
-  # volatility <<- reactive(
-  #   list(
-  #     "volatility_Winter_workdays" = results$volatility_Winter_Workday,
-  #     "volatility_Summer_workdays" = results$volatility_Summer_Workday,
-  #     "volatility_Winter_workdays" = results$volatility_Winter_Weekend,
-  #     "volatility_Summer_workdays" = results$volatility_Summer_Weekend
-  #   )
-  # )
+  return(round(anomaly_rate, 2))
 }
+
+
+#' @description Returns the percentage of frequent load profiles in the clusters
+#'
+#' @return dataframe with frequency indicators
+#'
+#' @noRd
+#'
+#' @importFrom dplyr group_by summarise ungroup
+get_load_shape_frequency <- function() {
+
+  data_cluster <- get_cluster_labels()
+
+  metrics <- read.csv(file.path("data", paste0("metrics_", end_use(), ".csv")), header = TRUE)
+
+  data_cluster <- merge(
+    x = data_cluster,
+    y = metrics[,c("cluster", "frequency", "load_condition")],
+    by = c("cluster", "load_condition"),
+    all.x = TRUE
+  )
+
+  load_shape_freq <- data_cluster %>%
+    subset(!load_condition %in% c("Non-working days", "Holidays")) %>%
+    group_by(date, load_condition) %>%
+    summarise(frequency = unique(frequency)) %>%
+    ungroup() %>%
+    group_by(load_condition) %>%
+    summarise(freq = round(sum(frequency == "Frequent load shape") / n() * 100, 2))
+
+  return(load_shape_freq)
+
+}
+
+#' Calculate the percentile rank of a value within a numeric vector
+#'
+#' This function computes the percentile position of a value in a numeric vector
+#' using the empirical cumulative distribution function (`ecdf`). The percentile
+#' is returned as a value between 0 and 100.
+#'
+#' @param vec A numeric vector of values.
+#' @param value A single numeric value whose percentile rank is to be computed.
+#'
+#' @return A numeric value indicating the percentile rank (from 0 to 100).
+#' Returns NA if `vec` is empty or contains no finite values.
+#'
+#' @examples
+#' percentile_rank(c(10, 20, 30, 40, 50), 35)
+#' # Returns 60
+#'
+#' @noRd
+#' @export
+percentile_rank <- function(vec, value) {
+  vec <- vec[is.finite(vec)]  # Remove NA, Inf, -Inf
+  if (length(vec) == 0) return(NA_real_)
+  F <- ecdf(vec)
+  return(F(value) * 100)
+}
+
+
+# perform_analysis <- function(input) {
+#   # Define reactive values to store the output of the functions
+#   results <- reactiveValues(data_clean = NULL,
+#                             thermal_correlation = NULL,
+#                             features = NULL,
+#                             EUI = NULL,
+#                             operational_schedules = NULL,
+#                             epi_schedules = NULL,
+#                             volatility_Winter_workdays = NULL,
+#                             volatility_Summer_workdays = NULL,
+#                             volatility_Winter_weekends = NULL,
+#                             volatility_Summer_weekends = NULL)
+#
+#   observeEvent(input, {
+#     # Reset the progress indicator
+#     withProgress(message = "Analyzing the building: ", value = 0, {
+#
+#       # PRE-PROCESSING
+#       incProgress(0.2, detail = "Data pre-processing")
+#       results$data_clean <- get_data_clean()
+#
+#       # PEER IDENTIFICATION
+#       incProgress(0.2, detail = "Peer identification")
+#       features <- get_features()
+#
+#       results$thermal_correlation <- features$thermal_correlation
+#
+#       results$features <- features$features
+#
+#       # KEY PERFORMANCE INDICATOR CALCULATION
+#       incProgress(0.1, detail = "Energy Use Intensity calculation")
+#       results$EUI <- get_eui()
+#
+#       incProgress(0.2, detail = "Operational schedules extraction")
+#       results$operational_schedules <- get_operational_schedules()
+#
+#       results$epi_schedules <- get_epi_schedules(results$operational_schedules$schedule)
+#
+#       incProgress(0.1, detail = "Volatility of energy consumption calculation")
+#       results$volatility_Winter_workdays <- get_volatility("Winter workdays")
+#       results$volatility_Summer_workdays <- get_volatility("Summer workdays")
+#       results$volatility_Winter_weekends <- get_volatility("Winter weekends")
+#       results$volatility_Summer_weekends <- get_volatility("Summer weekends")
+#
+#
+#     })
+#   })
+#
+#   data_clean <<- reactive({
+#     results$data_clean
+#   })
+#
+#   features <<- reactive({
+#     results$features
+#   })
+#
+#   thermal_correlation <<- reactive({
+#     results$thermal_correlation
+#   })
+#
+#   EUI <<- reactive({
+#     results$EUI
+#   })
+#
+#   schedules <<- reactive({
+#     results$operational_schedules$schedule
+#   })
+#
+#   off_impact <<- reactive({
+#     results$epi_schedules$off_impact
+#   })
+#
+#   weekend_impact <<- reactive({
+#     results$epi_schedules$weekend_impact
+#   })
+#
+#   # volatility <<- reactive(
+#   #   list(
+#   #     "volatility_Winter_workdays" = results$volatility_Winter_Workday,
+#   #     "volatility_Summer_workdays" = results$volatility_Summer_Workday,
+#   #     "volatility_Winter_workdays" = results$volatility_Winter_Weekend,
+#   #     "volatility_Summer_workdays" = results$volatility_Summer_Weekend
+#   #   )
+#   # )
+# }

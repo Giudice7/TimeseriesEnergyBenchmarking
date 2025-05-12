@@ -9,26 +9,46 @@ function scatter_plot_peers(id_container, end_use_features, peers_features, buil
       style: {
         fontFamily: 'Poppins, sans-serif'
       },
-        credits: {
-          enabled: false
-        },
     },
+    credits: {
+          enabled: false
+      },
     title: {
       text: ''
     },
     xAxis: {
       title: {
         text: 'Shape factor [-]',
-        align: 'middle'
+        align: 'middle',
+        style: {
+          fontSize: '1.3em'
+        }
+      },
+      labels: {
+        style: {
+          fontSize: '1.3em'
+                }
       }
     },
     yAxis: {
       title: {
         text: 'Energy consumption [kWh]',
-        align: 'middle'
+        align: 'middle',
+        style: {
+          fontSize: '1.3em'
+        }
       },
       offset: 10,
-      opposite: false
+      opposite: false,
+      labels: {
+        style: {
+          fontSize: '1.3em'
+                }
+      }
+    },
+    legend: {
+      enabled: true,
+      itemStyle: { fontSize: '1.3em' }
     },
     tooltip: {
       style: {
