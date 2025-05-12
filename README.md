@@ -1,51 +1,132 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# TimeseriesEnergyBenchmarking
+# Timeseries-based Building Energy Benchmarking application
+
+![](inst/app/www/logo.png)
 
 <!-- badges: start -->
+
+[![Lifecycle:
+experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 <!-- badges: end -->
 
-The goal of TimeseriesEnergyBenchmarking is to …
+This tool performs advanced energy benchmarking of buildings based on
+hourly electricity consumption time series. Its main purpose is to
+evaluate and compare the operational performance of a building against a
+reference group of peer buildings, selected from a larger population
+based on similar features of the electrical consumption.
 
+The benchmarking workflow includes the following key processes:
+
+- **Preprocessing** of time series data: Raw electricity consumption
+  data is cleaned through statistical outlier detection and
+  seasonal-trend decomposition using MSTL (Multiple Seasonal-Trend
+  decomposition with Loess). This ensures that the time series is free
+  from inconsistencies and well-prepared for analysis.
+
+- **Peer identification**: A critical step that involves extracting
+  meaningful time series features from each building. These include
+  thermal dependency of the electrical load, reference load conditions
+  (e.g., weekdays vs weekends, seasonal groupings), load shape factors,
+  and mean energy consumption. Based on these features, the tool
+  identifies a set of peer buildings that exhibit similar load
+  behaviors.
+
+- **Key Performance Indicators (KPIs) calculation**: The application
+  computes a series of KPIs to describe different aspects of energy
+  performance:
+
+  - Energy Use Intensity
+
+  - Operational Schedule Efficiency: evaluate the consumption ratio
+    among working hours, non-working hours and weekends.
+
+  - Load Volatility: evaluates the variability in daily load profiles.
+
+  - Anomaly Detection: Identification of atypical consumption patterns.
+
+  - Load Pattern Frequency: Analysis of the variety and recurrence of
+    load shapes within a specific load condition.
+
+- **Benchmarking**: Each KPI is benchmarked against the selected set of
+  peers. For each load condition, a performance score for each KPI
+  ranging from 0 to 100 is computed, where 100 indicates best-in-class
+  performance. These scores provide building managers and energy
+  analysts with a clear understanding of how a building performs in each
+  area and where there are opportunities for improvement.
+ 
 ## Installation
 
+### Local Installation
+
 You can install the development version of TimeseriesEnergyBenchmarking
-like so:
+from [GitHub](https://github.com/) like so:
 
 ``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+# install.packages("devtools")
+devtools::install_github("https://github.com/baeda-polito/TimeseriesEnergyBenchmarking")
 ```
 
-## Example
-
-This is a basic example which shows you how to solve a common problem:
+Then you can run the application by simply typing in the console:
 
 ``` r
-library(TimeseriesEnergyBenchmarking)
-## basic example code
+library("TimeseriesEnergyBenchmarking")
+TimeseriesEnergyBenchmarking::run_app()
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
+### Docker Installation
 
-``` r
-summary(cars)
-#>      speed           dist       
-#>  Min.   : 4.0   Min.   :  2.00  
-#>  1st Qu.:12.0   1st Qu.: 26.00  
-#>  Median :15.0   Median : 36.00  
-#>  Mean   :15.4   Mean   : 42.98  
-#>  3rd Qu.:19.0   3rd Qu.: 56.00  
-#>  Max.   :25.0   Max.   :120.00
+You can also run the application using Docker. The Docker image can be
+built using the Dockerfile provided in the repository.
+
+First, clone the repository from GitHub:
+
+``` bash
+git clone https://github.com/baeda-polito/TimeseriesEnergyBenchmarking
+cd TimeseriesEnergyBenchmarking
 ```
 
-You’ll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date. `devtools::build_readme()` is handy for this.
+Then, build the Docker image using the following command:
 
-You can also embed plots, for example:
+``` bash
+docker build -t timeseries_energy_benchmarking .
+```
 
-<img src="man/figures/README-pressure-1.png" width="100%" />
+After the image is built, you can run the application using the
+following command:
 
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub and CRAN.
+``` bash
+docker run -p 80:80 timeseries_energy_benchmarking
+```
+
+This will start the application, and you can access it in your web
+browser at `http://localhost:3838`.
+
+## Contributors
+
+- Ing. [Rocco Giudice](mailto:rocco.giudice@polito.it), PhD Student at
+  [BAEDA Lab](http://www.baeda.polito.it/), Politecnico di Torino;
+- Prof. [Alfonso Capozzoli](mailto:alfonso.capozzoli@polito.it),
+  Coordinator of [BAEDA Lab](http://www.baeda.polito.it/), Politecnico
+  di Torino;
+- Prof. [Marco Savino Piscitelli](mailto:marco.piscitelli@polito.it),
+  Assistant Prof. at [BAEDA Lab](http://www.baeda.polito.it/),
+  Politecnico di Torino;
+
+## License
+
+This project is licensed under the terms of the [MIT
+license](https://opensource.org/licenses/MIT). See the
+[LICENSE](LICENSE) file for details.
+
+## Citation
+
+If you use this package in your research, please cite it as follows:
+
+M.S. Piscitelli, R. Giudice, A. Capozzoli, A holistic time series-based
+energy benchmarking framework for applications in large stocks of
+buildings, Applied Energy, 2024,
+<https://doi.org/10.1016/j.apenergy.2023.122550>.
+
+<!-- You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date. `devtools::build_readme()` is handy for this. -->
