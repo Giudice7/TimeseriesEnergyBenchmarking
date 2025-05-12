@@ -1,14 +1,14 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# Timeseries-based Building Energy Benchmarking application
+# Timeseries Energy Benchmarking
 
 ![](inst/app/www/logo.png)
 
 <!-- badges: start -->
 
 [![Lifecycle:
-experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+stable](https://img.shields.io/badge/lifecycle-stable-green.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 <!-- badges: end -->
 
 This tool performs advanced energy benchmarking of buildings based on
@@ -16,6 +16,28 @@ hourly electricity consumption time series. Its main purpose is to
 evaluate and compare the operational performance of a building against a
 reference group of peer buildings, selected from a larger population
 based on similar features of the electrical consumption.
+
+![](inst/app/www/screenshot_app.png)
+
+## Input data
+
+The input data are the followings: - **Hourly electrical energy
+consumption timeseries**: The application accepts hourly electricity
+consumption data in CSV format. - **Outside air temperature
+timeseries**: The application accepts outside air temperature data in
+CSV format. - **End-use category** of the building: The application
+accept the end-use category of the building (e.g., Office, Educational,
+etc.) as a string. - **Floor area** of the building: The application
+accepts the floor area of the building in square meters as a numeric
+value. - \[Optional\] **State** : The application accepts the state of
+the building as a string. This is used to obtain the holiday calendar of
+the building.
+
+If you don’t have the data required, you can still inspect the
+application using the buildings given as examples. use the toogle
+![](inst/app/www/toogle.png) to select the usage mode.
+
+## About the workflow
 
 The benchmarking workflow includes the following key processes:
 
@@ -55,7 +77,9 @@ The benchmarking workflow includes the following key processes:
   performance. These scores provide building managers and energy
   analysts with a clear understanding of how a building performs in each
   area and where there are opportunities for improvement.
- 
+
+![](inst/app/www/summary.png)
+
 ## Installation
 
 ### Local Installation
@@ -101,7 +125,7 @@ docker run -p 80:80 timeseries_energy_benchmarking
 ```
 
 This will start the application, and you can access it in your web
-browser at `http://localhost:3838`.
+browser at `http://localhost:80`.
 
 ## Contributors
 
