@@ -1,0 +1,44 @@
+Package: TimeseriesEnergyBenchmarking
+Title: Timeseries-based energy benchmarking tool
+Version: 0.0.0.9000
+Authors@R: 
+    person("Rocco", "Giudice", , "rocco.giudice@polito.it", role = c("cre", "aut"))
+Description: A shiny app to perform timeseries-based external energy
+    benchmarking on annual electrical energy consumption of a whole
+    building.
+License: MIT + file LICENSE
+URL: https://github.com/Giudice7/TimeseriesEnergyBenchamrking
+BugReports: 
+    https://github.com/Giudice7/TimeseriesEnergyBenchamrking/issues
+Imports:
+    BreakoutDetection (>= 1.0.1),
+    config (>= 0.3.1),
+    dplyr,
+    DT,
+    forecast,
+    golem (>= 0.4.1),
+    highcharter,
+    imputeTS,
+    jsonlite,
+    lubridate,
+    magrittr,
+    mathjaxr,
+    purrr,
+    rlang,
+    shiny (>= 1.7.4),
+    shinycssloaders,
+    shinydashboard,
+    shinyjs,
+    shinyWidgets,
+    stats,
+    tidyr
+Suggests: 
+    spelling,
+    testthat (>= 3.0.0)
+Remotes: 
+    twitter/BreakoutDetection
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.2.3
