@@ -21,15 +21,20 @@ based on similar features of the electrical consumption.
 
 ## Input data
 
-The input data are the followings: - **Hourly electrical energy
+The input data are the followings: 
+- **Hourly electrical energy
 consumption timeseries**: The application accepts hourly electricity
-consumption data in CSV format. - **Outside air temperature
+consumption data in CSV format.
+- **Outside air temperature
 timeseries**: The application accepts outside air temperature data in
-CSV format. - **End-use category** of the building: The application
+CSV format.
+ - **End-use category** of the building: The application
 accept the end-use category of the building (e.g., Office, Educational,
-etc.) as a string. - **Floor area** of the building: The application
+etc.) as a string.
+- **Floor area** of the building: The application
 accepts the floor area of the building in square meters as a numeric
-value. - \[Optional\] **State** : The application accepts the state of
+value.
+- \[Optional\] **State** : The application accepts the state of
 the building as a string. This is used to obtain the holiday calendar of
 the building.
 
