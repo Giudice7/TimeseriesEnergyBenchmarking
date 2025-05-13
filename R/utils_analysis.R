@@ -21,7 +21,7 @@ get_load_condition <- function() {
       mutate(
         time = strftime(timestamp, format = "%H:%M:%S", tz = 'UTC'),
         date = as.Date(timestamp, format = '%Y-%m-%d'),
-        dayofweek = wday(date, label = TRUE, locale="EN-us"),
+        dayofweek = wday(date, label = TRUE, locale="en_US.UTF-8"),
         month = as.character(month(date, label = TRUE, abbr = TRUE, locale = "EN-us"))
       ) %>%
       mutate(
@@ -294,7 +294,7 @@ get_cluster_labels <- function() {
   data_norm <- data
   data_norm[, 2:25] <- data_norm[, 2:25]/max
 
-  centroids <- read.csv(file.path("data", paste0("centroids_", end_use(), ".csv")), header = TRUE)
+  centroids <- read.csv(file.path("data", paste0("centroids_",tolower(end_use()), ".csv")), header = TRUE)
 
   data_clustered <- data.frame(matrix(nrow = 0, ncol = 2)) %>%
     setNames(c("date", "cluster"))

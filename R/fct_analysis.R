@@ -688,7 +688,7 @@ get_load_shape_frequency <- function() {
 
   data_cluster <- get_cluster_labels()
 
-  metrics <- read.csv(file.path("data", paste0("metrics_", end_use(), ".csv")), header = TRUE)
+  metrics <- read.csv(file.path("data", paste0("metrics_", tolower(end_use()), ".csv")), header = TRUE)
 
   data_cluster <- merge(
     x = data_cluster,
